@@ -1,0 +1,25 @@
+/* Author: Peter "Felix" Nguyen */
+
+.grid-sizer, .item  {
+	width: calc((100% - 40px) / 3);
+}
+
+ul.mason > li.wide {
+	width: 100%;
+}
+
+.gutter-sizer {
+	width: 20px;
+}
+
+.col-sm-12 {
+	margin-bottom: -20px;
+}
+
+div.header > div.name > a {
+	font-size: 5vw;
+}
+
+body {
+	//background-color: Magenta !important;
+}

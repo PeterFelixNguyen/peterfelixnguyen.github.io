@@ -1,0 +1,104 @@
+/* Author: Peter "Felix" Nguyen */
+
+.min500 {
+	min-height: 0px;
+}
+
+div.main-block {
+	margin-top: 0px; /* go negative */
+	padding-top: 0px;
+}
+
+/* Header */
+
+div.header {
+	height: 190px;
+}
+
+div.header > div.name {
+	left: 110px;
+	height: 100px;
+}
+
+div.header > div.name  > a {
+	line-height: 70px;
+}
+
+div.header > div.name-logo {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
+div.header > div.name-logo > a {
+	width: 100px;
+	height: 100px;
+	background-size: 100px 100px;
+}
+
+div.header {
+	overflow: hidden;
+}
+
+div.header > div.pages  {
+	font-size: 16px;
+	padding: 0px;
+}
+
+div.header > div.pages > a {
+	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
+	padding: 10px 0px;
+}
+
+div.header > div.pages > a.selected {
+	border-bottom-color: rgba(60,190,120,1); /* Calm Green */
+}
+
+div.header > div.pages {
+	left: 0px;
+}
+
+/* Masonry */
+
+.grid-sizer, .item  {
+	width: 100%;
+}
+
+ul.container2 > li.wide {
+	width: 100%;
+}
+
+.gutter-sizer {
+	width: 20px;
+}
+
+.right-col {
+	clear: both;
+}
+
+div.left-col {
+	width: 100%;
+	border-left-style: solid;
+	border-bottom-style: solid;
+	border-right-style: solid;
+	border-left-width: 5px;
+	border-bottom-width: 5px;
+	border-right-width: 5px;
+	border-left-color: rgba(47,71,121,1); /* Darker Blue */
+	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
+	border-right-color: rgba(47,71,121,1); /* Darker Blue */
+}
+
+div.left-col > div.tab > ul > li {
+	width: 100%;
+}
+
+div.left-col > div.tab > ul > li > a {
+	float: none;
+	clear: both;
+	width: 100%;
+	border-style: none;
+	border-radius: 0px;
+	padding: 10px 0px;
+}

@@ -1,0 +1,520 @@
+/* Author: Peter "Felix" Nguyen */
+
+.min500 {
+	min-height: 500px;
+}
+
+/* Header */
+
+div.header {
+	background-color: rgba(59,89,152,1);
+	background-color: Black;
+	width: 100%;
+	clear: both;
+	height: 240px;
+	overflow: hidden;
+	position: relative;
+	text-align: center;
+	text-align: left;
+}
+
+div.header > a {
+	float: left;
+	height: 100%;
+}
+
+div.header > div.name {
+	background-color: White; /* Fallback color White*/
+	background-color: rgba(60,190,120,1); /* Fallback color Calm Green */
+	background-color: rgba(120,120,245,1); /* Fallback color Calm Blue */
+	background: linear-gradient(210deg, rgba(120,120,245,1), rgba(60,190,120,1)); /* Calm Blue dominant gradient */
+	background: linear-gradient(210deg, rgba(120,120,245,1), rgba(60,190,120,1), rgba(60,190,120,1)); /* Calm Green dominant gradient */
+	position: absolute;
+	left: 230px;
+	right: 0px;
+	top: 10px;
+	font-size: 30px;
+	height: 120px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: rgba(47,71,121,1); /* Darker Blue */
+}
+
+div.header > div.name:hover {
+	border-color: rgba(255,255,255,1);
+}
+
+div.header > div.name > a {
+	font-weight: Bold !important;
+	width: 33%;
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+	line-height: 90px;
+	display: block;
+	color: Black;
+}
+
+div.header > div.name > a:hover {
+	color: rgba(255,255,255,1) /* White */;
+}
+
+div.header > div.name > a:nth-child(2) {
+	border-left-style: solid;
+	border-left-color: Black;
+	border-left-width: 6px;
+	border-right-style: solid;
+	border-right-color: Black;
+	border-right-width: 6px;
+	width: 34% !important;
+}
+
+div.header > div.name:hover > a:nth-child(2) {
+	border-color: rgba(255,255,255,1) /* White */;
+}
+
+div.header > div.pages {
+	position: absolute;
+	left: 230px;
+	right: 0px;
+	bottom: 0px;
+	font-size: 30px;
+	padding-right: 0px;
+}
+
+div.header > div.pages > a {
+	background-color: rgba(59,89,152,1); /* Dark Blue */
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;
+	padding: 25px 0px;
+	margin: 0px 0px;
+	float: left;
+	font-weight: bold !important;
+	width: 33%;
+	text-align: center;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-style: solid;	
+	border-top-color: rgba(47,71,121,1); /* Darker Blue */
+	border-bottom-color: rgba(255,255,255,1); /* White */
+	border-left-color: rgba(47,71,121,1); /* Darker Blue */
+	border-right-color: rgba(47,71,121,1); /* Darker Blue */
+	border-top-width: 5px;
+	border-left-width: 5px;
+	border-right-width: 5px;
+	font-size: 30px;
+}
+
+div.header > div.pages > a:nth-child(2) {
+	width: 34%;
+}
+
+div.header > div.pages > a:hover {
+	background-color: rgba(60,190,120,1); /* Calm Green */
+}
+
+div.header > div.pages > a.selected {
+	background-color: rgba(223,227,238,1) /* Pale Blue */;
+    background-color: rgba(139,157,195,1); /* Light Blue */
+	color: Black;
+	background-color: rgba(60,190,120,1); /* Calm Green */
+	border-bottom-color: rgba(60,190,120,1); /* Calm Green */
+}
+
+div.header > div.name-logo > h1 {
+	float: left;
+	color: White !important;
+}
+
+div.header > div.name-logo {
+	position: absolute;
+	left: 0px;
+	top: 10px;
+	overflow: visible;
+}
+
+div.header > div.name-logo > a  {
+	float: left;
+	margin: 10px 0px;
+	border-radius: 10px;
+	width: 220px;
+	height: 220px;
+	background-size: 220px 220px;
+	background-repeat: no-repeat;
+	background-image: url("../ximages/logo-colored1b.png");
+}
+
+div.header > div.name-logo > a:hover {
+	background-image: url("../ximages/logo-colored2.png");
+}
+
+div.header > div.name-logo > a {
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+div.header > div.name-logo > a > h1 {
+	margin: 0px;
+	padding: 0px 20px;
+	line-height: 50px;
+}
+
+div.header > div.name-logo > a > h3 {
+	margin: 0px;
+	padding: 0px 20px;
+	line-height: 51px;
+}
+
+/*
+	Masonry
+*/
+.row {
+	padding-bottom: 30px; /* Stops clipping at bottom */
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
+
+div.item  {
+	background-color: rgba(255,255,255,1);
+}
+
+div.item > ul {
+	margin-top: 20px;
+	list-style-type: none;
+	overflow: hidden; /* Fixes layout issue */
+	//padding-bottom: 10px; /* Fixes layout issue if enough padding */
+	padding-left: 20px;
+}
+
+div.item  > h4 {
+	border-bottom-style: solid;
+	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
+	color: Black;
+}
+
+div.item > ul > li {
+	float: left;
+	background-color: rgba(238,238,238,1);
+	padding: 10px;
+	margin: 0px;
+	font-size: 20px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(153,153,153,1);
+}
+
+.bordered {
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(153,153,153,1);
+}
+
+.mason {
+	padding: 0px;
+}
+
+.content-box {
+	background-color: blue;
+	width: 300px;
+	height: 200px;
+	border-style: solid;
+	border-width: 10px;
+	display: none;
+}
+
+.border-box {
+	background-color: red;
+	width: 300px;
+	height: 200px;
+	box-sizing: border-box;
+	border-style: solid;
+	border-width: 10px;
+	display: none;
+}
+
+.item {
+	float: left;
+	background-color: rgba(238,238,238,1);
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 20px;
+	border-style: solid;
+	border-radius: 10px;
+	border-width: 0px;
+	border-width: 2px;
+	border-color: rgba(153,153,153,1);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*
+	Bootstrap
+*/
+.col-sm-12, .col-lg-4 {
+	padding: 0px;
+}
+
+.main-block {
+	height: auto;
+	overflow: hidden;
+	clear: both;	
+}
+
+/* Parent Padding */
+.tab-content {
+	padding: 0px;
+	padding-top: 20px;
+	padding-bottom: 1px; /* Ensure parent height fits child height */
+	background-color: rgba(120,120,245,1); /* Calm Blue */
+	background-color: rgba(139,157,195,1); /* Light Blue */
+}
+
+.tab-pane {
+	margin: 0px;
+	padding: 0px;
+}
+
+div.tab > ul {
+	list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+	list-style-position: inside;
+	text-align: center;
+}
+
+div.left-col > div.tab > ul > li > a {
+	border-top-left-radius: 10px; /* Smooth border */
+	border-bottom-left-radius: 10px; /* Smooth border */  
+	font-size: 30px;
+	padding: 25px 0px;
+	margin: 0px;
+	font-weight: bold !important;
+	display: inline-block;
+	width: 230px;
+	border-top-style: solid;
+	border-left-style: solid;
+	border-bottom-style: solid;	
+	border-left-color: rgba(47,71,121,1); /* Darker Blue */
+	border-top-color: rgba(47,71,121,1); /* Darker Blue */
+	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
+	border-left-width: 5px;
+	border-top-width: 5px;
+	border-bottom-width: 5px;
+	border-right-style: solid;
+	border-right-color: rgba(255,255,255,1); /* White */ 
+	background-color: rgba(59,89,152,1);
+}
+
+div.left-col > div.tab > ul > li.active > a {
+	background-color: rgba(223,227,238,1); /* Pale Blue */
+    background-color: rgba(139,157,195,1); /* Light Blue */
+	color: Black;
+	font-weight: bold !important;
+	background-color: rgba(60,190,120,1) !important; /* Calm Green */
+	border-right-color: rgba(60,190,120,1) !important; /* Calm Green */
+}
+
+div.left-col > div.tab > ul > li > a:hover {
+	background-color: rgba(60,190,120,1); /* Calm Green */
+}
+
+.left-col {
+    background-color: Black;
+	float:left;
+	width: 230px;
+	height: auto;
+}
+
+.left-col > h2 {
+	text-align: right;
+}
+
+.right-col {
+	width: auto;
+	overflow: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0px;
+	padding: 20px;
+}
+
+h1 {
+	font-size: 120px !important;
+}
+
+h2 {
+	font-size: 30px !important;
+}
+
+h3 {
+	font-size: 25px !important;
+}
+
+h4 {
+	font-size: 25px !important;
+}
+
+section > h2, section > h3, section > h4 {
+	border-bottom: solid;
+	border-bottom-color: rgba(47,71,121,1); /* Darker Blue*/
+}
+
+section > h2, section > h3 {
+	border-bottom: solid;
+	border-bottom-color: rgba(47,71,121,1); /* Darker Blue*/
+	color: white;
+	margin: 0px;
+	margin-bottom: 20px;
+	background-color: rgba(59,89,152,1); /* Dark Blue */
+}
+
+section > h2 {
+	font-weight: bold !important;
+	border-radius: 10px;
+}
+
+section > h3 {
+	font-weight: bold !important;
+	border-radius: 10px;
+}
+
+section > h4 {
+	font-size: 25px;
+}
+
+p {
+	font-size: 20px;
+	padding: 20px;
+	padding-left: 30px;
+}
+
+div.tab {
+	/* DELETE FROM HTML ??? */
+}
+
+/* Do not delete this one */
+.container-fluid > .row  {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.container-fluid > .row > div {
+	margin-bottom: 0px;
+}
+
+.container-fluid {
+	padding-left: 0px !important;
+	padding-right: 0px !important;}
+
+/* old */
+
+body {
+    width: 100%;
+	min-width: 480px;
+	max-width: 2600px;
+    background-color: Black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a:link, a:visited, a:hover {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    color: White;
+}
+
+div.content-body {
+    width:100%;
+    padding:0px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+
+hr {
+    border-width:1px;
+    border-style:solid;
+    border-color:rgba(255,255,255,1);
+}
+
+section {
+    overflow:auto;
+    clear:both;
+    height:auto;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+section.contained {
+    background-color: White;
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgba(153,153,153,1);
+	border-radius: 10px;
+}
+
+section.contained > h2 {
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+
+/*
+.row > div:first-child > section.scaffold {
+	margin-left: 20px;
+}
+*/
+
+section.scaffold {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* Embedded content */
+
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    padding-top:35px;
+    height:0;
+    overflow:hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index:0;
+}
+
+/* Universal */
+
+*, *:before, *:after {
+	font-family: Arial !important;
+	font-weight: normal !important;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Super parent */
+
+html {
+	overflow: -moz-scrollbars-vertical; 
+	overflow-y: scroll;
+}
