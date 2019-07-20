@@ -7,8 +7,7 @@
 /* Header */
 
 div.header {
-	background-color: rgba(59,89,152,1);
-	background-color: Black;
+    background-color: rgba(139,157,195,1); /* Light Blue */
 	width: 100%;
 	clear: both;
 	height: 240px;
@@ -85,8 +84,8 @@ div.header > div.pages {
 
 div.header > div.pages > a {
 	background-color: rgba(59,89,152,1); /* Dark Blue */
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
 	border-top-style: solid;
 	border-left-style: solid;
 	border-right-style: solid;
@@ -110,6 +109,18 @@ div.header > div.pages > a {
 	font-size: 30px;
 }
 
+div.header > div.pages > a.first {
+	border-top-right-radius: 0px;
+	border-top-left-radius: 10px;
+    border-right-style: none;
+}
+
+div.header > div.pages > a.last {
+    border-top-right-radius: 10px;
+	border-top-left-radius: 0px;
+    border-left-style: none;
+}
+
 div.header > div.pages > a:nth-child(2) {
 	width: 34%;
 }
@@ -120,7 +131,7 @@ div.header > div.pages > a:hover {
 
 div.header > div.pages > a.selected {
 	background-color: rgba(223,227,238,1) /* Pale Blue */;
-    	background-color: rgba(139,157,195,1); /* Light Blue */
+    background-color: rgba(139,157,195,1); /* Light Blue */
 	color: Black;
 	background-color: rgba(60,190,120,1); /* Calm Green */
 	border-bottom-color: rgba(60,190,120,1); /* Calm Green */
@@ -311,8 +322,8 @@ div.tab > ul {
 }
 
 div.left-col > div.tab > ul > li > a {
-	border-top-left-radius: 10px; /* Smooth border */
-	border-bottom-left-radius: 10px; /* Smooth border */  
+	border-top-left-radius: 0px; /* Smooth border */
+	border-bottom-left-radius: 0px; /* Smooth border */  
 	font-size: 30px;
 	padding: 25px 0px;
 	margin: 0px;
@@ -321,7 +332,7 @@ div.left-col > div.tab > ul > li > a {
 	width: 230px;
 	border-top-style: solid;
 	border-left-style: solid;
-	border-bottom-style: solid;	
+	border-bottom-style: none;	
 	border-left-color: rgba(47,71,121,1); /* Darker Blue */
 	border-top-color: rgba(47,71,121,1); /* Darker Blue */
 	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
@@ -331,6 +342,17 @@ div.left-col > div.tab > ul > li > a {
 	border-right-style: solid;
 	border-right-color: rgba(255,255,255,1); /* White */ 
 	background-color: rgba(59,89,152,1);
+}
+
+div.left-col > div.tab > ul > li > a.first {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 0px;
+}
+
+div.left-col > div.tab > ul > li > a.last {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-style: none; /* not sure if prefer none or solid */
 }
 
 div.left-col > div.tab > ul > li.active > a {
@@ -347,7 +369,7 @@ div.left-col > div.tab > ul > li > a:hover {
 }
 
 .left-col {
-    background-color: Black;
+    background-color: rgba(139,157,195,1); /* Light Blue */
 	float:left;
 	width: 230px;
 	height: auto;
@@ -453,7 +475,8 @@ body {
     width: 100%;
 	min-width: 480px;
 	max-width: 2600px;
-        background-color: Black;
+    background-color: Black;
+    background-color: rgba(139,157,195,1); /* Light Blue */
 	margin-left: auto;
 	margin-right: auto;
 }
