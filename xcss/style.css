@@ -185,9 +185,14 @@ div.header > div.name-logo > a > h3 {
 	Masonry
 */
 .row {
-	padding-bottom: 30px; /* Stops clipping at bottom */
 	margin-left: -5px;
 	margin-right: -5px;
+}
+
+.invisibox {
+	margin-left: -5px !important;
+	margin-right: 0px !important;
+    margin-bottom: 20px;
 }
 
 .contacts {
@@ -196,6 +201,8 @@ div.header > div.name-logo > a > h3 {
 
 div.item  {
 	background-color: rgba(255,255,255,1);
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
 }
 
 div.item > ul {
@@ -252,6 +259,7 @@ div.item > ul > li {
 
 .mason {
 	padding: 0px;
+    margin-top: -20px;
 }
 
 .content-box {
@@ -540,6 +548,7 @@ section {
 	margin-right: 20px;
 	overflow: hidden;
 	border-radius: 10px;
+    /*background-color: red !important;*/
 }
 
 section.contained {
