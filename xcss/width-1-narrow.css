@@ -61,12 +61,14 @@ div.header > div.pages  {
 }
 
 div.header > div.pages > a {
+	border-bottom-style: solid !important;
+    border-bottom-width: 5px;
 	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
 	padding: 10px 0px;
 }
 
 div.header > div.pages > a.selected {
-	border-bottom-color: rgba(60,190,120,1); /* Calm Green */
+	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
 }
 
 div.header > div.pages {
