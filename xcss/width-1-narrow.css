@@ -1,5 +1,13 @@
 /* Author: Peter "Felix" Nguyen */
 
+.tab-content {
+    padding-left: 0px;
+}
+
+.row {
+	margin-left: -15px !important;
+}
+
 .min500 {
 	min-height: 0px;
 }
@@ -7,6 +15,12 @@
 div.main-block {
 	margin-top: 0px; /* go negative */
 	padding-top: 0px;
+}
+
+/* Do not delete this one */
+.container-fluid > .row  {
+	padding-left: 0px !important;
+	padding-right: 5px !important;
 }
 
 /* Header */

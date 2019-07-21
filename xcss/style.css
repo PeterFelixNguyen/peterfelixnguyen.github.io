@@ -190,6 +190,9 @@ div.header > div.name-logo > a > h3 {
 	margin-right: -5px;
 }
 
+.contacts {
+	margin-left: -25px !important;
+}
 
 div.item  {
 	background-color: rgba(255,255,255,1);
@@ -209,7 +212,7 @@ li span {
 
 img {
     display: block;
-    width: 85%;
+    width: 90%;
     max-height: 100%;
     margin-top: 30px;
     margin-left: auto;
@@ -276,7 +279,7 @@ div.item > ul > li {
 	padding: 0px;
 	margin: 0px;
 	margin-bottom: 20px;
-	border-style: solid;
+	border-style: none;
 	border-radius: 10px;
 	border-width: 0px;
 	border-width: 2px;
@@ -302,7 +305,8 @@ div.item > ul > li {
 /* Parent Padding */
 .tab-content {
 	padding: 0px;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-left: 10px;
 	padding-bottom: 1px; /* Ensure parent height fits child height */
 	background-color: rgba(120,120,245,1); /* Calm Blue */
 	background-color: rgba(139,157,195,1); /* Light Blue */
@@ -456,8 +460,8 @@ div.tab {
 
 /* Do not delete this one */
 .container-fluid > .row  {
-	padding-left: 15px !important;
-	padding-right: 15px !important;
+	padding-left: 0px !important;  /* 2019 style change, previously 15 */
+	padding-right: 5px !important; /* 2019 style change, previously 15 */
 }
 
 .container-fluid > .row > div {
@@ -467,6 +471,16 @@ div.tab {
 .container-fluid {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
+}
+
+.contained {
+    margin: 10px 15px !important; 
+    margin-right: 0px !important; /* 2019 style change */
+}
+
+.contained-masonry {
+    margin: 10px 15px !important; 
+    margin-right: 0px !important; /* 2019 style change */
 }
 
 /* old */
@@ -530,7 +544,7 @@ section {
 
 section.contained {
     background-color: White;
-	border-style: solid;
+	border-style: none;
 	border-width: 2px;
 	border-color: rgba(153,153,153,1);
 	border-radius: 10px;
@@ -549,7 +563,7 @@ section.contained > h2 {
 
 section.scaffold {
 	margin-right: 10px;
-	margin-left: 10px;
+	margin-left: 5px; /* 2019 style change, previously 10px*/
 }
 
 /* Embedded content */
