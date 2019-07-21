@@ -116,3 +116,14 @@ div.left-col > div.tab > ul > li > a {
 	border-radius: 0px;
 	padding: 10px 0px;
 }
+
+div.left-col > div.tab > ul > li > a.first {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+div.left-col > div.tab > ul > li > a.last {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-style: none; /* not sure if prefer none or solid */
+}
