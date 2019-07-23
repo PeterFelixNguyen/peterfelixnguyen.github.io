@@ -644,6 +644,7 @@ html {
   background-color: rgba(255,255,255,0.9);
   padding: .75em 1em;
   margin-bottom: 1.5em;
+  resize: vertical;
 }
 #fs-frm input:focus,
 #fs-frm select:focus,
@@ -653,6 +654,7 @@ html {
   outline-width: thin;
   outline-color: gray;
   outline-offset: -1px;
+  resize: vertical;
 }
 #fs-frm [type="text"],
 #fs-frm [type="email"] {
