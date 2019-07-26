@@ -88,33 +88,91 @@
 									<div class="col-sm-12 col-md-12 col-lg-12">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
-                                                <a class="screenshot" href="ximages/ffs_fire_1.jpg" target="_blank"><img src="ximages/ffs_fire_1.jpg" alt="placeholder"></a>
-                                                <p class="caption">Forest fire: starting a fire</p>
-                                                <a class="screenshot" href="ximages/ffs_fire_2.jpg" target="_blank"><img src="ximages/ffs_fire_2.jpg" alt="placeholder"></a>
-                                                <p class="caption">Forest fire: fire spreads</p>
-                                                <a class="screenshot" href="ximages/ffs_fire_3.jpg" target="_blank"><img src="ximages/ffs_fire_3.jpg" alt="placeholder"></a>
-                                                <p class="caption">Forest fire: fire spreads even more</p>
-                                                <a class="screenshot" href="ximages/ffs_rain_1.jpg" target="_blank"><img src="ximages/ffs_rain_1.jpg" alt="placeholder"></a>
-                                                <p class="caption">Weather: before the rain</p>
-                                                <a class="screenshot" href="ximages/ffs_rain_1.jpg" target="_blank"><img src="ximages/ffs_rain_2.jpg" alt="placeholder"></a>
-                                                <p class="caption">Weather: rain begins</p>
-                                                <a class="screenshot" href="ximages/ffs_rain_1.jpg" target="_blank"><img src="ximages/ffs_rain_3.jpg" alt="placeholder"></a>
-                                                <p class="caption">Weather: rain interaction</p>
+                                            <div id="screenshot-carousel" class="carousel slide" data-ride="carousel"  data-interval="5000">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#screenshot-carousel" data-slide-to="1"></li>
+                                                    <li data-target="#screenshot-carousel" data-slide-to="2"></li>
+                                                    <li data-target="#screenshot-carousel" data-slide-to="3"></li>
+                                                    <li data-target="#screenshot-carousel" data-slide-to="4"></li>
+                                                    <li data-target="#screenshot-carousel" data-slide-to="5"></li>
+                                                </ol>
+                                                <div style="background-color: green !important; padding: 0px !important; margin: 0px !important; " class="carousel-inner">
+                                                    <div class="item item-carousel active">
+                                                        <img class="d-block w-100" src="ximages/ffs_fire_1.jpg" alt="First slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Forest Fire</h5>
+                                                            <p>Starting a fire</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item item-carousel">
+                                                        <img class="d-block w-100" src="ximages/ffs_fire_2.jpg" alt="Second slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Forest Fire</h5>
+                                                            <p>Fire begins to spread</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item item-carousel">
+                                                        <img class="d-block w-100" src="ximages/ffs_fire_3.jpg" alt="Third slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Forest Fire</h5>
+                                                            <p>Fire spreads even more</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item item-carousel">
+                                                        <img class="d-block w-100" src="ximages/ffs_rain_1.jpg" alt="Fourth slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Weather Mechanics</h5>
+                                                            <p>Rain blob appears</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item item-carousel">
+                                                        <img class="d-block w-100" src="ximages/ffs_rain_2.jpg" alt="Fifth slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Weather Mechanics</h5>
+                                                            <p>Rain blob arrives</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item item-carousel">
+                                                        <img class="d-block w-100" src="ximages/ffs_rain_3.jpg" alt="Sixth slide">
+                                                        <div class="carousel-caption d-none d-md-block">
+                                                            <h5>Weather Mechanics</h5>
+                                                            <p>Rain blob interacts with fire</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Left and right controls -->
+                                                <a class="left carousel-control" href="#screenshot-carousel" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                                <a class="right carousel-control" href="#screenshot-carousel" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </div>
+                                            <br>
 										</section>
 										<section class="contained min500 scaffold">
 											<h2>Videos</h2>   
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">Random map generation</p>
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">Map editor</p>
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">Simulation replay</p>
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">Simulation speed adjustment</p>
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">Weather interaction: rain</p>
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">Weather interaction: wind</p>
+                                            <img class="temp" src="ximages/placeholder.png" alt="placeholder">
+                                            <p class="caption">Gameplay Video</p>
+                                            <!-- order of events
+                                            Generate random map, 
+                                            edit the map, 
+                                            start fire, 
+                                            fast foward, 
+                                            slow down, 
+                                            pause,
+                                            resume normal speed,
+                                            end simulation,
+                                            replay until the end
+                                            new simulation, 
+                                            (weather not yet integrated w/ replay)
+                                            start fire,
+                                            spawn rain and wind,
+                                            end simulation
+                                            -->
 										</section>
 									</div>
 								</div>
