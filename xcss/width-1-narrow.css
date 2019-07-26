@@ -5,7 +5,8 @@
 }
 
 .row {
-	margin-left: -15px !important;
+	margin-left: 0px !important; /* New 2019, may want to set all screens to 0px, previously -15px */
+	margin-right: 0px !important; /* New 2019, may want to set all screens to 0px */
 }
 
 .invisibox {
