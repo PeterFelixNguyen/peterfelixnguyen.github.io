@@ -1,5 +1,39 @@
 /* Author: Peter "Felix" Nguyen */
 
+/* Bootstrap Modals */
+
+body.modal-open {
+  overflow: inherit;
+  padding-right: 0px !important;
+  overflow-y: hidden;
+}
+
+.modal-title { /* regular h5 pushes the X button down*/
+    padding-left: 0px !important;
+    float: left;
+}
+
+.modal-dialog {
+    width: 90% !important;
+    margin: 0px !important;
+    padding: 0px !important; /* Important to remove annoying right padding for scrollbar (1) */
+    padding-top: 50px !important;
+}
+
+.modal {
+    padding: 0px !important; /* Important to remove annoying right padding for scrollbar (2) */
+}
+
+button {
+    opacity: 1.0 !important;
+}
+
+button:hover {
+    opacity: 0.5 !important;
+}
+
+/* Bootstrap Carousels */
+
 div.carousel {
     display: block;
     width: 90%;
@@ -31,6 +65,8 @@ div.slide {
 div.carousel-inner > div.item {
     width: 100%;
 }
+
+/* General -> Other */
 
 .min500 {
 	min-height: 500px;
@@ -259,8 +295,12 @@ a.screenshot {
     margin-top: 30px !important;
     margin-left: auto !important;
     margin-right: auto !important;
+    cursor: pointer; /* required when used with anchor modals */
 }
 
+a.slideshow {
+    cursor: pointer; /* required when used with anchor modals */
+}
 
 a.screenshot-left {
     display: block;
@@ -269,6 +309,7 @@ a.screenshot-left {
     margin-top: 0px !important;
     margin-left: none !important;
     margin-right: none !important;
+    cursor: pointer; /* required when used with anchor modals */
 }
 
 a.screenshot-right {
@@ -278,6 +319,7 @@ a.screenshot-right {
     margin-top: 0px !important;
     margin-left: none !important;
     margin-right: none !important;
+    cursor: pointer; /* required when used with anchor modals */
 }
 
 img.temp {

@@ -1,5 +1,19 @@
 /* Author: Peter "Felix" Nguyen */
 
+/* Bootstrap Modals */
+
+.modal-dialog {
+    width: 100% !important;
+    padding-top: 100px !important;
+}
+
+.modal-body {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+/* Everything Else */
+
 .tab-content {
     padding-left: 0px;
 }

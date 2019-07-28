@@ -44,3 +44,11 @@ $(window).on('popstate', function() {
     $('a[href=' + anchor + ']').tab('show');
 });
 
+/* Specify which screenshot to popup on modal action */
+$('#screenshotModal').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+  var popup = button.data('screenshot') // Extract info from data-* attributes
+  var modal = $(this)
+  $("img.modal-screenshot").attr("src", popup);
+  $("a.modal-screenshot").attr("href", popup);
+})

@@ -18,6 +18,23 @@
     </head>
 	<body>
 		<noscript><h1 style="text-align: center !important; font-size: 32px !important; color: White !important;">JavaScript support is not detected.<br>This website is best viewed with JavaScript enabled</h1></noscript>
+        
+        <div class="modal fade" id="screenshotModal" tabindex="-1" style="padding-right: 0px !important;">
+            <div class="modal-dialog" style="width: 100%; margin-left: auto !important; margin-right: auto !important; margin-top: 50px;">
+                <div class="modal-content" style="background-color: Lavender; margin-right: 0px !important;">
+                <div class="modal-header">
+                    <h5 class="modal-title">Screenshot</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span style="font-size: 30px;">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <a class="modal-screenshot" href="" target="_blank"><img class="modal-screenshot" src='ximages/placeholder.png' style="width: 100%; display: block; margin-left: auto; margin-right: auto;"/></a>
+                </div>
+            </div>
+          </div>
+        </div>
+
         <div class="content-body">
 			<div class="header">
 				<div class="name-logo">
@@ -99,42 +116,42 @@
                                                 </ol>
                                                 <div style="background-color: green !important; padding: 0px !important; margin: 0px !important; " class="carousel-inner">
                                                     <div class="item item-carousel active">
-                                                        <img class="d-block w-100" src="ximages/ffs_fire_1.jpg" alt="First slide">
+                                                        <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_1.jpg"><img class="d-block w-100" src="ximages/ffs_fire_1.jpg" alt="First slide"></a>
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5>Forest Fire</h5>
                                                             <p>Starting a fire</p>
                                                         </div>
                                                     </div>
                                                     <div class="item item-carousel">
-                                                        <img class="d-block w-100" src="ximages/ffs_fire_2.jpg" alt="Second slide">
+                                                        <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_2.jpg"><img class="d-block w-100" src="ximages/ffs_fire_2.jpg" alt="Second slide"></a>
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5>Forest Fire</h5>
                                                             <p>Fire begins to spread</p>
                                                         </div>
                                                     </div>
                                                     <div class="item item-carousel">
-                                                        <img class="d-block w-100" src="ximages/ffs_fire_3.jpg" alt="Third slide">
+                                                        <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_3.jpg"><img class="d-block w-100" src="ximages/ffs_fire_3.jpg" alt="Third slide"></a>
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5>Forest Fire</h5>
                                                             <p>Fire spreads even more</p>
                                                         </div>
                                                     </div>
                                                     <div class="item item-carousel">
-                                                        <img class="d-block w-100" src="ximages/ffs_rain_1.jpg" alt="Fourth slide">
+                                                        <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_1.jpg"><img class="d-block w-100" src="ximages/ffs_rain_1.jpg" alt="Fourth slide"></a>
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5>Weather Mechanics</h5>
                                                             <p>Rain blob appears</p>
                                                         </div>
                                                     </div>
                                                     <div class="item item-carousel">
-                                                        <img class="d-block w-100" src="ximages/ffs_rain_2.jpg" alt="Fifth slide">
+                                                        <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_2.jpg"><img class="d-block w-100" src="ximages/ffs_rain_2.jpg" alt="Fifth slide"></a>
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5>Weather Mechanics</h5>
                                                             <p>Rain blob arrives</p>
                                                         </div>
                                                     </div>
                                                     <div class="item item-carousel">
-                                                        <img class="d-block w-100" src="ximages/ffs_rain_3.jpg" alt="Sixth slide">
+                                                        <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_3.jpg"><img class="d-block w-100" src="ximages/ffs_rain_3.jpg" alt="Sixth slide"></a>
                                                         <div class="carousel-caption d-none d-md-block">
                                                             <h5>Weather Mechanics</h5>
                                                             <p>Rain blob interacts with fire</p>
@@ -213,15 +230,15 @@
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
-                                                <a class="screenshot" href="ximages/sl_z_test_c_intervals_1.png" target="_blank"><img src="ximages/sl_z_test_c_intervals_1.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_1.png"><img src="ximages/sl_z_test_c_intervals_1.png" alt="placeholder"></a>
                                                 <p class="caption">Z-test, entering sample</p>
-                                                <a class="screenshot" href="ximages/sl_z_test_c_intervals_2.png" target="_blank"><img src="ximages/sl_z_test_c_intervals_2.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_2.png"><img src="ximages/sl_z_test_c_intervals_2.png" alt="placeholder"></a>
                                                 <p class="caption">Z-test, results</p>
-                                                <a class="screenshot" href="ximages/sl_z_test_c_intervals_3.png" target="_blank"><img src="ximages/sl_z_test_c_intervals_3.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_3.png"><img src="ximages/sl_z_test_c_intervals_3.png" alt="placeholder"></a>
                                                 <p class="caption">Output window</p>
-                                                <a class="screenshot" href="ximages/sl_descriptive_stats.png" target="_blank"><img src="ximages/sl_descriptive_stats.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_descriptive_stats.png"><img src="ximages/sl_descriptive_stats.png" alt="placeholder"></a>
                                                 <p class="caption">Descriptive statistics</p>
-                                                <a class="screenshot" href="ximages/sl_standard_score.png" target="_blank"><img src="ximages/sl_standard_score.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_standard_score.png"><img src="ximages/sl_standard_score.png" alt="placeholder"></a>
                                                 <p class="caption">Standard score</p>
 										</section>
 									</div>
@@ -271,19 +288,19 @@
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
-                                            <a class="screenshot" href="ximages/hm_s1_values.png" target="_blank"><img src="ximages/hm_s1_values.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s1_values.png"><img src="ximages/hm_s1_values.png" alt="placeholder"></a>
                                             <p class="caption">Step 1: enter the values</p>
-                                            <a class="screenshot" href="ximages/hm_s2_ticks.png" target="_blank"><img src="ximages/hm_s2_ticks.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s2_ticks.png"><img src="ximages/hm_s2_ticks.png" alt="placeholder"></a>
                                             <p class="caption">Step 2: specify tick intervals</p>
-                                            <a class="screenshot" href="ximages/hm_s3a_colors.png" target="_blank"><img src="ximages/hm_s3a_colors.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s3a_colors.png"><img src="ximages/hm_s3a_colors.png" alt="placeholder"></a>
                                             <p class="caption">Step 3a: pick color and gap size</p>
-                                            <a class="screenshot" href="ximages/hm_s3b_colors.png" target="_blank"><img src="ximages/hm_s3b_colors.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s3b_colors.png"><img src="ximages/hm_s3b_colors.png" alt="placeholder"></a>
                                             <p class="caption">Step 3b: alternatively, click on square for color palette</p>
-                                            <a class="screenshot" href="ximages/hm_s4_labels.png" target="_blank"><img src="ximages/hm_s4_labels.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s4_labels.png"><img src="ximages/hm_s4_labels.png" alt="placeholder"></a>
                                             <p class="caption">Step 4: change the graph labels</p>
-                                            <a class="screenshot" href="ximages/hm_s5_output.png" target="_blank"><img src="ximages/hm_s5_output.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s5_output.png"><img src="ximages/hm_s5_output.png" alt="placeholder"></a>
                                             <p class="caption">Step 5: generate the graph, resize, and save</p>
-                                            <a class="screenshot" href="ximages/hm_s5_output_alt.png" target="_blank"><img src="ximages/hm_s5_output_alt.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s5_output_alt.png"><img src="ximages/hm_s5_output_alt.png" alt="placeholder"></a>
                                             <p class="caption">Resized graph</p>
 										</section>
 									</div>
@@ -338,13 +355,13 @@
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
-                                            <a class="screenshot" href="ximages/ieee754-half.png" target="_blank"><img src="ximages/ieee754-half.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-half.png"><img src="ximages/ieee754-half.png" alt="placeholder"></a>
                                             <p class="caption">16-bit conversion</p>
-                                            <a class="screenshot" href="ximages/ieee754-single.png" target="_blank"><img src="ximages/ieee754-single.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-single.png"><img src="ximages/ieee754-single.png" alt="placeholder"></a>
                                             <p class="caption">32-bit conversion</p>
-                                            <a class="screenshot" href="ximages/ieee754-double.png" target="_blank"><img src="ximages/ieee754-double.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-double.png"><img src="ximages/ieee754-double.png" alt="placeholder"></a>
                                             <p class="caption">64-bit conversion</p>
-                                            <a class="screenshot" href="ximages/ieee754-formatting.png" target="_blank"><img src="ximages/ieee754-formatting.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-formatting.png"><img src="ximages/ieee754-formatting.png" alt="placeholder"></a>
                                             <p class="caption">Formatting options</p>
 										</section>
 									</div>
@@ -389,22 +406,22 @@
 											<h2>Screenshots</h2>
                                             <div class="row" style="padding: 0% 2%;">
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                                                    <a class="screenshot-left" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Bits keypad: for entering the binary value</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                                                    <a class="screenshot-right" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Decimal keypad: for entering the float value</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                                                    <a class="screenshot-left" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Copy and paste, other functions</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                                                    <a class="screenshot-right" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Double precision</p>
                                                     <br>
                                                 </div>
@@ -464,37 +481,37 @@
 											<h2>Screenshots</h2>
                                             <div class="row" style="padding: 0% 2%;">
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                                                    <a class="screenshot-left" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Low transparency</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                                                    <a class="screenshot-right" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Medium transparency</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                                                    <a class="screenshot-left" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">High transparency</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                                                    <a class="screenshot-right" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Landscape overlay</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                                                    <a class="screenshot-left" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Reverse landscape overlay</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                                                    <a class="screenshot-right" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Options 1</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                                                    <a class="screenshot-left" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
+                                                    <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder-android.png"><img src="ximages/placeholder-android.png" alt="placeholder"></a>
                                                     <p class="caption">Options 2</p>
                                                     <br>
                                                 </div>
@@ -535,11 +552,11 @@
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
-                                                <a class="screenshot" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                                 <p class="caption">Sketch of car</p>
-                                                <a class="screenshot" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                                 <p class="caption">Sketch of tank</p>
-                                                <a class="screenshot" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder.png" alt="placeholder"></a>
+                                                <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                                 <p class="caption">Sketch of plane</p>
 										</section>
 										<section class="contained min500 scaffold">
@@ -582,13 +599,13 @@
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
-                                            <a class="screenshot" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                             <p class="caption">Caption</p>
-                                            <a class="screenshot" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                             <p class="caption">Caption</p>
-                                            <a class="screenshot" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                             <p class="caption">Caption</p>
-                                            <a class="screenshot" href="ximages/placeholder.png" target="_blank"><img src="ximages/placeholder.png" alt="placeholder"></a>
+                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                             <p class="caption">Caption</p>
 										</section>
 										<section class="contained min500 scaffold">
