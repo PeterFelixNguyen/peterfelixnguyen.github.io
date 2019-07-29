@@ -4,7 +4,7 @@
 
 .modal-dialog {
     width: 100% !important;
-    padding-top: 100px !important;
+    margin-top: 100px !important;
 }
 
 .modal-body {
@@ -23,12 +23,8 @@
 	margin-right: 0px !important; /* New 2019, may want to set all screens to 0px */
 }
 
-.contained {
+.contained, .contained-masonry {
     margin: 10px 0px !important; /* New 2019, removes left padding in narrow screens */
-}
-
-.invisibox {
-	margin-left: -15px !important;
 }
 
 .min500 {

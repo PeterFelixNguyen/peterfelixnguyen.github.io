@@ -2,10 +2,15 @@
 
 /* Bootstrap Modals */
 
+/* Remove text selection AND passes input */
+.not-clickable {
+    pointer-events: none;
+}
+
 body.modal-open {
-  overflow: inherit;
-  padding-right: 0px !important;
-  overflow-y: hidden;
+    overflow: inherit;
+    padding-right: 0px !important;
+    overflow-y: hidden;
 }
 
 .modal-title { /* regular h5 pushes the X button down*/
@@ -17,9 +22,12 @@ body.modal-open {
     width: 90% !important;
     margin: 0px !important;
     padding: 0px !important; /* Important to remove annoying right padding for scrollbar (1) */
-    padding-top: 50px !important;
+    margin-top: 50px !important;
 }
 
+.modal-backdrop {
+    opacity:0.75 !important;
+}
 .modal {
     padding: 0px !important; /* Important to remove annoying right padding for scrollbar (2) */
 }
@@ -193,12 +201,13 @@ div.header > div.pages > a:nth-child(2) {
 	width: 34%;
 }
 
+/* This is no longer needed with the new JQuery hover function */
 div.header > div.pages > a:hover {
-	background-color: rgba(60,190,120,1); /* Calm Green */
+	/* background-color: rgba(60,190,120,1); */
 }
 
 div.header > div.pages > a.selected {
-	background-color: rgba(223,227,238,1) /* Pale Blue */;
+	background-color: rgba(223,227,238,1); /* Pale Blue */;
     background-color: rgba(139,157,195,1); /* Light Blue */
 	color: Black;
 	background-color: rgba(60,190,120,1); /* Calm Green */
@@ -253,18 +262,16 @@ div.header > div.name-logo > a > h3 {
 	Masonry
 */
 .row {
-	margin-left: -5px;
+	margin-left: 0px;
 	margin-right: -5px;
 }
 
 .invisibox {
-	margin-left: -5px !important;
-	margin-right: 0px !important;
     margin-bottom: 20px;
 }
 
 .contacts {
-	margin-left: -25px !important;
+	margin-left: -20px !important;
 }
 
 div.item {
@@ -281,7 +288,7 @@ div.item > ul {
 	list-style-type: none;
 	overflow: hidden; /* Fixes layout issue */
 	//padding-bottom: 10px; /* Fixes layout issue if enough padding */
-	padding-left: 20px;
+	padding-left: 0px;
 }
 
 li span { 
@@ -424,7 +431,7 @@ div.item > ul > li {
 .tab-content {
 	padding: 0px;
 	padding-top: 10px;
-	padding-left: 10px;
+	padding-left: 5px;
 	padding-bottom: 1px; /* Ensure parent height fits child height */
 	background-color: rgba(120,120,245,1); /* Calm Blue */
 	background-color: rgba(139,157,195,1); /* Light Blue */
@@ -486,8 +493,9 @@ div.left-col > div.tab > ul > li.active > a {
 	border-right-color: rgba(60,190,120,1) !important; /* Calm Green */
 }
 
+/* This is no longer needed with the new JQuery hover function */
 div.left-col > div.tab > ul > li > a:hover {
-	background-color: rgba(60,190,120,1); /* Calm Green */
+	/* background-color: rgba(60,190,120,1); */
 }
 
 .left-col {
@@ -741,7 +749,7 @@ html {
 }
 #fs-frm label,
 #fs-frm legend {
-  font-size: .825em;
+  font-size: 1.5em;
   margin-bottom: .5em;
 }
 /* border, padding, margin, width */

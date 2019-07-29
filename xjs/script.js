@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 /* Bootstrap Tabs */
 $(window).on('popstate', function() {
-    var anchor = location.hash || $("a[data-toggle=tab]").first().attr("href");
+    var anchor = location.hash || $('a[data-toggle=tab]').first().attr('href');
     $('a[href=' + anchor + ']').tab('show');
 });
 
@@ -49,6 +49,28 @@ $('#screenshotModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var popup = button.data('screenshot') // Extract info from data-* attributes
   var modal = $(this)
-  $("img.modal-screenshot").attr("src", popup);
-  $("a.modal-screenshot").attr("href", popup);
+  $('img.modal-screenshot').attr('src', popup);
+  $('a.modal-screenshot').attr('href', popup);
 })
+
+/*
+  jQuery hover function for hovered links/tabs
+  Works much better then CSS-only method.
+
+  We need this function because "a:hover" does not behave correctly with touch input
+  Sometimes, a touch will cause the link to stay highlighted even after release. 
+  
+  This fixes it.
+*/
+$("a.hoverable").hover(function() {
+    // hover enter
+    $(this).css('background-color', 'rgba(60,190,120,1)'); // green
+}, function() {
+    // hover leave
+    var is_selected = $(this).hasClass('selected');
+    if (is_selected) {
+        $(this).css('background-color', 'rgba(60,190,120,1)'); // green
+    } else {
+        $(this).css('background-color', 'rgba(59,89,152,1)'); // blue
+    }
+});
