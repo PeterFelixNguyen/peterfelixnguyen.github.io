@@ -295,6 +295,12 @@ li span {
     font-weight: bold !important; 
 }
 
+a.border {
+    border-style: solid;
+    border-color: Blue;
+    border-width: 2px;
+}
+
 a.screenshot {
     display: block;
     width: 90%;
