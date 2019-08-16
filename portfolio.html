@@ -56,11 +56,11 @@
 					<div class="tab">
 						<ul>
 							<li class="active"><a class="first hoverable" data-target="#ForestFire" id="tab1" href="#" data-toggle="tab" aria-expanded="true" aria-controls="ForestFire">Forest Fire Simulator</a></li>
-							<li><a class="hoverable" data-target="#StatLogic" id="tab2" href="" data-toggle="tab" aria-expanded="true" aria-controls="StatLogic">StatLogic</a></li>
-							<li><a class="hoverable" data-target="#HistogramMaker" id="tab3" href="" data-toggle="tab" aria-expanded="true" aria-controls="HistogramMaker">Histogram Maker</a></li>
 							<li><a class="hoverable" data-target="#IEEE754Calc" id="tab4" href="" data-toggle="tab" aria-expanded="true" aria-controls="IEEE754Calc">Floating Point Calculator</a></li>
 							<li><a class="hoverable" data-target="#FloatPointAndroid" id="tab5" href="" data-toggle="tab" aria-expanded="true" aria-controls="FloatPointAndroid">Floating Point Calc Android</a></li>
 							<li><a class="hoverable" data-target="#GuideLights" id="tab6" href="" data-toggle="tab" aria-expanded="true" aria-controls="GuideLights">Guide Lights for ZTE Axon 7</a></li>
+							<li><a class="hoverable" data-target="#StatLogic" id="tab2" href="" data-toggle="tab" aria-expanded="true" aria-controls="StatLogic">StatLogic</a></li>
+							<li><a class="hoverable" data-target="#HistogramMaker" id="tab3" href="" data-toggle="tab" aria-expanded="true" aria-controls="HistogramMaker">Histogram Maker</a></li>
 							<li><a class="hoverable" data-target="#SketchAndLabel" id="tab7" href="" data-toggle="tab" aria-expanded="true" aria-controls="SketchAndLabel">Sketch and Label</a></li>
 							<li><a class="last hoverable" data-target="#RaspPiAlarm" id="tab8" href="" data-toggle="tab" aria-expanded="true" aria-controls="RaspPiAlarm">Raspberry Pi Alarm System</a></li>
 						</ul>
@@ -79,35 +79,38 @@
 						<div class="tab-pane active" id="ForestFire">
                             <div class="container-fluid">
 								<div class="row">
-									<div class="col-sm-12 col-md-12 col-lg-6">
-										<section class="contained min500 scaffold">
-											<h2>Summary</h2>
-                                            <h5>Forest Fire Simulator</h5>
-											<p>A 2D top-down simulation of a Forest Fire. It is a real-time, interactive simulation with replay fetures and a map editor.</p>
-                                            
-                                            <h5>Requirements</h5>
-                                            <p>Java Virtual Machine, v7 minimum</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" href="https://github.com/PeterFelixNguyen/ForestFireSimulation"> GitHub repository</a>
-                                            <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/ForestFireSimulator.jar">Download this app</a></p>
+									<div class="col-sm-12 col-md-12 col-lg-12">
+										<section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">Forest Fire Simulator</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 col-lg-6 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p>A 2D top-down simulation of a Forest Fire. It is a real-time, interactive simulation with replay fetures and a map editor.</p>
+                                                    
+                                                    <h5>Requirements</h5>
+                                                    <p>Java Virtual Machine, v7 minimum</p>
+                                                    
+                                                    <h5>Links</h5>
+                                                    <p><a class="content" href="https://github.com/PeterFelixNguyen/ForestFireSimulation"> GitHub repository</a>
+                                                    <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/ForestFireSimulator.jar">Download this app</a></p>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-6 inner-col vertical-separator">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Random map generator:</span> set map size and tree density</li>
+                                                            <li><span>Map editor:</span> insert and delete trees</li>
+                                                            <li><span>Replay system:</span> rewind events and change outcomes</li>
+                                                            <li><span>Adjustable simulation speeds:</span> slow down, speed up, or pause</li>
+                                                            <li><span>Real-time mechanics:</span> simulation is run in real-time</li>
+                                                            <li><span>Weather interactions:</span> rain and wind effects</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
-									</div>
-									<div class="col-sm-12 col-md-12 col-lg-6">
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Random map generator:</span> set map size and tree density</li>
-                                                    <li><span>Map editor:</span> insert and delete trees</li>
-                                                    <li><span>Replay system:</span> rewind events and change outcomes</li>
-                                                    <li><span>Adjustable simulation speeds:</span> slow down, speed up, or pause</li>
-                                                    <li><span>Real-time mechanics:</span> simulation is run in real-time</li>
-                                                    <li><span>Weather interactions:</span> rain and wind effects</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
-										</section>		
 									</div>
 									<div class="col-sm-12 col-md-12 col-lg-12">
 										<section class="contained min500 scaffold">
@@ -209,35 +212,40 @@
 						<div class="tab-pane" id="StatLogic">
                             <div class="container-fluid">
 								<div class="row">
-									<div class="col-sm-12 col-md-12 col-lg-6">
-										<section class="contained min500 scaffold">
-											<h2>Summary</h2>
-                                            <h5>StatLogic</h5>
-											<p>A basic statistical calculator that performs calculations for t-tests, z-tests, confidence intervals, descriptive statistics, and standard scores.</p>
-                                            
-                                            <h5>Requirements</h5>
-                                            <p>Java Virtual Machine, v7 minimum</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" href="https://github.com/PeterFelixNguyen/StatLogic" target="_blank">GitHub repository</a>
-                                            <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/StatLogic.jar" target="_blank">Download this app</a></p>
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+										<section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">StatLogic</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6 col-lg-6 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p>A basic statistical calculator that performs calculations for t-tests, z-tests, confidence intervals, descriptive statistics, and standard scores.</p>
+                                                    
+                                                    <h5>Requirements</h5>
+                                                    <p>Java Virtual Machine, v7 minimum</p>
+                                                    
+                                                    <h5>Links</h5>
+                                                    <p><a class="content" href="https://github.com/PeterFelixNguyen/StatLogic" target="_blank">GitHub repository</a>
+                                                    <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/StatLogic.jar" target="_blank">Download this app</a></p>
+                                                </div>
+                                                <div class="col-sm-12 col-md-6 col-lg-6 inner-col vertical-separator">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Hypothesis tests:</span> 1-sample Z-tests and t-tests</li>
+                                                            <li><span>Confidence intervals:</span> for both t and normal distributions</li>
+                                                            <li><span>Standard score:</span> quick way to calculate Z-score</li>
+                                                            <li><span>Descriptive statistics:</span> from a data set, produce descriptive statistics such as mean, median, mode, quartiles, min, max, variance, standard deviation </li>
+                                                            <li><span>Data sort:</span> sorts values</li>
+                                                            <li><span>Save and Load:</span> load data files to perform calculations, and save output into a file</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Hypothesis tests:</span> 1-sample Z-tests and t-tests</li>
-                                                    <li><span>Confidence intervals:</span> for both t and normal distributions</li>
-                                                    <li><span>Standard score:</span> quick way to calculate Z-score</li>
-                                                    <li><span>Descriptive statistics:</span> from a data set, produce descriptive statistics such as mean, median, mode, quartiles, min, max, variance, standard deviation </li>
-                                                    <li><span>Data sort:</span> sorts values</li>
-                                                    <li><span>Save and Load:</span> load data files to perform calculations, and save output into a file</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
-										</section>		
 									</div>
-									<div class="col-sm-12 col-md-12 col-lg-6">
+									<div class="col-sm-12 col-md-12 col-lg-12">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
                                                 <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_1.png"><img src="ximages/sl_z_test_c_intervals_1.png" alt="placeholder"></a>
@@ -258,37 +266,42 @@
 						<div class="tab-pane" id="HistogramMaker">
                             <div class="container-fluid">
 								<div class="row">
-									<div class="col-sm-12 col-md-12 col-lg-6">
-										<section class="contained min500 scaffold">
-                                            <h2>Summary</h2>
-                                            <h5>Histogram Maker</h5>
-											<p>A quick and easy-to-use application that generates histograms from a data set. It has several options to customize the histogram's appearance, such as gap distance between bins or the color of the bins. Histograms can be saved as JPEG files.</p>
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
+										<section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">Histogram Maker</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p>A quick and easy-to-use application that generates histograms from a data set. It has several options to customize the histogram's appearance, such as gap distance between bins or the color of the bins. Histograms can be saved as JPEG files.</p>
                                             
-                                            <h5>Requirements</h5>
-                                            <p>Java Virtual Machine, v7 minimum</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" href="https://github.com/PeterFelixNguyen/Histogram-Maker" target="_blank">GitHub repository</a>
-                                            <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/Histogram-Maker.jar" target="_blank">Download this app</a></p>
+                                                    <h5>Requirements</h5>
+                                                    <p>Java Virtual Machine, v7 minimum</p>
+                                                    
+                                                    <h5>Links</h5>
+                                                    <p><a class="content" href="https://github.com/PeterFelixNguyen/Histogram-Maker" target="_blank">GitHub repository</a>
+                                                    <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/Histogram-Maker.jar" target="_blank">Download this app</a></p>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Data input:</span> import data file or input manually</li>
+                                                            <li><span>Tick options:</span> specify tick intervals, minimum tick value</li>
+                                                            <li><span>Bin color picker:</span> use RGB sliders or the color palette</li>
+                                                            <li><span>Bin gradients:</span> choose a solid color or gradient color</li>
+                                                            <li><span>Bing gap distance:</span> change the gap size</li>
+                                                            <li><span>Graph labels:</span> x and y labels, graph title</li>
+                                                            <li><span>Other options:</span> horizontal guide lines, bin frequency labels</li>
+                                                            <li><span>Resize image:</span> resize the graph by dragging on the corners</li>
+                                                            <li><span>Save image:</span> save file by right clicking on the histogram</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Data input:</span> import data file or input manually</li>
-                                                    <li><span>Tick options:</span> specify tick intervals, minimum tick value</li>
-                                                    <li><span>Bin color picker:</span> use RGB sliders or the color palette</li>
-                                                    <li><span>Bin gradients:</span> choose a solid color or gradient color</li>
-                                                    <li><span>Bing gap distance:</span> change the gap size</li>
-                                                    <li><span>Graph labels:</span> x and y labels, graph title</li>
-                                                    <li><span>Other options:</span> horizontal guide lines, bin frequency labels</li>
-                                                    <li><span>Resize image:</span> resize the graph by dragging on the corners</li>
-                                                    <li><span>Save image:</span> save file by right clicking on the histogram</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
-										</section>
-										<section class="contained min500 scaffold">
+                                        <section class="contained min500 scaffold">
 											<h2>Videos</h2>   
                                             <div class="temp">
                                                 <div style="position: relative; padding-top: 56.25%;">
@@ -296,9 +309,9 @@
                                                 </div>
                                             </div>
                                             <p class="caption">Using Histogram Maker</p>
-										</section>                                        
+										</section>
 									</div>
-									<div class="col-sm-12 col-md-12 col-lg-6">
+                                    <div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
 											<h2>Screenshots</h2>
                                             <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s1_values.png"><img src="ximages/hm_s1_values.png" alt="placeholder"></a>
@@ -324,29 +337,43 @@
                             <div class="container-fluid">
 								<div class="row">
 									<div class="col-sm-12 col-md-12 col-lg-6">
-										<section class="contained min500 scaffold">
-                                            <h2>Summary</h2>
-                                            <h5>Floating Point Calculator for PC (IEEE 754)</h5>
-											<p>A Java-based floating-point calculator that supports two-way 32-bit and 64-bit precision conversions between decimal values and their equivalent binary representations. This was a team project with co-developer Latrice Sebastian.</p>
+                                        <section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">Floating Point Calculator for PC (IEEE 754)</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p>A Java-based floating-point calculator that supports two-way 32-bit and 64-bit precision conversions between decimal values and their equivalent binary representations. This was a team project with co-developer Latrice Sebastian.</p>
                                             
-                                            <h5>Requirements</h5>
-                                            <p>Java Virtual Machine, v7 minimum</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" href="https://github.com/lcsebastian/IEEE754CalcGUI" target="_blank">GitHub repository</a>
-                                            <br><a class="content" href="https://s3.amazonaws.com/ieee754/IEEE754CalcByLatriceAndPeter.jar" target="_blank">Download this app</a></p>
+                                                    <h5>Requirements</h5>
+                                                    <p>Java Virtual Machine, v7 minimum</p>
+                                                    
+                                                    <h5>Links</h5>
+                                                    <p><a class="content" href="https://github.com/lcsebastian/IEEE754CalcGUI" target="_blank">GitHub repository</a>
+                                                    <br><a class="content" href="https://s3.amazonaws.com/ieee754/IEEE754CalcByLatriceAndPeter.jar" target="_blank">Download this app</a></p>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Floating point precision:</span> single and double precision</li>
+                                                            <li><span>Conversions:</span> float-to-binary, binary-to-float</li>
+                                                            <li><span>Instant output:</span> no need to press enter, values updated dynamically</li>
+                                                            <li><span>Formatted output:</span> hide trailing zero bits, remove space delimiters</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Floating point precision:</span> single and double precision</li>
-                                                    <li><span>Conversions:</span> float-to-binary, binary-to-float</li>
-                                                    <li><span>Instant output:</span> no need to press enter, values updated dynamically</li>
-                                                    <li><span>Formatted output:</span> hide trailing zero bits, remove space delimiters</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
+                                        <section class="contained min500 scaffold">
+											<h2>Videos</h2>   
+                                            <div class="temp">
+                                                <div style="position: relative; padding-top: 56.25%;">
+                                                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/kRgPavSTLjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                                </div>
+                                            </div>
+                                            <p class="caption">Using Floating Point Calculator</p>
 										</section>	
                                         <section class="contained min500 scaffold">
 											<h2>Disclosure</h2>
@@ -357,16 +384,7 @@
                                                 </ul>
                                                 <br>        
                                             </font>
-										</section>
-										<section class="contained min500 scaffold">
-											<h2>Videos</h2>   
-                                            <div class="temp">
-                                                <div style="position: relative; padding-top: 56.25%;">
-                                                    <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/kRgPavSTLjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                </div>
-                                            </div>
-                                            <p class="caption">Using Floating Point Calculator</p>
-										</section>		
+										</section>	
 									</div>
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
@@ -388,27 +406,57 @@
                             <div class="container-fluid">
 								<div class="row">
 									<div class="col-sm-12 col-md-12 col-lg-4">
-										<section class="contained min500 scaffold">
-                                            <h2>Summary</h2>
-                                            <h5>Floating Point Calculator for Android (IEEE 754)</h5>
-											<p>A floating point calculator that performs two-way conversions between binary and floating point values. Currently supports 32-bit precision, but will be updated to support 64-bit conversions. Designed to be easy to use compared to other graphical floating point calculators available on Android.</p>
-                                            
-                                            <h5>Requirements</h5>
-                                            <p>Android Nougat or newer</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.floatingpointcalculatorieee754" target="_blank">Install on Google Play Store</a></p>
-										</section>
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Floating point precision:</span> 32-bit (available) and 64-bit (coming soon)</li>
-                                                    <li><span>Conversions:</span> float-to-binary, binary-to-float</li>
-                                                    <li><span>Instant output:</span> no need to press enter, values updated dynamically</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
+                                        <section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">Floating Point Calculator for Android (IEEE 754)</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p>A floating point calculator that performs two-way conversions between binary and floating point values. Currently supports 32-bit precision, but will be updated to support 64-bit conversions. Designed to be easy to use compared to other graphical floating point calculators available on Android.</p>
+                                                    
+                                                    <h5>Requirements</h5>
+                                                    <p>Android Nougat or newer</p>
+                                                    
+                                                    <h5 style="padding-bottom: 0px !important;">Links</h5>
+                                                    <a href='https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.floatingpointcalculatorieee754&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' style="max-width:600px;" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Floating point precision:</span> 32-bit (available) and 64-bit (coming soon)</li>
+                                                            <li><span>Conversions:</span> float-to-binary, binary-to-float</li>
+                                                            <li><span>Instant output:</span> no need to press enter, values updated dynamically</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                    <h5>Change Log</h5>
+                                                    <div class="custom-scroll" style="overflow: scroll; overflow-x: hidden; background-color:PaleTurquoise none; width: 100%; height: 300px; margin-left: -5px !important;">
+                                                        <font size="4">
+                                                            <p><b>v1.0.1</b></p>
+                                                            <ul>
+                                                                <li>Fixed a bug where backspace/delete crashes the app (i.e. when the last remaining digit is removed and all that is left are periods, signs, spaces, or empty strings).</li>
+                                                                <li>Users can now paste values from the clipboard. Works for both base 2 and base 10 values.</li>
+                                                            </ul>
+                                                            <br>  
+                                                            <p><b>v1.0.0</b></p>
+                                                            <ul>
+                                                                <li>32-bit precision available (swipe right)</li>
+                                                                <li>64-bit precision COMING SOON (swipe left)</li>
+                                                                <li>Binary input (swipe down)</li>
+                                                                <li>Decimal input (swipe up)</li>
+                                                                <li>Dedicated keypad (no more erroneous characters)</li>
+                                                                <li>Change any part of the decimal by moving the green cursor &lt;left&gt; and &lt;right&gt; </li>
+                                                                <li>Color coded binary string to familiarize students with the sign, exponent, and mantissa</li>
+                                                                <li>Ads do not obstruct the screen (phones only)</li>
+                                                                <li>Copy the binary string or the decimal string with the menu button</li>
+                                                                <li>Large tablet screens have more room for binary and decimal keypads</li>
+                                                            </ul>
+                                                            <br>        
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
 										<section class="contained scaffold">
 											<h2>Videos</h2>
@@ -459,39 +507,67 @@
                             <div class="container-fluid">
 								<div class="row">
 									<div class="col-sm-12 col-md-12 col-lg-4">
-										<section class="contained min500 scaffold">
-                                            <h2>Description</h2>
-                                            <h5>Guide Lights for the ZTE Axon 7</h5>
-											<p>An Android service that adds an overlay of the 'Recent apps', 'Home', and 'Back' buttons to the ZTE Axon 7 Android smartphone. This app was designed for the ZTE Axon 7, but it works perfectly on other Android devices.<br><br>
+										<section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">Guide Lights for the ZTE Axon 7</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p>An Android service that adds an overlay of the 'Recent apps', 'Home', and 'Back' buttons to the ZTE Axon 7 Android smartphone. This app was designed for the ZTE Axon 7, but it works perfectly on other Android devices.<br><br>
                                             
-                                            This app solves a design flaw on the ZTE Axon 7's capacitive buttons. Most Android buttons light up so they are visible at night. Those buttons are usually spaced out from each other which prevents accidental input (for example: accidentally pressing 'home' instead of 'back'). The Axon 7's buttons are very close together and they are impossible to see at night because they do not light up. My software adds icons next to these buttons so that the user can get a good feel of where the buttons are in the dark.<br><br>
-                                            
-                                            I call this app "Guide Lights" instead of "Navigation Bar" because my intention was to use this app as 'inert icons' instead of 'functional buttons'. My reasoning for this is that I do not want the buttons to block touch input where the overlay is obstructing. However, I know a lot of users prefer actual buttons so I included the option to enable button functionality.</p>
-                                            
-                                            <h5>Requirements</h5>
-                                            <p>Android Nougat or newer</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.guidelights" target="_blank">Install on Google Play Store</a></p>
-										</section>
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Button layouts:</span> change button order</li>
-                                                    <li><span>Touch behavior:</span> perform action, temporarily hide overlay, do nothing</li>
-                                                    <li><span>Appearance:</span> minimal, narrow, wide, or transparent overlay</li>
-                                                    <li><span>Animation:</span> fade animation on or off</li>
-                                                    <li><span>Transparency:</span> low, medium, high, off</li>
-                                                    <li><span>Hide duration:</span> 2, 5, 10, 30, 60 seconds</li>
-                                                    <li><span>Status bar offset:</span> offset overlay so it does not obstruct status bar</li>
-                                                    <li><span>Return timer:</span> an on-screen counter to tell user when hidden overlay returns</li>
-                                                    <li><span>Gestures:</span> swipe gesture (coming soon)</li>
-                                                    <li><span>Sensor options:</span> shake device to hide the overlay</li>
-                                                    <li><span>Other sensors:</span> proximity, light sensor behaviors (coming soon)</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
+                                                    This app solves a design flaw on the ZTE Axon 7's capacitive buttons. Most Android buttons light up so they are visible at night. Those buttons are usually spaced out from each other which prevents accidental input (for example: accidentally pressing 'home' instead of 'back'). The Axon 7's buttons are very close together and they are impossible to see at night because they do not light up. My software adds icons next to these buttons so that the user can get a good feel of where the buttons are in the dark.<br><br>
+                                                    
+                                                    I call this app "Guide Lights" instead of "Navigation Bar" because my intention was to use this app as 'inert icons' instead of 'functional buttons'. My reasoning for this is that I do not want the buttons to block touch input where the overlay is obstructing. However, I know a lot of users prefer actual buttons so I included the option to enable button functionality.</p>
+                                                    
+                                                    <h5>Requirements</h5>
+                                                    <p>Android Nougat or newer</p>
+                                                    
+                                                    <h5 style="padding-bottom: 0px !important;">Links</h5>
+                                                    <a href='https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.guidelights&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' style="max-width: 600px;" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Button layouts:</span> change button order</li>
+                                                            <li><span>Touch behavior:</span> perform action, temporarily hide overlay, do nothing</li>
+                                                            <li><span>Appearance:</span> minimal, narrow, wide, or transparent overlay</li>
+                                                            <li><span>Animation:</span> fade animation on or off</li>
+                                                            <li><span>Transparency:</span> low, medium, high, off</li>
+                                                            <li><span>Hide duration:</span> 2, 5, 10, 30, 60 seconds</li>
+                                                            <li><span>Status bar offset:</span> offset overlay so it does not obstruct status bar</li>
+                                                            <li><span>Return timer:</span> an on-screen counter to tell user when hidden overlay returns</li>
+                                                            <li><span>Gestures:</span> swipe gesture (coming soon)</li>
+                                                            <li><span>Sensor options:</span> shake device to hide the overlay</li>
+                                                            <li><span>Other sensors:</span> proximity, light sensor behaviors (coming soon)</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                    <h5>Change Log</h5>
+                                                    <div class="custom-scroll" style="overflow: scroll; overflow-x: hidden; background-color:PaleTurquoise none; width: 100%; height: 300px; margin-left: -5px !important;">
+                                                        <font size="4">
+                                                            <p><b>v1.0.1</b></p>
+                                                            <ul>
+                                                                <li>Fixed a bug where the icons did not display correctly when appearance is set to "minimal".</li>
+                                                                <li>The "narrow" appearance option now gives the bar rounded instead of sharp corners.</li>
+                                                            </ul>
+                                                            <br>  
+                                                            <p><b>v1.0.0</b></p>
+                                                            <ul>
+                                                                <li>Button layouts: change button order</li>
+                                                                <li>Touch behavior: perform action, temporarily hide overlay, do nothing</li>
+                                                                <li>Appearance: minimal, narrow, wide, or transparent overlay</li>
+                                                                <li>Animation: fade animation on or off</li>
+                                                                <li>Transparency: low, medium, high, off</li>
+                                                                <li>Hide duration: 2, 5, 10, 30, 60 seconds</li>
+                                                                <li>Status bar offset: offset overlay so it does not obstruct status bar</li>
+                                                                <li>Sensor options: shake device to hide the overlay</li>
+                                                            </ul>
+                                                            <br>        
+                                                        </font>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
 										<section class="contained scaffold">
 											<h2>Videos</h2>
@@ -573,28 +649,38 @@
                             <div class="container-fluid">
 								<div class="row">
 									<div class="col-sm-12 col-md-12 col-lg-6">
-										<section class="contained min500 scaffold">
-                                            <h2>Summary</h2>
-                                            <h5>Sketch and Label</h5>
-											<p><font style="font-weight: bold !important; color: red;">Requires a compatible Samsung device with S-Pen features.</font> An Android image recognition app that can determine what the user has sketched on the Android app. Trained and integrated the app’s neural network via transfer learning on the MobileNet architecture.</p>
+                                        <section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">Sketch and Label</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p><font style="font-weight: bold !important; color: red;">Requires a compatible Samsung device with S-Pen features.</font> An Android image recognition app that can determine what the user has sketched on the Android app. Trained and integrated the app’s neural network via transfer learning on the MobileNet architecture.</p>
                                             
-                                            <h5>Requirements</h5>
-                                            <p>Any Samsung Galaxy device with an S-Pen<br>Android Lollipop or newer</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" target="_blank">(Coming soon) to Google Play Store</a></p>
+                                                    <h5>Requirements</h5>
+                                                    <p>Any Samsung Galaxy device with an S-Pen<br>Android Lollipop or newer</p>
+                                                    
+                                                    <h5>Links</h5>
+                                                    <p><a class="content" target="_blank">(Coming soon) to Google Play Store</a></p>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Image classification:</span> car, tank, plane</li>
+                                                            <li><span>Saves sketches: last sketch is saved in the file system</span> </li>
+                                                            <li><span>Eraser input:</span> erase with the stylus eraser</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Image classes:</span> car, tank, plane</li>
-                                                    <li><span>Saves sketches: last sketch is saved in the file system</span> </li>
-                                                    <li><span>Eraser input:</span> erase with the stylus eraser</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
-										</section>		
+                                        <section class="contained min500 scaffold">
+											<h2>Videos</h2>   
+                                            <img class="temp" src="ximages/placeholder.png" alt="placeholder">
+                                            <p class="caption">App in action</p>
+										</section>
 									</div>
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
@@ -606,11 +692,6 @@
                                                 <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                                 <p class="caption">Sketch of plane</p>
 										</section>
-										<section class="contained min500 scaffold">
-											<h2>Videos</h2>   
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">App in action</p>
-										</section>
 									</div>
 								</div>
 							</div>
@@ -619,28 +700,38 @@
                             <div class="container-fluid">
 								<div class="row">
 									<div class="col-sm-12 col-md-12 col-lg-6">
-										<section class="contained min500 scaffold">
-                                            <h2>Summary</h2>
-                                            <h5>Raspberry Pi Door Sensor and Alarm System</h5>
-											<p>A two-person student project for Advanced Computer Networking in which we implemented a basic IoT door alarm system with a Raspberry Pi 3 Model B.</p>
+                                        <section class="contained scaffold">
+											<h2 style="margin-bottom:0px !important;">Raspberry Pi Door Sensor and Alarm System</h2>
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Description</h5>
+                                                    <p>A two-person student project for Advanced Computer Networking in which we implemented a basic IoT door alarm system with a Raspberry Pi 3 Model B.</p>
                                             
-                                            <h5>Requirements</h5>
-                                            <p>Linux/unix system (alarm client)<br>Raspberry Pi (sensor client)<br>Ubuntu Server (messaging server)</p>
-                                            
-                                            <h5>Links</h5>
-                                            <p><a class="content" target="_blank">View in-class presentation slides (coming soon)</a>
+                                                    <h5>Requirements</h5>
+                                                    <p>Linux/unix system (alarm client)<br>Raspberry Pi (sensor client)<br>Ubuntu Server (messaging server)</p>
+                                                    
+                                                    <h5>Links</h5>
+                                                    <p><a class="content" target="_blank">View in-class presentation slides (coming soon)</a>
+                                                </div>
+                                                <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
+                                                    <h5>Features</h5>
+                                                    <font size="4">
+                                                        <ul>
+                                                            <li><span>Client alarm:</span> sounds an alarm upon server notification</li>
+                                                            <li><span>Client sensor:</span> detects an opened door with Reed sensor</li>
+                                                            <li><span>Server-side script:</span> python script to communicate between alarm and sensor</li>
+                                                        </ul>
+                                                        <br>        
+                                                    </font>
+                                                </div>
+                                            </div>
+                                            <br>
 										</section>
-										<section class="contained min500 scaffold">
-											<h2>Features</h2>
-											<font size="4">
-                                                <ul>
-                                                    <li><span>Client alarm:</span> sounds an alarm upon server notification</li>
-                                                    <li><span>Client sensor:</span> detects an opened door with Reed sensor</li>
-                                                    <li><span>Server-side script:</span> python script to communicate between alarm and sensor</li>
-                                                </ul>
-                                                <br>        
-                                            </font>
-										</section>		
+                                        <section class="contained min500 scaffold">
+											<h2>Videos</h2>   
+                                            <img class="temp" src="ximages/placeholder.png" alt="placeholder">
+                                            <p class="caption">Caption</p>
+										</section>
 									</div>
 									<div class="col-sm-12 col-md-12 col-lg-6">
 										<section class="contained min500 scaffold">
@@ -649,15 +740,6 @@
                                             <p class="caption">Caption</p>
                                             <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
                                             <p class="caption">Caption</p>
-                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
-                                            <p class="caption">Caption</p>
-                                            <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png"><img src="ximages/placeholder.png" alt="placeholder"></a>
-                                            <p class="caption">Caption</p>
-										</section>
-										<section class="contained min500 scaffold">
-											<h2>Videos</h2>   
-                                                <img class="temp" src="ximages/placeholder.png" alt="placeholder">
-                                                <p class="caption">Caption</p>
 										</section>
 									</div>
 								</div>
