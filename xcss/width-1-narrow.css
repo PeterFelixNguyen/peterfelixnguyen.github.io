@@ -148,3 +148,9 @@ div.left-col > div.tab > ul > li > a.last {
     border-bottom-left-radius: 0px;
     border-bottom-style: none; /* not sure if prefer none or solid */
 }
+
+/* Bootstrap */
+
+.vertical-separator {
+    border-left: none;
+}

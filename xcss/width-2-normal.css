@@ -16,6 +16,10 @@ ul.mason > li.wide {
 	width: 20px;
 }
 
+.vertical-separator {
+    border-left: none;
+}
+
 .col-sm-12 {
 	margin-bottom: -20px;
 }
