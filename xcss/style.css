@@ -731,24 +731,6 @@ section.scaffold {
 	margin-left: 5px; /* 2019 style change, previously 10px*/
 }
 
-/* Embedded content */
-
-.video-container {
-    position:relative;
-    padding-bottom:56.25%;
-    padding-top:35px;
-    height:0;
-    overflow:hidden;
-}
-.video-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index:0;
-}
-
 /* Custom scrollbar*/
 
 .custom-scroll::-webkit-scrollbar {
@@ -866,4 +848,72 @@ html {
 #fs-frm fieldset.locale input[name="city"],
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
+}
+
+/* Toast message */
+
+#toast {
+    visibility: hidden;
+    min-width: 300px;
+    margin-left: -150px;
+    background-color: #000000dd;
+    color: #ffffffff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+#toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from { 
+        bottom: 0; 
+        opacity: 0; 
+    } 
+    to { 
+        bottom: 30px; 
+        opacity: 1; 
+    }
+}
+
+@keyframes fadein {
+    from { 
+        bottom: 0; 
+        opacity: 0; 
+    }
+    to { 
+        bottom: 30px; 
+        opacity: 1; 
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from { 
+        bottom: 30px; 
+        opacity: 1; 
+    } 
+    to { 
+        bottom: 0; 
+        opacity: 0; 
+    }
+}
+
+@keyframes fadeout {
+    from { 
+        bottom: 30px; 
+        opacity: 1; 
+    }
+    to { 
+        bottom: 0; 
+        opacity: 0; 
+    }
 }
