@@ -74,3 +74,31 @@ $("a.hoverable").hover(function() {
         $(this).css('background-color', 'rgba(59,89,152,1)'); // blue
     }
 });
+
+function copy(element) {
+    /* Copy to clipboard */
+    
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy")
+    $temp.remove();
+
+    /* Toast notification of copy */
+    
+    if (element == '#phone') {
+        $('div#toast').text('Phone copied');  
+    } else if (element == '#email') {
+        $('div#toast').text('Email copied');  
+    } else {
+        $('div#toast').text('Content copied');  
+    }
+
+    var toast = document.getElementById('toast');
+
+    toast.className = 'show';
+
+    setTimeout(function() { 
+        toast.className = toast.className.replace('show', ''); 
+    }, 3000);
+}
