@@ -857,7 +857,9 @@ html {
     min-width: 300px;
     margin-left: -150px;
     background-color: #000000dd;
+    background-color: rgba(0,0,0,0.86); /* fallback color for Microsoft Edge */
     color: #ffffffff;
+    color: rgba(255,255,255,1); /* fallback color for Microsoft Edge */
     font-size: 20px;
     text-align: center;
     border-radius: 5px;
