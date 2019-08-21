@@ -303,7 +303,7 @@ iframe.border {
 
 a.border {
     border-style: solid;
-    border-color: Blue;
+    border-color: rgba(24,131,215,1);
     border-width: 2px;
 }
 
