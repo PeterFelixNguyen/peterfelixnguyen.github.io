@@ -55,10 +55,10 @@
 				<div class="left-col">
 					<div class="tab">
 						<ul>
-							<li class="active"><a class="first hoverable" data-target="#forest-fire-simulator" id="tab1" href="#forest-fire-simulator" data-toggle="tab" aria-expanded="true" aria-controls="ForestFire">Forest Fire Simulator</a></li>
-							<li><a class="hoverable" data-target="#floating-point-calculator-pc" id="tab4" href="#floating-point-calculator-pc" data-toggle="tab" aria-expanded="true" aria-controls="IEEE754Calc">Floating Point Calculator</a></li>
-							<li><a class="hoverable" data-target="#floating-point-calculator-android" id="tab5" href="#floating-point-calculator-android" data-toggle="tab" aria-expanded="true" aria-controls="FloatPointAndroid">Floating Point Calc Android</a></li>
+							<li class="active"><a class="first hoverable" data-target="#floating-point-calculator-android" id="tab5" href="#floating-point-calculator-android" data-toggle="tab" aria-expanded="true" aria-controls="FloatPointAndroid">Floating Point Calc Android</a></li>
 							<li><a class="hoverable" data-target="#guide-lights-for-axon-7" id="tab6" href="#guide-lights-for-axon-7" data-toggle="tab" aria-expanded="true" aria-controls="GuideLights">Guide Lights for ZTE Axon 7</a></li>
+							<li><a class="hoverable" data-target="#forest-fire-simulator" id="tab1" href="#forest-fire-simulator" data-toggle="tab" aria-expanded="true" aria-controls="ForestFire">Forest Fire Simulator</a></li>
+							<li><a class="hoverable" data-target="#floating-point-calculator-pc" id="tab4" href="#floating-point-calculator-pc" data-toggle="tab" aria-expanded="true" aria-controls="IEEE754Calc">Floating Point Calculator PC</a></li>
 							<li><a class="hoverable" data-target="#stat-logic" id="tab2" href="#stat-logic" data-toggle="tab" aria-expanded="true" aria-controls="StatLogic">StatLogic</a></li>
 							<li><a class="hoverable" data-target="#histogram-maker" id="tab3" href="#histogram-maker" data-toggle="tab" aria-expanded="true" aria-controls="HistogramMaker">Histogram Maker</a></li>
 							<li><a class="hoverable" data-target="#sketch-and-label" id="tab7" href="#sketch-and-label" data-toggle="tab" aria-expanded="true" aria-controls="SketchAndLabel">Sketch and Label</a></li>
@@ -76,7 +76,7 @@
                 <a name="tab7"></a>
                 <a name="tab8"></a>
 					<div class="tab-content min500">
-						<div class="tab-pane active" id="forest-fire-simulator">
+						<div class="tab-pane" id="forest-fire-simulator">
                             <div class="container-fluid">
 								<div class="row">
 									<div class="col-sm-12 col-md-12 col-lg-12">
@@ -402,7 +402,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane" id="floating-point-calculator-android">
+						<div class="tab-pane active" id="floating-point-calculator-android">
                             <div class="container-fluid">
 								<div class="row">
 									<div class="col-sm-12 col-md-12 col-lg-4">
@@ -431,7 +431,24 @@
                                                     </font>
                                                     <h5>Change Log</h5>
                                                     <div class="custom-scroll" style="overflow: scroll; overflow-x: hidden; background-color:PaleTurquoise none; width: 100%; height: 300px; margin-left: -5px !important;">
-                                                        <font size="4">
+                                                        <font size="4"><p><b>v1.3.0</b></p>
+                                                            <p>Added Features</p>
+                                                            <ul>
+                                                                <li>Decimal pane scrollable.</li>
+                                                                <li>Copy/paste and clear buttons added on small screens.</li>
+                                                                <li>"About this app" page added.</li>
+                                                            </ul>
+                                                            <br>
+                                                            <p>Bug Fixes</p>
+                                                            <ul>
+                                                                <li>Backspace/delete removes one extra character when released.</li>
+                                                                <li>Dot character not insert if value was zero.</li>
+                                                                <li>Binary string crashes app if 32 bits not specified.</li>
+                                                                <li>Paste decimal action does not strip spaces which crashes app.</li>
+                                                                <li>Pasted decimals not fully traversable by cursor</li>
+                                                                <li>Keypad crashes app if value was Infinity or NaN</li>
+                                                            </ul>
+                                                            <br>
                                                             <p><b>v1.2.0</b></p>
                                                             <p>Added Features</p>
                                                             <ul>
@@ -501,8 +518,8 @@
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                                                    <a class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc_menu_functions.jpg"><img src="ximages/fpc_menu_functions.jpg" alt="placeholder"></a>
-                                                    <p class="caption">Copy and paste, other functions</p>
+                                                    <a class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc_smart_paste.jpg"><img src="ximages/fpc_smart_paste.jpg" alt="placeholder"></a>
+                                                    <p class="caption">Copy and paste options</p>
                                                     <br>
                                                 </div>
                                                 <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
@@ -729,7 +746,9 @@
                                                     <p>Linux/unix system (alarm client)<br>Raspberry Pi (sensor client)<br>Ubuntu Server (messaging server)</p>
                                                     
                                                     <h5>Links</h5>
-                                                    <p><a class="content" target="_blank">View in-class presentation slides (coming soon)</a>
+                                                    <p><a class="content" target="_blank">Technical documentation (coming soon)</a><br>
+                                                    <a class="content" target="_blank">Slide presentation (coming soon)</a><br>
+                                                    <a class="content" target="_blank">Source code (coming soon)</a></p>
                                                 </div>
                                                 <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
                                                     <h5>Features</h5>
