@@ -54,6 +54,7 @@ div.header > div.name {
 }
 
 div.header > div.name  > a {
+    margin-top: 10px;
 	line-height: 70px;
 }
 

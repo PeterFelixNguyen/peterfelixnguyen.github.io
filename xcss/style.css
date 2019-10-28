@@ -86,7 +86,7 @@ div.header {
     background-color: rgba(139,157,195,1); /* Light Blue */
 	width: 100%;
 	clear: both;
-	height: 240px;
+	height: 260px;
 	overflow: hidden;
 	position: relative;
 	text-align: center;
@@ -105,11 +105,11 @@ div.header > div.name {
 	background: linear-gradient(210deg, rgba(120,120,245,1), rgba(60,190,120,1)); /* Calm Blue dominant gradient */
 	background: linear-gradient(210deg, rgba(120,120,245,1), rgba(60,190,120,1), rgba(60,190,120,1)); /* Calm Green dominant gradient */
 	position: absolute;
-	left: 230px;
+	left: 250px;
 	right: 0px;
 	top: 10px;
 	font-size: 30px;
-	height: 120px;
+	height: 140px;
 	border-radius: 10px;
 	border-style: solid;
 	border-width: 5px;
@@ -125,7 +125,7 @@ div.header > div.name > a {
 	width: 33%;
 	float: left;
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 20px;
 	line-height: 90px;
 	display: block;
 	color: Black;
@@ -151,7 +151,7 @@ div.header > div.name:hover > a:nth-child(2) {
 
 div.header > div.pages {
 	position: absolute;
-	left: 230px;
+	left: 250px;
 	right: 0px;
 	bottom: 0px;
 	font-size: 30px;
@@ -230,9 +230,9 @@ div.header > div.name-logo > a  {
 	float: left;
 	margin: 10px 0px;
 	border-radius: 10px;
-	width: 220px;
-	height: 220px;
-	background-size: 220px 220px;
+	width: 240px;
+	height: 240px;
+	background-size: 240px 240px;
 	background-repeat: no-repeat;
 	background-image: url("../ximages/logo-colored1b.png");
 }
@@ -483,11 +483,11 @@ div.left-col > div.tab > ul > li > a {
 	border-top-left-radius: 0px; /* Smooth border */
 	border-bottom-left-radius: 0px; /* Smooth border */  
 	font-size: 30px;
-	padding: 25px 0px;
+	padding: 25px 10px;
 	margin: 0px;
 	font-weight: bold !important;
 	display: inline-block;
-	width: 230px;
+	width: 250px;
 	border-top-style: solid;
 	border-left-style: solid;
 	border-bottom-style: none;	
@@ -530,7 +530,7 @@ div.left-col > div.tab > ul > li > a:hover {
 .left-col {
     background-color: rgba(139,157,195,1); /* Light Blue */
 	float:left;
-	width: 230px;
+	width: 250px;
 	height: auto;
 }
 
