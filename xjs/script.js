@@ -18,24 +18,26 @@ $(document).ready(function() {
         location.hash = this.getAttribute("href");
         /*alert("debug");*/
     });
+});
 
-	$('a[data-toggle=tab]').each(function () {
-		var $this = $(this);
-		
-		$this.on('shown.bs.tab', function() {
-			$('.mason').imagesLoaded(function() {
-				$('.mason').masonry({
-					transitionDuration: '0.1s',
-					columnWidth: '.grid-sizer',
-					itemSelector: '.item',
-					percentPosition: true,
-					gutter: '.gutter-sizer'
-				});
-			});
-            var $this = $(this).attr('id') ;
-            scrollToAnchor($this);
-		});
-	});
+/* Putting the Masonry function outside the .ready() function 
+   solves the following problem: failure to load masonry on subsequent page refresh */
+$('a[data-toggle=tab]').each(function () {
+    var $this = $(this);
+    
+    $this.on('shown.bs.tab', function() {
+        $('.mason').imagesLoaded(function() {
+            $('.mason').masonry({
+                transitionDuration: '0.1s',
+                columnWidth: '.grid-sizer',
+                itemSelector: '.item',
+                percentPosition: true,
+                gutter: '.gutter-sizer'
+            });
+        });
+        var $this = $(this).attr('id') ;
+        scrollToAnchor($this);
+    });
 });
 
 /* Bootstrap Tabs */

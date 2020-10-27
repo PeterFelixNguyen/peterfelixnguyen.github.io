@@ -369,9 +369,15 @@ p.caption {
     text-align: center;
 }
 
-div.item  > h4 {
+div.item > h4 {
 	border-bottom-style: solid;
 	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
+	color: Black;
+}
+
+div.item > h4.no-body {
+	border-bottom-style: none; /* Override and remove bottom border for Masonry */
+    margin-bottom: 0px; /* Override and remove bottom margin for Masonry */
 	color: Black;
 }
 
