@@ -1,27 +1,44 @@
 /* Author: Peter "Felix" Nguyen */
 
-/* Scroll function for Bootstrap tabs */
+/*
+  Scroll function for Bootstrap tabs 
+*/
 function scrollToAnchor(anchor_id){
+    /* Get the anchor id to determine which anchor to scroll to */
     var aTag = $("a[name='"+ anchor_id +"']");
+    /* Perform the desired scrolling animation */
     $('html,body').animate({scrollTop: aTag.offset().top},'fast');
 }
 
-/* Initialize */
+/*
+  Initialize (this function calls on page load and refresh) 
+*/
 $(document).ready(function() {
-	
+	/* Initialize the LazyLoader (Thank you, Mika Tuupola for creating this) */
+    if ($.isFunction($.fn.lazyload)) {
+        $("img.lazyload").lazyload();
+    }
+    
+    /* If location.hash is in URL, then show the associated tab */
 	if(location.hash) {
+        /* Show the specific tab based on the anchor specified in the url */
         $('a[href=' + location.hash + ']').tab('show');
     }
 	
-    /* Tabs event handling */
+    /* Handle the click event on the vertical tabs */
     $(document.body).on("click", "a[data-toggle]", function(event) {
+        /* Update the anchor (location.hash) in the url to keep track of which tab is active */
         location.hash = this.getAttribute("href");
         /*alert("debug");*/
     });
 });
 
-/* Putting the Masonry function outside the .ready() function 
-   solves the following problem: failure to load masonry on subsequent page refresh */
+/* 
+  The Masonry Function
+
+  Putting the Masonry function outside the .ready() function 
+  solves the following problem: failure to load masonry on subsequent page refresh 
+*/
 $('a[data-toggle=tab]').each(function () {
     var $this = $(this);
     
@@ -40,13 +57,9 @@ $('a[data-toggle=tab]').each(function () {
     });
 });
 
-/* Bootstrap Tabs */
-$(window).on('popstate', function() {
-    var anchor = location.hash || $('a[data-toggle=tab]').first().attr('href');
-    $('a[href=' + anchor + ']').tab('show');
-});
-
-/* Specify which screenshot to popup on modal action */
+/*
+  Specify which screenshot to popup on modal action
+*/
 $('#screenshotModal').on('show.bs.modal', function (event) {
   var button = $(event.relatedTarget) // Button that triggered the modal
   var popup = button.data('screenshot') // Extract info from data-* attributes
@@ -65,10 +78,10 @@ $('#screenshotModal').on('show.bs.modal', function (event) {
   This fixes it.
 */
 $("a.hoverable").hover(function() {
-    // hover enter
+    /* Hover enter */
     $(this).css('background-color', 'rgba(60,190,120,1)'); // green
 }, function() {
-    // hover leave
+    /* Hover leave */
     var is_selected = $(this).hasClass('selected');
     if (is_selected) {
         $(this).css('background-color', 'rgba(60,190,120,1)'); // green
@@ -77,9 +90,11 @@ $("a.hoverable").hover(function() {
     }
 });
 
+/* 
+  Function for the copy button in the Contact page.
+*/
 function copy(element) {
     /* Copy to clipboard */
-    
     var $temp = $("<input>");
     $("body").append($temp);
     $temp.val($(element).text()).select();
@@ -87,7 +102,6 @@ function copy(element) {
     $temp.remove();
 
     /* Toast notification of copy */
-    
     if (element == '#phone') {
         $('div#toast').text('Phone copied');  
     } else if (element == '#email') {
@@ -96,10 +110,13 @@ function copy(element) {
         $('div#toast').text('Content copied');  
     }
 
+    /* Get the toast element to display */
     var toast = document.getElementById('toast');
 
+    /* Show the toast message */
     toast.className = 'show';
 
+    /* Hide the toast message after a short time */
     setTimeout(function() { 
         toast.className = toast.className.replace('show', ''); 
     }, 3000);
