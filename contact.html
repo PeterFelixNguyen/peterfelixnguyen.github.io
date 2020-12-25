@@ -10,66 +10,72 @@
     <script src="xjs/jquery-2.1.4.min.js"></script>
     <script src="xjs/bootstrap.min.js"></script>
     <script src="xjs/imagesloaded.pkgd.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="xcss/style.css" media='all'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-1-narrow.css" media='screen and (max-width: 767px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-2-normal.css" media='screen and (min-width: 768px) and (max-width: 991px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-3-wide.css" media='screen and (min-width: 992px) and (max-width: 1199px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-4-very-wide.css" media='screen and (min-width: 1200px) and (max-width: 1399px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-5-x-very-wide.css" media='screen and (min-width: 1400px)'>
+    <link rel="stylesheet" type="text/css" href="xcss/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="xcss/width-1-narrow.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-2-normal.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-3-wide.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-4-very-wide.css" media="screen and (min-width: 1200px) and (max-width: 1399px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-5-x-very-wide.css" media="screen and (min-width: 1400px)">
   </head>
   <body>
     <noscript>
-      <h1 style="text-align: center !important; font-size: 32px !important; color: White !important;">JavaScript support is not detected.<br>This website is best viewed with JavaScript enabled</h1>
+      <div class="add-padding">
+        <h1 class="warning">
+          <span class="glyphicon glyphicon-warning-sign flashing-white-text"></span>
+          This website requires <span class="flashing-white-text">JavaScript </span>enabled in order to function properly. 
+          Please enable it in your browser settings. <span class="glyphicon glyphicon-warning-sign flashing-white-text"></span>
+        </h1>
+      </div>
     </noscript>
     <div class="content-body">
       <div class="header">
         <div class="name-logo">
-          <a href="https://peterfelixnguyen.github.io/index"></a>
+          <a href="https://peterfelixnguyen.github.io"></a>
         </div>
         <div class="name">
-          <a href="https://peterfelixnguyen.github.io/index" class="fit-sign">P E T E R</a>
-          <a href="https://peterfelixnguyen.github.io/index" class="fit-sign">F E L I X</a>
-          <a href="https://peterfelixnguyen.github.io/index" class="fit-sign">N G U Y E N</a>
+          <a href="https://peterfelixnguyen.github.io" class="fit-sign">P E T E R</a>
+          <a href="https://peterfelixnguyen.github.io" class="fit-sign">F E L I X</a>
+          <a href="https://peterfelixnguyen.github.io" class="fit-sign">N G U Y E N</a>
         </div>
         <div class="pages">
-          <a class="first fit-tab hoverable"          href="https://peterfelixnguyen.github.io/index">About</a>
-          <a class="      fit-tab hoverable"          href="https://peterfelixnguyen.github.io/portfolio">Portfolio</a>
-          <a class="last  fit-tab hoverable selected" href="https://peterfelixnguyen.github.io/contact">Contact</a>
+          <a class="first hoverable"          href="https://peterfelixnguyen.github.io/about">About</a>
+          <a class="      hoverable"          href="https://peterfelixnguyen.github.io/portfolio">Portfolio</a>
+          <a class="last  hoverable selected">Contact</a>
         </div>
       </div>
       <div class="main-block">
-        <div class="right-col">		
-          <div class="tab-content" style="border-top-style: none !important;">
+        <div class="right-col">
+          <div class="tab-content no-min-height" style="border-top-style: none !important;">
             <div class="container-fluid">
               <div class="row contacts">
                 <div class="col-sm-12 col-md-5 col-lg-5">
                   <div id="toast">Content copied</div>
                   <section class="contained">
-                    <h2>Phone <img onclick="copy('#phone')" style="float:right; width: 36px;" src="ximages/icon-copy-white.png"></img></h2>
+                    <h2 class="blue-heading">Phone <img class="material-icon" onclick="copy('#phone')" style="float:right; width: 36px; cursor:pointer;" src="ximages/material-icon-copy-white.png"></img></h2>
                     <h4 class="no-separator">
-                      <a style="color:Black;" href="tel:9096530282">
+                      <a class="link-black" href="tel:9096530282">
                         <span class="glyphicon glyphicon-phone-alt"></span>
                         <span id="phone">(909) 653-0282</span>
                       </a>
                     </h4>
                   </section>
                   <section class="contained">
-                    <h2>Email <img onclick="copy('#email')" style="float:right; width: 36px;" src="ximages/icon-copy-white.png"></img></h2>
+                    <h2 class="blue-heading">Email <img class="material-icon" onclick="copy('#email')" style="float:right; width: 36px; cursor:pointer;" src="ximages/material-icon-copy-white.png"></img></h2>
                     <h4 class="no-separator">
-                      <a style="color:Black;" href="mailto:peterfelixnguyen@gmail.com">
+                      <a class="link-black" href="mailto:peterfelixnguyen@gmail.com">
                         <span class="glyphicon glyphicon-envelope"></span>
                         <span id="email">peterfelixnguyen@gmail.com</span>
                       </a>
                     </h4>
                   </section>
                   <section class="contained">
-                    <h2>Social Media</h2>
-                    <a href="https://www.linkedin.com/in/peterfelixnguyen" target="_blank"><img class="temp" style="max-width: 170px; margin-left: 20px !important; margin-top: 0px !important; margin-bottom: 20px;" src="ximages/Logo-2C-41px-TM.png" align="left"></img></a>
+                    <h2 class="blue-heading">Social Media</h2>
+                    <a class="image-hover" href="https://www.linkedin.com/in/peterfelixnguyen" target="_blank"><img class="temp" style="max-width: 170px; margin-left: 20px !important; margin-top: 0px !important; margin-bottom: 20px;" src="ximages/Logo-2C-41px-TM.png" align="left"></img></a>
                   </section>
                 </div>
                 <div class="col-sm-12 col-md-7 col-lg-7">
                   <section class="contained">
-                    <h2>Send me an email</h2>
+                    <h2 class="blue-heading">Send me an email</h2>
                     <div style="padding-top: 0px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
                       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/peterfelixnguyen@gmail.com" method="post">
                         <fieldset id="fs-frm-inputs">
@@ -81,7 +87,7 @@
                           <textarea rows="5" name="message" id="message" placeholder="" required=""></textarea>
                           <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
                         </fieldset>
-                        <input type="submit" value="Submit">
+                        <input type="submit" class="form-style" value="Submit">
                       </form>
                     </div>
                   </section>
@@ -91,7 +97,12 @@
           </div>
         </div>
       </div>
-      <p style="color: white; float: right;">Copyright &copy; 2019 Peter Nguyen</p>
+      <p class="footer" style="color: white;">
+        Copyright &copy; 2020 Peter Nguyen&nbsp;&nbsp;&bull;&nbsp;
+        <a style="display: initial;" href="https://peterfelixnguyen.github.io/attribution" target="_blank">
+            License Attribution
+        </a>
+      </p>
     </div>
 
     <script src="xjs/masonry.pkgd.min.js"></script>

@@ -1,29 +1,33 @@
 /* Author: Peter "Felix" Nguyen */
 
 .min500 {
-	min-height: 0px;
+  min-height: 0px;
+}
+
+.min800 {
+  min-height: 0px;
 }
 
 .grid-sizer, .item  {
-	width: 100%;
+  width: 100%;
 }
 
 ul.mason > li.wide {
-	width: 100%;
+  width: 100%;
 }
 
 .gutter-sizer {
-	width: 20px;
+  width: 20px;
 }
 
 .col-sm-12 {
-	margin-bottom: -20px;
+  margin-bottom: -20px;
 }
 
 div.header > div.name > a {
-	font-size: 5vw;
+  font-size: 5vw;
 }
 
 body {
-	//background-color: rgba(65,152,115,1) !important;
+  //background-color: rgba(65,152,115,1) !important;
 }

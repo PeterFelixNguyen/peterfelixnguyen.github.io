@@ -3,155 +3,178 @@
 /* Bootstrap Modals */
 
 .modal-dialog {
-    width: 100% !important;
-    margin-top: 100px !important;
+  width: 100% !important;
+  margin-top: 0px !important;
 }
 
 .modal-body {
-    padding-left: 0px;
-    padding-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* Everything Else */
 
 .tab-content {
-    padding-left: 0px;
+  padding-left: 0px;
 }
 
 .row {
-	margin-left: 0px !important; /* New 2019, may want to set all screens to 0px, previously -15px */
-	margin-right: 0px !important; /* New 2019, may want to set all screens to 0px */
+  margin-left: 0px !important; /* New 2019, may want to set all screens to 0px, previously -15px */
+  margin-right: 0px !important; /* New 2019, may want to set all screens to 0px */
 }
 
 .contained, .contained-masonry {
-    margin: 10px 0px !important; /* New 2019, removes left padding in narrow screens */
+  margin: 10px 0px !important; /* New 2019, removes left padding in narrow screens */
 }
 
 .min500 {
-	min-height: 0px;
+  min-height: 0px;
+}
+
+.min800 {
+  min-height: 0px;
+}
+
+/* Change Log */
+.change-log {
+  height: auto;
+  max-height: 100px;
 }
 
 div.main-block {
-	margin-top: 0px; /* go negative */
-	padding-top: 0px;
+  margin-top: 0px; /* go negative */
+  padding-top: 0px;
+}
+
+div.main-block.fill-height {
+  height: auto !important;
+  min-height: 0 !important;
+  border-top-style: none;
+  border-left-style: none;
+  border-bottom-style: none; /* not sure if prefer none or solid */
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 /* Do not delete this one */
 .container-fluid > .row  {
-	padding-left: 0px !important;
-	padding-right: 0px !important;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
 }
 
 /* Header */
 
 div.header {
-	height: 190px;
+  height: 190px;
 }
 
 div.header > div.name {
-	left: 110px;
-	height: 100px;
+  left: 110px;
+  height: 100px;
 }
 
 div.header > div.name  > a {
-    margin-top: 10px;
-	line-height: 70px;
+  margin-top: 10px;
+  line-height: 70px;
 }
 
 div.header > div.name-logo {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	overflow: hidden;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 }
 
 div.header > div.name-logo > a {
-	width: 100px;
-	height: 100px;
-	background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
 }
 
 div.header {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 div.header > div.pages  {
-	font-size: 16px;
-	padding: 0px;
+  font-size: 16px;
+  padding: 0px;
 }
 
 div.header > div.pages > a {
-	border-bottom-style: solid !important;
-    border-bottom-width: 5px;
-	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
-	padding: 10px 0px;
+  border-bottom-style: solid !important;
+  border-bottom-width: 5px;
+  border-bottom-color: rgba(30,50,100,1); /* Darker Blue */
+  padding: 10px 0px;
 }
 
 div.header > div.pages > a.selected {
-	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
+  border-bottom-color: rgba(30,50,100,1); /* Darker Blue */
 }
 
 div.header > div.pages {
-	left: 0px;
+  left: 0px;
 }
 
 /* Masonry */
 
 .grid-sizer, .item  {
-	width: 100%;
+  width: 100%;
 }
 
 ul.container2 > li.wide {
-	width: 100%;
+  width: 100%;
 }
 
 .gutter-sizer {
-	width: 20px;
+  width: 20px;
 }
 
 .right-col {
-	clear: both;
+  clear: both;
 }
 
 div.left-col {
-	width: 100%;
-	border-left-style: solid;
-	border-bottom-style: solid;
-	border-right-style: solid;
-	border-left-width: 5px;
-	border-bottom-width: 5px;
-	border-right-width: 5px;
-	border-left-color: rgba(47,71,121,1); /* Darker Blue */
-	border-bottom-color: rgba(47,71,121,1); /* Darker Blue */
-	border-right-color: rgba(47,71,121,1); /* Darker Blue */
+  width: 100%;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  border-left-color: rgba(30,50,100,1); /* Darker Blue */
+  border-bottom-color: rgba(30,50,100,1); /* Darker Blue */
+  border-right-color: rgba(30,50,100,1); /* Darker Blue */
 }
 
 div.left-col > div.tab > ul > li {
-	width: 100%;
+  width: 100%;
 }
 
 div.left-col > div.tab > ul > li > a {
-	float: none;
-	clear: both;
-	width: 100%;
-	border-style: none;
-	border-radius: 0px;
-	padding: 10px 0px;
+  float: none;
+  clear: both;
+  width: 100%;
+  border-style: none;
+  border-radius: 0px;
+  padding: 10px 0px;
 }
 
 div.left-col > div.tab > ul > li > a.first {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 div.left-col > div.tab > ul > li > a.last {
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-style: none; /* not sure if prefer none or solid */
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-style: none; /* not sure if prefer none or solid */
 }
 
 /* Bootstrap */
 
 .vertical-separator {
-    border-left: none;
+  border-left: none;
 }

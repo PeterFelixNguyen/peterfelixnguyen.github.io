@@ -10,328 +10,463 @@
     <script src="xjs/bootstrap.min.js"></script>
     <script src="xjs/imagesloaded.pkgd.min.js"></script>
     <script src="xjs/lazyload.js"></script>
-    <link rel="stylesheet" type="text/css" href="xcss/style.css" media='all'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-1-narrow.css" media='screen and (max-width: 767px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-2-normal.css" media='screen and (min-width: 768px) and (max-width: 991px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-3-wide.css" media='screen and (min-width: 992px) and (max-width: 1199px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-4-very-wide.css" media='screen and (min-width: 1200px) and (max-width: 1399px)'>
-    <link rel="stylesheet" type="text/css" href="xcss/width-5-x-very-wide.css" media='screen and (min-width: 1400px)'>
+    <link rel="stylesheet" type="text/css" href="xcss/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="xcss/width-1-narrow.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-2-normal.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-3-wide.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-4-very-wide.css" media="screen and (min-width: 1200px) and (max-width: 1399px)">
+    <link rel="stylesheet" type="text/css" href="xcss/width-5-x-very-wide.css" media="screen and (min-width: 1400px)">
   </head>
   <body>
     <noscript>
-      <h1 style="text-align: center !important; font-size: 32px !important; color: White !important;">JavaScript support is not detected.<br>This website is best viewed with JavaScript enabled</h1>
+      <div class="add-padding">
+        <h1 class="warning">
+          <span class="glyphicon glyphicon-warning-sign flashing-white-text"></span>
+          This website requires <span class="flashing-white-text">JavaScript </span>enabled in order to function properly. 
+          Please enable it in your browser settings. <span class="glyphicon glyphicon-warning-sign flashing-white-text"></span>
+        </h1>
+      </div>
     </noscript>
     <div class="modal fade" id="screenshotModal" tabindex="-1" style="padding-right: 0px !important;">
-      <div class="modal-dialog" style="width: 100%; margin-left: auto !important; margin-right: auto !important; margin-top: 50px;">
-        <div class="modal-content" style="background-color: Lavender; margin-right: 0px !important;">
-          <div class="modal-header">
-            <h5 class="modal-title">Screenshot</h5>
-            <button type="button" class="close" data-dismiss="modal">
-              <span style="font-size: 30px;">&times;</span>
-            </button>
+      <div class="modal-dialog"  type="button" class="close" style="width: 100%; height: 100%; margin-left: auto !important; margin-right: auto !important;">
+        <div class="modal-content" id="modal-experiment">
+          <div class="modal-body" data-dismiss="modal">
+            <div class="modal-screenshot">
+              <img id="original" class="modal-screenshot" src="ximages/placeholder.png" oncontextmenu="return false" draggable="false" style="width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+            </div>
           </div>
-          <div class="modal-body">
-            <a class="modal-screenshot" href="" target="_blank">
-              <img class="modal-screenshot" src='ximages/placeholder.png' style="width: 100%; display: block; margin-left: auto; margin-right: auto;"/>
-            </a>
-          </div>
+          <button type="button" class="modal-floating-button open" onclick="window.open('ximages/fpc-portfolio-01.png')">
+            <span class="glyphicon glyphicon-new-window"></span>
+          </button>
+          <button type="button" class="modal-floating-button dismiss" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span>
+          </button>
         </div>
       </div>
     </div>
-
     <div class="content-body">
       <div class="header">
         <div class="name-logo">
-          <a href="https://peterfelixnguyen.github.io/index"></a>
+          <a href="https://peterfelixnguyen.github.io"></a>
         </div>
         <div class="name">
-          <a href="https://peterfelixnguyen.github.io/index" class="fit-sign">P E T E R</a>
-          <a href="https://peterfelixnguyen.github.io/index" class="fit-sign">F E L I X</a>
-          <a href="https://peterfelixnguyen.github.io/index" class="fit-sign">N G U Y E N</a>
+          <a href="https://peterfelixnguyen.github.io" class="fit-sign">P E T E R</a>
+          <a href="https://peterfelixnguyen.github.io" class="fit-sign">F E L I X</a>
+          <a href="https://peterfelixnguyen.github.io" class="fit-sign">N G U Y E N</a>
         </div>
         <div class="pages">
-          <a class="first fit-tab hoverable"          href="https://peterfelixnguyen.github.io/index">About</a>
-          <a class="      fit-tab hoverable selected" href="https://peterfelixnguyen.github.io/portfolio">Portfolio</a>
-          <a class="last  fit-tab hoverable"          href="https://peterfelixnguyen.github.io/contact">Contact</a>
+          <a class="first hoverable"          href="https://peterfelixnguyen.github.io/about">About</a>
+          <a class="      hoverable selected">Portfolio</a>
+          <a class="last  hoverable"          href="https://peterfelixnguyen.github.io/contact">Contact</a>
+          <div>
+            <span name="destination_large_screens_1"></span>
+            <span name="destination_large_screens_2"></span>
+            <span name="destination_large_screens_3"></span>
+            <span name="destination_large_screens_4"></span>
+            <span name="destination_large_screens_5"></span>
+            <span name="destination_large_screens_6"></span>
+            <span name="destination_large_screens_7"></span>
+            <span name="destination_large_screens_8"></span>
+            <span name="destination_large_screens_9"></span>
+          </div>
         </div>
       </div>
-      <div class="main-block">
+      <div class="main-block fill-height">
         <div class="left-col">
           <div class="tab">
             <ul>
-              <li class="active"><a class="first hoverable" data-target="#floating-point-calculator-android" id="tab1" href="#floating-point-calculator-android" data-toggle="tab" aria-expanded="true" aria-controls="FloatPointAndroid">Floating Point Calculator</a></li>
-              <li><a class="hoverable" data-target="#joystick-mouse-adapter" id="tab2" href="#joystick-mouse-adapter" data-toggle="tab" aria-expanded="true" aria-controls="GuideLights">Joystick Mouse Adapter</a></li>
-              <li><a class="hoverable" data-target="#guide-lights-for-axon-7" id="tab3" href="#guide-lights-for-axon-7" data-toggle="tab" aria-expanded="true" aria-controls="GuideLights">Guide Lights for ZTE Axon 7</a></li>
-              <li><a class="hoverable" data-target="#forest-fire-simulator" id="tab4" href="#forest-fire-simulator" data-toggle="tab" aria-expanded="true" aria-controls="ForestFire">Forest Fire Simulator</a></li>
-              <li><a class="hoverable" data-target="#histogram-maker" id="tab5" href="#histogram-maker" data-toggle="tab" aria-expanded="true" aria-controls="HistogramMaker">Histogram Maker</a></li>
-              <li><a class="hoverable" data-target="#stat-logic" id="tab6" href="#stat-logic" data-toggle="tab" aria-expanded="true" aria-controls="StatLogic">StatLogic</a></li>
-              <li><a class="hoverable" data-target="#floating-point-calculator-pc" id="tab7" href="#floating-point-calculator-pc" data-toggle="tab" aria-expanded="true" aria-controls="IEEE754Calc">Floating Point Calculator PC</a></li>
-              <li><a class="hoverable" data-target="#sketch-and-label" id="tab8" href="#sketch-and-label" data-toggle="tab" aria-expanded="true" aria-controls="SketchAndLabel">Sketch and Label</a></li>
-              <li><a class="last hoverable" data-target="#raspberry-pi-alarm-system" id="tab9" href="#raspberry-pi-alarm-system" data-toggle="tab" aria-expanded="true" aria-controls="RaspPiAlarm">Raspberry Pi Alarm System</a></li>
+              <li class="first-tab"><a class="first hoverable" data-target="#floating-point-calculator-android" id="destination_large_screens_1" href="#floating-point-calculator-android" data-toggle="tab" aria-expanded="true" aria-controls="FloatPointAndroid">Floating Point Calculator</a></li>
+              <li><a class="hoverable" data-target="#joystick-mouse-adapter" id="destination_large_screens_2" href="#joystick-mouse-adapter" data-toggle="tab" aria-expanded="true" aria-controls="JoystickMouseAdapter">Joystick Mouse Adapter</a></li>
+              <li><a class="hoverable" data-target="#guide-lights-for-axon-7" id="destination_large_screens_3" href="#guide-lights-for-axon-7" data-toggle="tab" aria-expanded="true" aria-controls="GuideLights">Guide Lights for ZTE Axon 7</a></li>
+              <li><a class="hoverable" data-target="#forest-fire-simulator" id="destination_large_screens_4" href="#forest-fire-simulator" data-toggle="tab" aria-expanded="true" aria-controls="ForestFire">Forest Fire Simulator</a></li>
+              <li><a class="hoverable" data-target="#histogram-maker" id="destination_large_screens_5" href="#histogram-maker" data-toggle="tab" aria-expanded="true" aria-controls="HistogramMaker">Histogram Maker</a></li>
+              <li><a class="hoverable" data-target="#stat-logic" id="destination_large_screens_6" href="#stat-logic" data-toggle="tab" aria-expanded="true" aria-controls="StatLogic">StatLogic</a></li>
+              <li><a class="hoverable" data-target="#floating-point-calculator-pc" id="destination_large_screens_7" href="#floating-point-calculator-pc" data-toggle="tab" aria-expanded="true" aria-controls="IEEE754Calc">Floating Point Calculator PC</a></li>
+              <li><a class="hoverable" data-target="#sketch-and-label" id="destination_large_screens_8" href="#sketch-and-label" data-toggle="tab" aria-expanded="true" aria-controls="SketchAndLabel">Sketch and Label</a></li>
+              <li><a class="last hoverable" data-target="#raspberry-pi-alarm-system" id="destination_large_screens_9" href="#raspberry-pi-alarm-system" data-toggle="tab" aria-expanded="true" aria-controls="RaspPiAlarm">Raspberry Pi Alarm System</a></li>
             </ul>
           </div>
         </div>
         <div class="right-col">
-          <a name="tab1"></a>
-          <a name="tab2"></a>
-          <a name="tab3"></a>
-          <a name="tab4"></a>
-          <a name="tab5"></a>
-          <a name="tab6"></a>
-          <a name="tab7"></a>
-          <a name="tab8"></a>
-          <a name="tab9"></a>
+          <span name="destination_small_screens"></span>
           <div class="tab-content min500">
             <div class="tab-pane active" id="floating-point-calculator-android">
               <div class="container-fluid">
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-4">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Floating Point Calculator for Android (IEEE 754)</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Floating Point Calculator for Android (IEEE 754)</h2>
                       <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Description</h5>
-                          <p>A floating point calculator that performs two-way conversions between binary and floating point values. Currently supports 32-bit precision, but will be updated to support 64-bit conversions. Designed to be easy to use compared to other graphical floating point calculators available on Android.</p>
-                          <h5>Requirements</h5>
-                          <p>Android Nougat or newer</p> 
-                          <h5 style="padding-bottom: 0px !important;">Links</h5>
-                          <a href='https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.floatingpointcalculatorieee754&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' style="max-width:600px;" src='ximages/en_badge_web_generic.png'/></a>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Description</h6>
+                          <p>
+                            This calculator converts a 32-bit and 64-bit binary strings into their floating point values (i.e. decimal values such as "3.14159..."). It can also convert the decimal number to a 32-bit and 64-bit binary string.
+                            <br><br>
+                            For example, the floating point (decimal) value of Pi is 3.14159...
+                            <br><br>
+                            The binary representation of Pi is therefore:
+                            01000000 01001001 00001111 11010000
+                            <br><br>
+                            This calculator supports two-way conversions. To clarify what that means, here are the conversions it can do:
+                            <br>(1) Float to Binary (3.14159 = 01000000 01001001 00001111 11010000)
+                            <br>(2) Binary to Float (01000000 01001001 00001111 11010000 = 3.14159)
+                            <br><br>
+                            This app is designed to help computer science and computer architecture students easily understand how a floating point value is calculated. For example: the binary string is color coded to help students differentiate between the sign, the exponent, and the mantissa. Another example: by long-pressing on an individual bit, this will activate an overlay that shows the user what happens when that specific bit is toggled on or off (try it out!).
+                            <br><br>
+                            This converter also supports other numerical systems or representations including: floating point, binary, hexadecimal, octal, signed integer, and unsigned integer numbers.
+                          </p>
+                          <h6>Requirements</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Floating point precision:</span> 32-bit (available) and 64-bit (coming soon)</li>
-                              <li><span>Conversions:</span> float-to-binary, binary-to-float</li>
-                              <li><span>Instant output:</span> no need to press enter, values updated dynamically</li>
+                              <li>Android Lollipop 5.1 or newer</li>
                             </ul>
-                            <br>        
                           </font>
-                          <h5>Change Log</h5>
-                          <div class="custom-scroll" style="overflow: scroll; overflow-x: hidden; background-color:PaleTurquoise none; width: 100%; height: 300px; margin-left: -5px !important;">
-                            <font size="4">
-                              <p><b>v2.0.1</b></p>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>When using the numbpad/keypad, toggling the plus/minus (+/-) will not update the bitpad which results in the wrong binary value displayed on the bitpad. For example: switching +0.5 to -0.5 via the keypad results in 00111111000000000000000000000000 (previously the same value) instead of 10111111000000000000000000000000. On the other hand, toggling 00111111000000000000000000000000 to 10111111000000000000000000000000 (i.e. the left-most bit) via the bitpad results in -0.5 (previously +0.5).</li>
-                              </ul>
-                              <br>
-                              <p><b>v2.0.0</b></p>
-                              <p>Added</p>
-                              <ul>
-                                <li>64-bit mode</li>
-                                <li>Hint overlay</li>
-                                <li>Compact layout</li>
-                                <li>App remembers last session</li>
-                                <li>Toggle font size</li>
-                                <li>Strip leading/trailing zeroes</li>
-                                <li>Copy and paste NaN/Inf</li>
-                                <li>New settings</li>
-                              </ul>
-                              <br>
-                              <p>Improved</p>
-                              <ul>
-                                <li>Layout and user interface</li>
-                                <li>Results output</li>
-                                <li>Preview pasted values</li>
-                                <li>Space delimit copied values</li>
-                                <li>Performance improvements</li>
-                                <li>Calculator behavior adjustments</li>
-                              </ul>
-                              <br>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Sometimes unable to perform horizontal swipe gesture</li>
-                                <li>Crashes when inserting digit where the minus sign is</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.6.0</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>"Copy Bits" button changed to "Copy" button on large screens, which provides an option to copy either the bits or the decimal value.</li>
-                              </ul>
-                              <br>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Changed the appearance of the buttons on large screens.</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.5.0</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>Added options for copying the decimal value as a float, signed integer, or unsigned integer.</li>
-                                <li>Added option to show all converted values and copy them.</li>
-                                <li>Added option to automatically hide the scrollbar.</li>
-                                <li>Other minor visual changes.</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.4.0</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>Changed layout on small and large screens.</li>
-                                <li>Added "copy hex" and "copy octal" on small screens.</li>
-                                <li>Added user settings to customize calculator's appearance and behavior.</li>
-                                <li>Removed redundant menu buttons.</li>
-                                <li>Other minor visual changes.</li>
-                              </ul>
-                              <br>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Paste may crash app if decimal value contains the following letters: f, F, d, D, e, E</li>
-                                <li>Other minor bug fixes</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.3.0</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>Decimal pane scrollable.</li>
-                                <li>Copy/paste and clear buttons added on small screens.</li>
-                                <li>"About this app" page added.</li>
-                              </ul>
-                              <br>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Backspace/delete removes one extra character when released.</li>
-                                <li>Dot character not insert if value was zero.</li>
-                                <li>Binary string crashes app if 32 bits not specified.</li>
-                                <li>Paste decimal action does not strip spaces which crashes app.</li>
-                                <li>Pasted decimals not fully traversable by cursor</li>
-                                <li>Keypad crashes app if value was Infinity or NaN</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.2.0</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>Layout for half-byte blocks changed.</li>
-                                <li>Buttons moved and resized on small screens.</li>
-                                <li>Custom scrollbar added on small screens.</li>
-                                <li>Buttons moved and auto-sized to fit on large screens.</li>
-                                <li>Copy/paste and clear buttons added on large screens.</li>
-                                <li>Cursor will stop blinking if value is 0.</li>
-                              </ul>
-                              <br>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Paste button crashes app when clipboard is empty.</li>
-                                <li>Sign button crashes app when cursor is on the minus sign.</li>
-                                <li>Values like 0.00 fails to reset to 0.</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.1.0</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>Users can now paste values from the clipboard. Works for both base 2 and base 10 values.</li>
-                              </ul>
-                              <br>  
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                  <li>Fixed a bug where backspace/delete crashes the app (i.e. when the last remaining digit is removed and all that is left are periods, signs, spaces, or empty strings).</li>
-                              </ul>
-                              <br>  
-                              <p><b>v1.0.0</b></p>
-                              <p>Features</p>
-                              <ul>
-                                <li>32-bit precision available (swipe right)</li>
-                                <li>64-bit precision COMING SOON (swipe left)</li>
-                                <li>Binary input (swipe down)</li>
-                                <li>Decimal input (swipe up)</li>
-                                <li>Dedicated keypad (no more erroneous characters)</li>
-                                <li>Change any part of the decimal by moving the green cursor &lt;left&gt; and &lt;right&gt; </li>
-                                <li>Color coded binary string to familiarize students with the sign, exponent, and mantissa</li>
-                                <li>Ads do not obstruct the screen (phones only)</li>
-                                <li>Copy the binary string or the decimal string with the menu button</li>
-                                <li>Large tablet screens have more room for binary and decimal keypads</li>
-                              </ul>
-                              <br>        
-                            </font>
-                          </div>
+                          <br>
+                          <h6 style="margin-bottom: 0px !important;">Links</h6>
+                          <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.floatingpointcalculatorieee754" target="_blank"><img alt="Get it on Google Play" style="max-width:450px;" src="ximages/en_badge_web_generic.png"/></a>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Features</h6>
+                          <font size="4">
+                            <ul>
+                              <li><span>Floating point precisions:</span>
+                                <ul>
+                                  <li>32-bit</li>
+                                  <li>64-bit</li>
+                                </ul>
+                              </li>
+                              <li><span>IEEE 754 bidirectional conversions:</span>
+                                <ul>
+                                  <li>Float to binary<br>Binary to float</li>
+                                  <li>Float to hexadecimal<br>Hexadecimal to float</li>
+                                  <li>Float to octal<br>Octal to float</li>
+                                </ul>
+                              </li>
+                              <li><span>Other bidirectional conversions:</span>
+                                <ul>
+                                  <li>Binary to hexadecimal<br>Hexadecimal to binary</li>
+                                  <li>Binary to octal<br>Octal to binary</li>
+                                  <li>Hexadecimal to octal<br>Octal to hexadecimal</li>
+                                </ul>
+                              </li>
+                              <li><span>One-way conversions:</span>
+                                <ul>
+                                  <li>Float to signed integer</li>
+                                  <li>Float to unsigned integer</li>
+                                  <li>Binary to signed integer</li>
+                                  <li>Binary to unsigned integer</li>
+                                </ul>
+                              </li>
+                              <li><span>Instant output:</span>
+                                <ul>
+                                  <li>No need to press enter, values are calculated automatically</li>
+                                </ul>
+                              </li>
+                              <li><span>Copy and paste:</span>
+                                <ul>
+                                  <li>Access the built-in clipboard to make it easier to perform copy and paste operations</li>
+                                </ul>
+                              </li>
+                              <li><span>Calculation hints:</span>
+                                <ul>
+                                  <li>By long-pressing a bit, the hint will show how intermediate values are calculated</li>
+                                </ul>
+                              </li>
+                              <li><span>Color coded bits:</span>
+                                <ul>
+                                  <li>Bits are color coded by a red sign bit, green exponent bits, & blue mantissa bits</li>
+                                </ul>
+                              </li>
+                              <li><span>Error calculation:</span>
+                                <ul>
+                                  <li>The calculator will calculate the bit scheme that most closely represents the "entered" value</li>
+                                  <li>The "actual" value shows the exact value of any given bit representation by the computer</li>
+                                  <li>The "difference" will calculate the "error" between "actual" and "entered" values</li>
+                                  <li>If the "accuracy" is 100%, than the "entered" value is represented exactly by the bit conversion</li>
+                                  <li>The green background span on the "actual" value represents which digits match with the "entered" value</li>
+                                  <li>The red background span on the "actual" value represents which digits do not with the "entered" value</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <br>
+                          </font>
                         </div>
                       </div>
                       <br>
                     </section>
-                    <section class="contained scaffold">
-                      <h2>Videos</h2>
-                      <div class="temp">
-                        <div style="position: relative; padding-top: 177.77%;">
-                          <iframe class="border" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/NACG_fnI71w?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <section class="contained scaffold" style="padding-bottom: 0px !important;">
+                      <h2 class="blue-heading collapse-toggle" style="margin-bottom:0px !important;" type="button" data-toggle="collapse" data-target="#collapse-trigger-1" aria-expanded="false" aria-controls="collapse-trigger-1">
+                        <span>Change Log</span>
+                        <span class="glyphicon glyphicon-plus" style="color: White; float: right;"></span>
+                      </h2>
+                      <div class="collapse" id="collapse-trigger-1" >
+                        <div class="change-log">
+                          <font size="4">
+                            <p><b>v2.1.0</b></p>
+                            <p>Added</p>
+                            <ul>
+                              <li>Hex, oct, and binary converter</li>
+                              <li>Fail-safe to prevent crashes from starting with corrupted values</li>
+                              <li>3D button option</li>
+                              <li>Invisible bits option</li>
+                              <li>Sound and haptics options</li>
+                            </ul>
+                            <br>
+                            <p>Removed</p>
+                            <ul>
+                              <li>Dark/light bits option</li>
+                            </ul>
+                            <br>
+                            <p>Improved</p>
+                            <ul>
+                              <li>Look and feel</li>
+                              <li>Loading screen</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>On Chrome OS, bit hints overlay might not close properly</li>
+                              <li>Cursor shouldn't blink when value is 0</li>
+                              <li>Sound effects trigger when not supposed to</li>
+                              <li>Bit hints overlay might appear during start-up</li>
+                            </ul>
+                            <br>
+                            <p><b>v2.0.1</b></p>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>When using the numbpad/keypad, toggling the plus/minus (+/-) will not update the bitpad which results in the wrong binary value displayed on the bitpad. For example: switching +0.5 to -0.5 via the keypad results in 00111111000000000000000000000000 (previously the same value) instead of 10111111000000000000000000000000. On the other hand, toggling 00111111000000000000000000000000 to 10111111000000000000000000000000 (i.e. the left-most bit) via the bitpad results in -0.5 (previously +0.5).</li>
+                            </ul>
+                            <br>
+                            <p><b>v2.0.0</b></p>
+                            <p>Added</p>
+                            <ul>
+                              <li>64-bit mode</li>
+                              <li>Hint overlay</li>
+                              <li>Compact layout</li>
+                              <li>App remembers last session</li>
+                              <li>Toggle font size</li>
+                              <li>Strip leading/trailing zeroes</li>
+                              <li>Copy and paste NaN/Inf</li>
+                              <li>New settings</li>
+                            </ul>
+                            <br>
+                            <p>Improved</p>
+                            <ul>
+                              <li>Layout and user interface</li>
+                              <li>Results output</li>
+                              <li>Preview pasted values</li>
+                              <li>Space delimit copied values</li>
+                              <li>Performance improvements</li>
+                              <li>Calculator behavior adjustments</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Sometimes unable to perform horizontal swipe gesture</li>
+                              <li>Crashes when inserting digit where the minus sign is</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.6.0</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>"Copy Bits" button changed to "Copy" button on large screens, which provides an option to copy either the bits or the decimal value.</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Changed the appearance of the buttons on large screens.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.5.0</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>Added options for copying the decimal value as a float, signed integer, or unsigned integer.</li>
+                              <li>Added option to show all converted values and copy them.</li>
+                              <li>Added option to automatically hide the scrollbar.</li>
+                              <li>Other minor visual changes.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.4.0</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>Changed layout on small and large screens.</li>
+                              <li>Added "copy hex" and "copy octal" on small screens.</li>
+                              <li>Added user settings to customize calculator's appearance and behavior.</li>
+                              <li>Removed redundant menu buttons.</li>
+                              <li>Other minor visual changes.</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Paste may crash app if decimal value contains the following letters: f, F, d, D, e, E</li>
+                              <li>Other minor bug fixes</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.3.0</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>Decimal pane scrollable.</li>
+                              <li>Copy/paste and clear buttons added on small screens.</li>
+                              <li>"About this app" page added.</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Backspace/delete removes one extra character when released.</li>
+                              <li>Dot character not insert if value was zero.</li>
+                              <li>Binary string crashes app if 32 bits not specified.</li>
+                              <li>Paste decimal action does not strip spaces which crashes app.</li>
+                              <li>Pasted decimals not fully traversable by cursor</li>
+                              <li>Keypad crashes app if value was Infinity or NaN</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.2.0</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>Layout for half-byte blocks changed.</li>
+                              <li>Buttons moved and resized on small screens.</li>
+                              <li>Custom scrollbar added on small screens.</li>
+                              <li>Buttons moved and auto-sized to fit on large screens.</li>
+                              <li>Copy/paste and clear buttons added on large screens.</li>
+                              <li>Cursor will stop blinking if value is 0.</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Paste button crashes app when clipboard is empty.</li>
+                              <li>Sign button crashes app when cursor is on the minus sign.</li>
+                              <li>Values like 0.00 fails to reset to 0.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.1.0</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>Users can now paste values from the clipboard. Works for both base 2 and base 10 values.</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                                <li>Fixed a bug where backspace/delete crashes the app (i.e. when the last remaining digit is removed and all that is left are periods, signs, spaces, or empty strings).</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.0.0</b></p>
+                            <p>Features</p>
+                            <ul>
+                              <li>32-bit precision available (swipe right)</li>
+                              <li>64-bit precision COMING SOON (swipe left)</li>
+                              <li>Binary input (swipe down)</li>
+                              <li>Decimal input (swipe up)</li>
+                              <li>Dedicated keypad (no more erroneous characters)</li>
+                              <li>Change any part of the decimal by moving the green cursor &lt;left&gt; and &lt;right&gt; </li>
+                              <li>Color coded binary string to familiarize students with the sign, exponent, and mantissa</li>
+                              <li>Ads do not obstruct the screen (phones only)</li>
+                              <li>Copy the binary string or the decimal string with the menu button</li>
+                              <li>Large tablet screens have more room for binary and decimal keypads</li>
+                            </ul>
+                            <br>
+                          </font>
                         </div>
                       </div>
-                      <p class="caption">Video of old version of Floating Point Calculator</p>
-                    </section>		
+                    </section>
+                    <section class="contained scaffold">
+                      <h2 class="blue-heading">Videos</h2>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 177.77%;">
+                          <iframe class="border" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/5a2vhwDDzuc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">New Version of Floating Point Calculator</p>
+                      </div>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 177.77%;">
+                          <iframe class="border" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/NACG_fnI71w?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Old Version of Floating Point Calculator</p>
+                      </div>
+                    </section>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-8">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
+                      <h2 class="blue-heading">Screenshots</h2>
                       <div class="row" style="padding: 0% 2%;">
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-01.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-01.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">32-bit output for pi (Nexus 9)</p>
-                          <br>
+                        <div class="col-sm-12 col-md-12 col-lg-12 media-pair">
+                          <div class="row" name="comment:prevents-misalignment">
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-01.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-01.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"3.14159" converted to 32-bits (Nexus 9)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-02.png">
+                                <img class="lazyload"data-src="ximages/fpc-portfolio-02.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"3.14159" converted to 64-bits (Nexus 9)</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-02.png">
-                            <img class="lazyload"data-src="ximages/fpc-portfolio-02.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">64-bit output for pi (Nexus 9)</p>
-                          <br>
+                        <div class="col-sm-12 col-md-12 col-lg-12 media-pair">
+                          <div class="row" name="comment:prevents-misalignment">
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-03.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-03.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"3.14159" converted to 32-bits (Pixel 2 XL)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-04.png">
+                                <img class="lazyload"  data-src="ximages/fpc-portfolio-04.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"3.14159" copied to the clipboard (Pixel 2 XL)</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-03.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-03.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">32-bit output for pi (Pixel 2 XL)</p>
-                          <br>
+                        <div class="col-sm-12 col-md-12 col-lg-12 media-pair">
+                          <div class="row" name="comment:prevents-misalignment">
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-05.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-05.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">64-bit mode, output cleared (Pixel 2 XL)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-06.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-06.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"3.14159" pasted from clipboard for 64-bit conversion (Pixel 2 XL)</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-04.png">
-                            <img class="lazyload"  data-src="ximages/fpc-portfolio-04.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">Copying the decimal value of pi from 32-bit mode (Pixel 2 XL)</p>
-                          <br>
+                        <div class="col-sm-12 col-md-12 col-lg-12 media-pair">
+                          <div class="row" name="comment:prevents-misalignment">
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-07.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-07.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"3.14159" converted to 64-bits (Pixel 2 XL)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-08.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-08.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"71" converted to 64-bits (Pixel 2 XL)</p>
+                            </div>
+                          </div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-05.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-05.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">64-bit mode, output cleared (Pixel 2 XL)</p>
-                          <br>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-06.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-06.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">Pasting the value of pi to 64-bit mode (Pixel 2 XL)</p>
-                          <br>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-07.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-07.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">64-bit output for pi (Pixel 2 XL)</p>
-                          <br>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-08.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-08.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">64-bit output for -256 (Pixel 2 XL)</p>
-                          <br>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-09.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-09.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">Hint overlay shows the result of toggling bit 41 out of 62 bits (Pixel 2 XL)</p>
-                          <br>
-                        </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">                                                
-                          <a class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-10.png">
-                            <img class="lazyload" data-src="ximages/fpc-portfolio-10.png" alt="Screenshot">
-                          </a>
-                          <p class="caption">Alternate layout with banner ad on top (Pixel 2 XL)</p>
-                          <br>
+                        <div class="col-sm-12 col-md-12 col-lg-12 media-pair">
+                          <div class="row" name="comment:prevents-misalignment">
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-09.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-09.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">Hint overlay shows the result of toggling bit 16 out of 32 bits (Pixel 2 XL)</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                              <div class="screenshot-right" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/fpc-portfolio-10.png">
+                                <img class="lazyload" data-src="ximages/fpc-portfolio-10.png" alt="Image Not Found">
+                              </div>
+                              <p class="media-caption">"71.5" converted to hexadecimal in 32-bits (Pixel 2 XL)</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </section>
@@ -344,19 +479,25 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Joystick Mouse Adapter</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Joystick Mouse Adapter</h2>
                       <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Description</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Description</h6>
                           <p>Developed for the GPD XD Plus and tested on various Bluetooth gamepads. This app turns the joystick on your gamepad or game controller into a PC mouse. This is especially useful for those who connect their Android-based emulation machines (e.g. GPD XD+) to an external screen via HDMI out or screencasting.<br><br>
-                          The Joystick Mouse adapter works similar to the way the joystick on the GPD Win 1 and GPD Win 2 works in mouse mode.<br><br></p>
-                          <h5>Requirements</h5>
-                          <p>Android Nougat or newer</p>
-                          <h5 style="padding-bottom: 0px !important;">Links</h5>
-                          <a href='https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.joystickmouseadapterpro'><img alt='Get it on Google Play' style="max-width: 600px;" src='ximages/en_badge_web_generic.png'/></a>
+                          The Joystick Mouse adapter works similar to the way the joystick on the GPD Win 1 and GPD Win 2 works in mouse mode.<br></p>
+                          <h6>Requirements</h6>
+                          <font size="4">
+                            <ul>
+                              <li>Android Nougat 7.0 or newer</li>
+                              <li>Android compatible game controller</li>
+                            </ul>
+                          </font>
+                          <br>
+                          <h6 style="margin-bottom: 0px !important;">Links</h6>
+                          <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.joystickmouseadapterpro" target="_blank"><img alt="Get it on Google Play" style="max-width: 450px;" src="ximages/en_badge_web_generic.png"/></a>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Features</h6>
                           <font size="4">
                             <ul>
                               <li>Perform short and long clicks.</li>
@@ -371,127 +512,148 @@
                             </ul>
                             <br>
                           </font>
-                          <h5>Change Log</h5>
-                          <div class="custom-scroll" style="overflow: scroll; overflow-x: hidden; background-color:PaleTurquoise none; width: 100%; height: 300px; margin-left: -5px !important;">
-                            <font size="4">
-                              <p><b>v1.1.2</b></p>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Fixed a minor bug where the hyperlink to the app's website was (still) wrong.</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.1.1</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>Mouse cursor will now become invisible after switching to Gamepad Mode.</li>
-                              </ul>
-                              <br>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Fixed a bug where pressing the X button during Gamepad Mode will switch back to Mouse Mode.</li>
-                                <li>Updated hyperlink to point to the correct link for Joystick Mouse Adapter.</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.0.1</b></p>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Apps show as unlicensed after purchasing.</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.1.0</b></p>
-                              <p>New Features</p>
-                              <ul>
-                                <li>Users can now re-assign functions to different buttons.</li>
-                              </ul>
-                              <br>
-                              <p>Other Changes</p>
-                              <ul>
-                                <li>Due to compatibility issues, this app will no longer install on Lollipop and Marshmallow devices).</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.0.1</b></p>
-                              <p>Squashed Bugs</p>
-                              <ul>
-                                <li>Apps show as unlicensed after purchasing.</li>
-                              </ul>
-                              <br>
-                              <p><b>v1.0.0</b></p>
-                              <p>Features</p>
-                              <ul>
-                                <li>Perform short and long clicks.</li>
-                                <li>Variable mouse pointer speed based on joystick input.</li>
-                                <li>Perform actions such as: go home, go back, recent apps.</li>
-                                <li>Control volume, expand notification tray, launch power dialog.</li>
-                                <li>Scroll pages and navigate menus with D-Pad.</li>
-                                <li>Change mouse pointer style.</li>
-                                <li>Change mouse pointer color.</li>
-                                <li>Adjust mouse speed.</li>
-                              </ul>
-                              <br>
-                            </font>
-                          </div>
                         </div>
                       </div>
                       <br>
                     </section>
+                    <section class="contained scaffold" style="padding-bottom: 0px !important;">
+                      <h2 class="blue-heading collapse-toggle" style="margin-bottom:0px !important;" type="button" data-toggle="collapse" data-target="#collapse-trigger-2" aria-expanded="false" aria-controls="collapse-trigger-2">
+                        <span>Change Log</span>
+                        <span class="glyphicon glyphicon-plus" style="color: White; float: right;"></span>
+                      </h2>
+                      <div class="collapse" id="collapse-trigger-2" >
+                        <div class="change-log">
+                          <font size="4">
+                            <p><b>v1.1.2</b></p>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Fixed a minor bug where the hyperlink to the app's website was (still) wrong.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.1.1</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>Mouse cursor will now become invisible after switching to Gamepad Mode.</li>
+                            </ul>
+                            <br>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Fixed a bug where pressing the X button during Gamepad Mode will switch back to Mouse Mode.</li>
+                              <li>Updated hyperlink to point to the correct link for Joystick Mouse Adapter.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.0.1</b></p>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Apps show as unlicensed after purchasing.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.1.0</b></p>
+                            <p>New Features</p>
+                            <ul>
+                              <li>Users can now re-assign functions to different buttons.</li>
+                            </ul>
+                            <br>
+                            <p>Other Changes</p>
+                            <ul>
+                              <li>Due to compatibility issues, this app will no longer install on Lollipop and Marshmallow devices).</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.0.1</b></p>
+                            <p>Squashed Bugs</p>
+                            <ul>
+                              <li>Apps show as unlicensed after purchasing.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.0.0</b></p>
+                            <p>Features</p>
+                            <ul>
+                              <li>Perform short and long clicks.</li>
+                              <li>Variable mouse pointer speed based on joystick input.</li>
+                              <li>Perform actions such as: go home, go back, recent apps.</li>
+                              <li>Control volume, expand notification tray, launch power dialog.</li>
+                              <li>Scroll pages and navigate menus with D-Pad.</li>
+                              <li>Change mouse pointer style.</li>
+                              <li>Change mouse pointer color.</li>
+                              <li>Adjust mouse speed.</li>
+                            </ul>
+                            <br>
+                          </font>
+                        </div>
+                      </div>
+                    </section>
                     <section class="contained scaffold">
-                      <h2>Videos</h2>
-                      <img class="temp" src="ximages/placeholder.png" alt="Screenshot">
-                      <p class="caption">Video Review Coming Soon!</p>
-                      <img class="temp" src="ximages/placeholder.png" alt="Screenshot">
-                      <p class="caption">How-to Video Coming Soon!</p>
-                    </section>		
+                      <h2 class="blue-heading">Videos</h2>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 56.25%;">
+                          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/NvdMcJ9DaSI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Mouse Emulation with a Game Controller in a Video Game on Android</p>
+                      </div>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 125%;">
+                          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/rx02svr6YRc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Mouse Emulation with a Game Controller in a Game of Sudoku on Android</p>
+                      </div>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 125%;">
+                          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/DDBMJ7eoXio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Mouse Emulation with a Game Controller in a Calculator App on Android</p>
+                      </div>
+                    </section>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
-                      <div>
-                        <a class="screenshot border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_video_example.gif">
-                          <img class="lazyload" data-src="ximages/jma_video_example.gif" alt="Screenshot">
-                        </a>
-                        <p class="caption">Joystick Mouse Adapter example</p>
+                      <h2 class="blue-heading">Screenshots</h2>
+                      <div class="media-container">
+                        <div class="screenshot border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_video_example.gif">
+                          <img class="lazyload" data-src="ximages/jma_video_example.gif" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Joystick Mouse Adapter example</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_basic_controls_1.png">
-                          <img class="lazyload" data-src="ximages/jma_basic_controls_1.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Basic Controls, Part 1</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_basic_controls_1.png">
+                          <img class="lazyload" data-src="ximages/jma_basic_controls_1.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Basic Controls, Part 1</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_basic_controls_2.png">
-                          <img class="lazyload" data-src="ximages/jma_basic_controls_2.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Basic Controls, Part 2</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_basic_controls_2.png">
+                          <img class="lazyload" data-src="ximages/jma_basic_controls_2.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Basic Controls, Part 2</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_reassign_buttons.png">
-                          <img class="lazyload" data-src="ximages/jma_reassign_buttons.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Reassign functions to Buttons</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_reassign_buttons.png">
+                          <img class="lazyload" data-src="ximages/jma_reassign_buttons.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Reassign functions to Buttons</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_advanced_controls_1.png">
-                          <img class="lazyload" data-src="ximages/jma_advanced_controls_1.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Advanced Controls, Part 1</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_advanced_controls_1.png">
+                          <img class="lazyload" data-src="ximages/jma_advanced_controls_1.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Advanced Controls, Part 1</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_advanced_controls_2.png">
-                          <img class="lazyload" data-src="ximages/jma_advanced_controls_2.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Advanced Controls, Part 2</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_advanced_controls_2.png">
+                          <img class="lazyload" data-src="ximages/jma_advanced_controls_2.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Advanced Controls, Part 2</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_user_options_1.png">
-                          <img class="lazyload" data-src="ximages/jma_user_options_1.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">User Options, Part 1</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_user_options_1.png">
+                          <img class="lazyload" data-src="ximages/jma_user_options_1.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">User Options, Part 1</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_user_options_2.png">
-                          <img class="lazyload" data-src="ximages/jma_user_options_2.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">User Options, Part 2</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/jma_user_options_2.png">
+                          <img class="lazyload" data-src="ximages/jma_user_options_2.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">User Options, Part 2</p>
                       </div>
                     </section>
                   </div>
@@ -503,153 +665,213 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-4">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Guide Lights for the ZTE Axon 7</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Guide Lights for the ZTE Axon 7</h2>
                       <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Description</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Description</h6>
                           <p>
                           An Android service that adds an overlay of the 'Recent apps', 'Home', and 'Back' buttons to the ZTE Axon 7 Android smartphone. This app was designed for the ZTE Axon 7, but it works perfectly on other Android devices.<br><br>
-                          This app solves a design flaw on the ZTE Axon 7's capacitive buttons. Most Android buttons light up so they are visible at night. Those buttons are usually spaced out from each other which prevents accidental input (for example: accidentally pressing 'home' instead of 'back'). The Axon 7's buttons are very close together and they are impossible to see at night because they do not light up. My software adds icons next to these buttons so that the user can get a good feel of where the buttons are in the dark.<br><br>                              
+                          This app solves a design flaw on the ZTE Axon 7's capacitive buttons. Most Android buttons light up so they are visible at night. Those buttons are usually spaced out from each other which prevents accidental input (for example: accidentally pressing 'home' instead of 'back'). The Axon 7's buttons are very close together and they are impossible to see at night because they do not light up. My software adds icons next to these buttons so that the user can get a good feel of where the buttons are in the dark.<br><br>
                           I call this app "Guide Lights" instead of "Navigation Bar" because my intention was to use this app as 'inert icons' instead of 'functional buttons'. My reasoning for this is that I do not want the buttons to block touch input where the overlay is obstructing. However, I know a lot of users prefer actual buttons so I included the option to enable button functionality.</p>
-                          <h5>Requirements</h5>
-                          <p>Android Nougat or newer</p>
-                          <h5 style="padding-bottom: 0px !important;">Links</h5>
-                          <a href='https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.guidelights&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' style="max-width: 600px;" src='ximages/en_badge_web_generic.png'/></a>
-                        </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Features</h5>
+                          <h6>Requirements</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Button layouts:</span> change button order</li>
-                              <li><span>Touch behavior:</span> perform action, temporarily hide overlay, do nothing</li>
-                              <li><span>Appearance:</span> minimal, narrow, wide, or transparent overlay</li>
-                              <li><span>Animation:</span> fade animation on or off</li>
-                              <li><span>Transparency:</span> low, medium, high, off</li>
-                              <li><span>Hide duration:</span> 2, 5, 10, 30, 60 seconds</li>
-                              <li><span>Status bar offset:</span> offset overlay so it does not obstruct status bar</li>
-                              <li><span>Return timer:</span> an on-screen counter to tell user when hidden overlay returns</li>
-                              <li><span>Gestures:</span> swipe gesture (coming soon)</li>
-                              <li><span>Sensor options:</span> shake device to hide the overlay</li>
-                              <li><span>Other sensors:</span> proximity, light sensor behaviors (coming soon)</li>
+                              <li>Android Nougat 7.1 or newer</li>
                             </ul>
-                            <br>        
                           </font>
-                          <h5>Change Log</h5>
-                          <div class="custom-scroll" style="overflow: scroll; overflow-x: hidden; background-color:PaleTurquoise none; width: 100%; height: 300px; margin-left: -5px !important;">
-                            <font size="4">
-                              <p><b>v1.0.1</b></p>
-                              <ul>
-                                <li>Fixed a bug where the icons did not display correctly when appearance is set to "minimal".</li>
-                                <li>The "narrow" appearance option now gives the bar rounded instead of sharp corners.</li>
-                              </ul>
-                              <br>  
-                              <p><b>v1.0.0</b></p>
-                              <ul>
-                                <li>Button layouts: change button order</li>
-                                <li>Touch behavior: perform action, temporarily hide overlay, do nothing</li>
-                                <li>Appearance: minimal, narrow, wide, or transparent overlay</li>
-                                <li>Animation: fade animation on or off</li>
-                                <li>Transparency: low, medium, high, off</li>
-                                <li>Hide duration: 2, 5, 10, 30, 60 seconds</li>
-                                <li>Status bar offset: offset overlay so it does not obstruct status bar</li>
-                                <li>Sensor options: shake device to hide the overlay</li>
-                              </ul>
-                              <br>        
-                            </font>
-                          </div>
+                          <br>
+                          <h6 style="margin-bottom: 0px !important;">Links</h6>
+                          <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.guidelights" target="_blank"><img alt="Get it on Google Play" style="max-width: 450px;" src="ximages/en_badge_web_generic.png"/></a>
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Features</h6>
+                          <font size="4">
+                            <ul>
+                              <li><span>Button layouts:</span>
+                                <ul>
+                                  <li>Change button order</li>
+                                </ul>
+                              </li>
+                              <li><span>Touch behavior:</span>
+                                <ul>
+                                  <li>Perform action</li>
+                                  <li>Temporarily hide overlay</li>
+                                  <li>Temporarily hide overlay, do nothing</li>
+                                </ul>
+                              </li>
+                              <li><span>Appearance:</span>
+                                <ul>
+                                  <li>Minimal</li>
+                                  <li>Narrow</li>
+                                  <li>Wide</li>
+                                  <li>Transparent overlay</li>
+                                </ul>
+                              </li>
+                              <li><span>Fade animation:</span>
+                                <ul>
+                                  <li>On</li>
+                                  <li>Off</li>
+                                </ul>
+                              </li>
+                              <li><span>Transparency:</span>
+                                <ul>
+                                  <li>Low</li>
+                                  <li>Medium</li>
+                                  <li>High</li>
+                                  <li>Off</li>
+                                </ul>
+                              </li>
+                              <li><span>Hide duration:</span>
+                                <ul>
+                                  <li>2 seconds</li>
+                                  <li>5 seconds</li>
+                                  <li>10 seconds</li>
+                                  <li>30 seconds</li>
+                                  <li>60 seconds</li>
+                                </ul>
+                              </li>
+                              <li><span>Status bar offset:</span>
+                                <ul>
+                                  <li>Offset overlay so it does not obstruct status bar</li>
+                                </ul>
+                              </li>
+                              <li><span>Return timer:</span>
+                                <ul>
+                                  <li>An on-screen counter to tell user when hidden overlay returns (coming soon)</li>
+                                </ul>
+                              </li>
+                              <li><span>Gestures:</span>
+                                <ul>
+                                  <li>Swipe gesture (coming soon)</li>
+                                </ul>
+                              </li>
+                              <li><span>Sensor options:</span>
+                                <ul>
+                                  <li>Shake device to hide the overlay</li>
+                                </ul>
+                              </li>
+                              <li><span>Other sensors:</span>
+                                <ul>
+                                  <li>Proximity (coming soon)</li>
+                                  <li>Light sensor behaviors (coming soon)</li>
+                                </ul>
+                              </li>
+                            </ul>
+                            <br>
+                          </font>
                         </div>
                       </div>
                       <br>
                     </section>
-                    <section class="contained scaffold">
-                      <h2>Videos</h2>
-                      <div class="temp">
-                        <div style="position: relative; padding-top: 177.77%;">
-                          <iframe class="border" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/rIgapUjtN2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <section class="contained scaffold" style="padding-bottom: 0px !important;">
+                      <h2 class="blue-heading collapse-toggle" style="margin-bottom:0px !important;" type="button" data-toggle="collapse" data-target="#collapse-trigger-3" aria-expanded="false" aria-controls="collapse-trigger-3">
+                        <span>Change Log</span>
+                        <span class="glyphicon glyphicon-plus" style="color: White; float: right;"></span>
+                      </h2>
+                      <div class="collapse" id="collapse-trigger-3" >
+                        <div class="change-log">
+                          <font size="4">
+                            <p><b>v1.0.1</b></p>
+                            <ul>
+                              <li>Fixed a bug where the icons did not display correctly when appearance is set to "minimal".</li>
+                              <li>The "narrow" appearance option now gives the bar rounded instead of sharp corners.</li>
+                            </ul>
+                            <br>
+                            <p><b>v1.0.0</b></p>
+                            <ul>
+                              <li>Button layouts: change button order</li>
+                              <li>Touch behavior: perform action, temporarily hide overlay, do nothing</li>
+                              <li>Appearance: minimal, narrow, wide, or transparent overlay</li>
+                              <li>Animation: fade animation on or off</li>
+                              <li>Transparency: low, medium, high, off</li>
+                              <li>Hide duration: 2, 5, 10, 30, 60 seconds</li>
+                              <li>Status bar offset: offset overlay so it does not obstruct status bar</li>
+                              <li>Sensor options: shake device to hide the overlay</li>
+                            </ul>
+                            <br>
+                          </font>
                         </div>
                       </div>
-                      <p class="caption">Using Guide Lights on the ZTE Axon 7</p>
-                    </section>		
+                    </section>
+                    <section class="contained scaffold">
+                      <h2 class="blue-heading">Videos</h2>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 177.77%;">
+                          <iframe class="border" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/rIgapUjtN2A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Using Guide Lights on the ZTE Axon 7</p>
+                      </div>
+                    </section>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-8">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
+                      <h2 class="blue-heading">Screenshots</h2>
                         <div class="row" style="padding: 0% 2%;">
                           <div class="col-sm-0 col-md-3 col-lg-3" style="padding-left: 2%; padding-right: 2%;">
                               <!-- bootstrap collumn spacer -->
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_mockup_final_port.png">
-                              <img class="lazyload" data-src="ximages/gl_mockup_final_port.png" alt="Screenshot">
-                            </a>
-                            <p class="caption">Mockup on ZTE Axon 7 (Portrait)</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_mockup_final_port.png">
+                              <img class="lazyload" data-src="ximages/gl_mockup_final_port.png" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Mockup on ZTE Axon 7 (Portrait)</p>
                           </div>
                           <div class="col-sm-0 col-md-3 col-lg-3" style="padding-left: 2%; padding-right: 2%;">
                               <!-- bootstrap collumn spacer -->
                           </div>
-                          <div class="col-sm-12 col-md-12 col-lg-12" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_mockup_final_land.png">
-                              <img class="lazyload" data-src="ximages/gl_mockup_final_land.png" alt="Screenshot">
-                            </a>
-                            <p class="caption">Mockup on ZTE Axon 7 (Landscape)</p>
-                            <br>
+                          <div class="col-sm-12 col-md-12 col-lg-12 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-left" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_mockup_final_land.png">
+                              <img class="lazyload" data-src="ximages/gl_mockup_final_land.png" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Mockup on ZTE Axon 7 (Landscape)</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_low.jpg">
-                              <img class="lazyload" data-src="ximages/gl_appear_minimal.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Minimal appearance</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_low.jpg">
+                              <img class="lazyload" data-src="ximages/gl_appear_minimal.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Minimal appearance</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_high.jpg">
-                              <img class="lazyload" data-src="ximages/gl_appear_narrow.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Narrow appearance</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-right border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_high.jpg">
+                              <img class="lazyload" data-src="ximages/gl_appear_narrow.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Narrow appearance</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_none.jpg">
-                              <img class="lazyload" data-src="ximages/gl_transparency_none.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Wide appearance, no transparency</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_none.jpg">
+                              <img class="lazyload" data-src="ximages/gl_transparency_none.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Wide appearance, no transparency</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-right border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_medium.jpg">
-                              <img class="lazyload" data-src="ximages/gl_transparency_medium.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Medium transparency</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-right border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_transparency_medium.jpg">
+                              <img class="lazyload" data-src="ximages/gl_transparency_medium.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Medium transparency</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-right border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_landscape_normal.jpg">
-                              <img class="lazyload" data-src="ximages/gl_landscape_normal.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Landscape overlay</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-right border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_landscape_normal.jpg">
+                              <img class="lazyload" data-src="ximages/gl_landscape_normal.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Landscape overlay</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_landscape_reverse.jpg">
-                              <img class="lazyload" data-src="ximages/gl_landscape_reverse.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Reverse landscape overlay</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_landscape_reverse.jpg">
+                              <img class="lazyload" data-src="ximages/gl_landscape_reverse.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Reverse landscape overlay</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-right border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_options_1.jpg">
-                              <img class="lazyload" data-src="ximages/gl_options_1.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Options 1</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-right border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_options_1.jpg">
+                              <img class="lazyload" data-src="ximages/gl_options_1.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Options 1</p>
                           </div>
-                          <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 2%; padding-right: 2%;">
-                            <a class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_options_2.jpg">
-                              <img class="lazyload" data-src="ximages/gl_options_2.jpg" alt="Screenshot">
-                            </a>
-                            <p class="caption">Options 2</p>
-                            <br>
+                          <div class="col-sm-12 col-md-6 col-lg-6 media-container" style="padding-left: 2%; padding-right: 2%;">
+                            <div class="screenshot-left border" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/gl_options_2.jpg">
+                              <img class="lazyload" data-src="ximages/gl_options_2.jpg" alt="Image Not Found">
+                            </div>
+                            <p class="media-caption">Options 2</p>
                           </div>
                         </div>
                     </section>
@@ -662,29 +884,66 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Forest Fire Simulator</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Forest Fire Simulator</h2>
                       <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col">                                                
-                          <h5>Description</h5>
-                          <p>A 2D top-down simulation of a Forest Fire. It is a real-time, interactive simulation with replay fetures and a map editor.</p>
-                          <h5>Requirements</h5>
+                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col">
+                          <h6>Description</h6>
+                          <p>A 2D top-down simulation of a Forest Fire. It is a real-time, interactive simulation with replay features and a map editor.<br><br>You start with a randomly generated map of trees. Then you can set a virtual fire on any tree and watch how the fire propogates through the nearby trees. You can also generate rain and wind weather effects. Rain reduces the spread rate of the forest fire. Wind will affect the path of the fire, depending on the direction of the wind.<br><br>The map editor and generator allows you to create new maps. You can either manually place trees on the map or generate them randomly. You can also delete sections of trees and specify the size of the map.<br><br>The replay feature allows you to rewind to a specific point during the simulation or return back to the most recent point. When you rewind, you can change the outcome of the fire propogation by choosing different spots to propogate the spread of the forest fire. If you're impatient, you can increase the simulation speed. If you want to pay closer attention to how the fire spreads, you can decrease the simulation speed.</p>
+                          <h6>Requirements</h6>
                           <p>Java Virtual Machine, v7 minimum</p>
-                          <h5>Links</h5>
-                          <p><a class="content" href="https://github.com/PeterFelixNguyen/ForestFireSimulation"> Source code</a>
-                          <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/ForestFireSimulator.jar">Download app</a></p>
+                          <h6>Links</h6>
+                          <a class="content link-button portfolio-margins" href="https://github.com/PeterFelixNguyen/ForestFireSimulation" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Source Code</span>
+                          </a>
+                          <a class="content link-button portfolio-margins" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/ForestFireSimulator.jar" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-save"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Download app</span>
+                          </a>
+                          <div class="clear-floats"></div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col vertical-separator">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col vertical-separator">
+                          <h6>Features</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Random map generator:</span> set map size and tree density</li>
-                              <li><span>Map editor:</span> insert and delete trees</li>
-                              <li><span>Replay system:</span> rewind events and change outcomes</li>
-                              <li><span>Adjustable simulation speeds:</span> slow down, speed up, or pause</li>
-                              <li><span>Real-time mechanics:</span> simulation is run in real-time</li>
-                              <li><span>Weather interactions:</span> rain and wind effects</li>
+                              <li><span>Random map generator:</span>
+                                <ul>
+                                  <li>Set map size</li>
+                                  <li>Set tree density</li>
+                                </ul>
+                              </li>
+                              <li><span>Map editor:</span>
+                                <ul>
+                                  <li>Insert trees</li>
+                                  <li>Delete trees</li>
+                                </ul>
+                              </li>
+                              <li><span>Replay system:</span>
+                                <ul>
+                                  <li>Rewind events</li>
+                                  <li>Change outcomes</li>
+                                </ul>
+                              </li>
+                              <li><span>Adjustable simulation speeds:</span>
+                                <ul>
+                                  <li>Slow down</li>
+                                  <li>Speed up</li>
+                                  <li>Pause</li>
+                                </ul>
+                              </li>
+                              <li><span>Real-time mechanics:</span>
+                                <ul>
+                                  <li>Simulation is run in real-time</li>
+                                </ul>
+                              </li>
+                              <li><span>Weather interactions:</span>
+                                <ul>
+                                  <li>Rain effects</li>
+                                  <li>Wind effects</li>
+                                </ul>
+                              </li>
                             </ul>
-                            <br>        
+                            <br>
                           </font>
                         </div>
                       </div>
@@ -693,68 +952,68 @@
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
+                      <h2 class="blue-heading">Screenshots</h2>
                         <div id="screenshot-carousel" class="carousel slide" data-ride="carousel"  data-interval="5000">
                           <ol class="carousel-indicators">
-                            <li data-target="#screenshot-carousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#screenshot-carousel" data-slide-to="1"></li>
-                            <li data-target="#screenshot-carousel" data-slide-to="2"></li>
-                            <li data-target="#screenshot-carousel" data-slide-to="3"></li>
-                            <li data-target="#screenshot-carousel" data-slide-to="4"></li>
-                            <li data-target="#screenshot-carousel" data-slide-to="5"></li>
+                            <li data-target="#screenshot-carousel" data-slide-to="0" class="active">1</li>
+                            <li data-target="#screenshot-carousel" data-slide-to="1">2</li>
+                            <li data-target="#screenshot-carousel" data-slide-to="2">3</li>
+                            <li data-target="#screenshot-carousel" data-slide-to="3">4</li>
+                            <li data-target="#screenshot-carousel" data-slide-to="4">5</li>
+                            <li data-target="#screenshot-carousel" data-slide-to="5">6</li>
                           </ol>
-                          <div style="background-color: green !important; padding: 0px !important; margin: 0px !important; " class="carousel-inner">
+                          <div style="background-color: Black !important; padding: 0px !important; margin: 0px !important; " class="carousel-inner">
                             <div class="item item-carousel active">
-                              <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_1.jpg">
+                              <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_1.jpg">
                                 <img class="d-block w-100" src="ximages/ffs_fire_1.jpg" alt="First slide">
-                              </a>
+                              </div>
                               <div class="carousel-caption d-none d-md-block not-clickable">
-                                <h5>Forest Fire</h5>
+                                <h6>Forest Fire</h6>
                                 <p>Starting a fire</p>
                               </div>
                             </div>
                             <div class="item item-carousel">
-                              <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_2.jpg">
+                              <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_2.jpg">
                                 <img class="d-block w-100" src="ximages/ffs_fire_2.jpg" alt="Second slide">
-                              </a>
+                              </div>
                               <div class="carousel-caption d-none d-md-block not-clickable">
-                                <h5>Forest Fire</h5>
+                                <h6>Forest Fire</h6>
                                 <p>Fire begins to spread</p>
                               </div>
                             </div>
                             <div class="item item-carousel">
-                              <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_3.jpg">
+                              <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_fire_3.jpg">
                                 <img class="d-block w-100" src="ximages/ffs_fire_3.jpg" alt="Third slide">
-                              </a>
+                              </div>
                               <div class="carousel-caption d-none d-md-block not-clickable">
-                                <h5>Forest Fire</h5>
+                                <h6>Forest Fire</h6>
                                 <p>Fire spreads even more</p>
                               </div>
                             </div>
                             <div class="item item-carousel">
-                              <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_1.jpg">
+                              <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_1.jpg">
                                 <img class="d-block w-100" src="ximages/ffs_rain_1.jpg" alt="Fourth slide">
-                              </a>
+                              </div>
                               <div class="carousel-caption d-none d-md-block not-clickable">
-                                <h5>Weather Mechanics</h5>
+                                <h6>Weather Mechanics</h6>
                                 <p>Rain blob appears</p>
                               </div>
                             </div>
                             <div class="item item-carousel">
-                              <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_2.jpg">
+                              <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_2.jpg">
                                 <img class="d-block w-100" src="ximages/ffs_rain_2.jpg" alt="Fifth slide">
-                              </a>
+                              </div>
                               <div class="carousel-caption d-none d-md-block not-clickable">
-                                <h5>Weather Mechanics</h5>
+                                <h6>Weather Mechanics</h6>
                                 <p>Rain blob arrives</p>
                               </div>
                             </div>
                             <div class="item item-carousel">
-                              <a class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_3.jpg">
+                              <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ffs_rain_3.jpg">
                                 <img class="d-block w-100" src="ximages/ffs_rain_3.jpg" alt="Sixth slide">
-                              </a>
+                              </div>
                               <div class="carousel-caption d-none d-md-block not-clickable">
-                                <h5>Weather Mechanics</h5>
+                                <h6>Weather Mechanics</h6>
                                 <p>Rain blob interacts with fire</p>
                               </div>
                             </div>
@@ -772,7 +1031,7 @@
                         <br>
                     </section>
                     <section class="contained min500 scaffold">
-                      <h2>Videos</h2>   
+                      <h2 class="blue-heading">Videos</h2>
                       <!-- order of events
                       Generate random map, 
                       edit the map, 
@@ -789,12 +1048,12 @@
                       spawn rain and wind,
                       end simulation
                       -->
-                      <div class="temp">
-                        <div style="position: relative; padding-top: 56.25%;">
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 56.25%;">
                           <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/GL-T6ff7-RU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        <p class="media-caption">Gameplay Video</p>
                       </div>
-                      <p class="caption">Gameplay Video</p>
                     </section>
                   </div>
                 </div>
@@ -805,91 +1064,140 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Histogram Maker</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Histogram Maker</h2>
                       <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Description</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Description</h6>
                           <p>A quick and easy-to-use application that generates histograms from a data set. It has several options to customize the histogram's appearance, such as gap distance between bins or the color of the bins. Histograms can be saved as JPEG files.</p>
-                          <h5>Requirements</h5>
+                          <h6>Requirements</h6>
                           <p>Java Virtual Machine, v7 minimum</p>
-                          <h5>Links</h5>
-                          <p><a class="content" href="https://github.com/PeterFelixNguyen/Histogram-Maker" target="_blank">Source code</a>
-                          <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/Histogram-Maker.jar" target="_blank">Download app</a></p>
+                          <h6>Links</h6>
+                          <a class="content link-button portfolio-margins" href="https://github.com/PeterFelixNguyen/Histogram-Maker" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Source Code</span>
+                          </a>
+                          <a class="content link-button portfolio-margins" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/Histogram-Maker.jar" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-save"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Download app</span>
+                          </a>
+                          <div class="clear-floats"></div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Features</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Data input:</span> import data file or input manually</li>
-                              <li><span>Tick options:</span> specify tick intervals, minimum tick value</li>
-                              <li><span>Bin color picker:</span> use RGB sliders or the color palette</li>
-                              <li><span>Bin gradients:</span> choose a solid color or gradient color</li>
-                              <li><span>Bing gap distance:</span> change the gap size</li>
-                              <li><span>Graph labels:</span> x and y labels, graph title</li>
-                              <li><span>Other options:</span> horizontal guide lines, bin frequency labels</li>
-                              <li><span>Resize image:</span> resize the graph by dragging on the corners</li>
-                              <li><span>Save image:</span> save file by right clicking on the histogram</li>
+                              <li><span>Data input:</span>
+                                <ul>
+                                  <li>Import data file</li>
+                                  <li>Manual data entry</li>
+                                </ul>
+                              </li>
+                              <li><span>Tick options:</span>
+                                <ul>
+                                  <li>Tick intervals</li>
+                                  <li>Minimum tick value</li>
+                                </ul>
+                              </li>
+                              <li><span>Bin color picker:</span>
+                                <ul>
+                                  <li>Use RGB sliders</li>
+                                  <li>Color palette</li>
+                                </ul>
+                              </li>
+                              <li><span>Bin gradients:</span>
+                                <ul>
+                                  <li>Solid color or gradient color</li>
+                                  <li>Gradient color</li>
+                                </ul>
+                              </li>
+                              <li><span>Bing gap distance:</span>
+                                <ul>
+                                  <li>Change the gap size</li>
+                                </ul>
+                              </li>
+                              <li><span>Graph labels:</span>
+                                <ul>
+                                  <li>X and Y labels</li>
+                                  <li>Graph title</li>
+                                </ul>
+                              </li>
+                              <li><span>Other options:</span>
+                                <ul>
+                                  <li>Horizontal guide lines</li>
+                                  <li>Bin frequency labels</li>
+                                </ul>
+                              </li>
+                              <li><span>Resize image:</span>
+                                <ul>
+                                  <li>Resize the graph by dragging on the corners</li>
+                                </ul>
+                              </li>
+                              <li><span>Save image:</span>
+                                <ul>
+                                  <li>Save file by right clicking on the histogram</li>
+                                </ul>
+                              </li>
                             </ul>
-                            <br>        
+                            <br>
                           </font>
                         </div>
                       </div>
                       <br>
                     </section>
                     <section class="contained min500 scaffold">
-                      <h2>Videos</h2>   
-                      <div class="temp">
-                        <div style="position: relative; padding-top: 56.25%;">
+                      <h2 class="blue-heading">Videos</h2>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 56.25%;">
                           <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/S0Za45UD088" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        <p class="media-caption">Using Histogram Maker</p>
                       </div>
-                      <p class="caption">Using Histogram Maker</p>
                     </section>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s1_values.png">
-                          <img class="lazyload" data-src="ximages/hm_s1_values.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Step 1: enter the values</p>
+                      <h2 class="blue-heading">Screenshots</h2>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s1_values.png">
+                          <img class="lazyload" data-src="ximages/hm_s1_values.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Step 1: enter the values</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s2_ticks.png">
-                          <img class="lazyload" data-src="ximages/hm_s2_ticks.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Step 2: specify tick intervals</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s2_ticks.png">
+                          <img class="lazyload" data-src="ximages/hm_s2_ticks.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Step 2: specify tick intervals</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s3a_colors.png">
-                          <img class="lazyload" data-src="ximages/hm_s3a_colors.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Step 3a: pick color and gap size</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s3a_colors.png">
+                          <img class="lazyload" data-src="ximages/hm_s3a_colors.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Step 3a: pick color and gap size</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s3b_colors.png">
-                          <img class="lazyload" data-src="ximages/hm_s3b_colors.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Step 3b: alternatively, click on square for color palette</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s3b_colors.png">
+                          <img class="lazyload" data-src="ximages/hm_s3b_colors.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Step 3b: alternatively, click on square for color palette</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s4_labels.png">
-                          <img class="lazyload" data-src="ximages/hm_s4_labels.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Step 4: change the graph labels</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s4_labels.png">
+                          <img class="lazyload" data-src="ximages/hm_s4_labels.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Step 4: change the graph labels</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s5_output.png">
-                          <img class="lazyload" data-src="ximages/hm_s5_output.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Step 5: generate the graph, resize, and save</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s5_output.png">
+                          <img class="lazyload" data-src="ximages/hm_s5_output.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Step 5: generate the graph, resize, and save</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s5_output_alt.png">
-                          <img class="lazyload" data-src="ximages/hm_s5_output_alt.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Resized graph</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/hm_s5_output_alt.png">
+                          <img class="lazyload" data-src="ximages/hm_s5_output_alt.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Resized graph</p>
                       </div>
                     </section>
                   </div>
@@ -901,27 +1209,68 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">StatLogic</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">StatLogic</h2>
                       <div class="row">
-                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col">                                                
-                          <h5>Description</h5>
+                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col">
+                          <h6>Description</h6>
                           <p>A basic statistical calculator that performs calculations for t-tests, z-tests, confidence intervals, descriptive statistics, and standard scores.</p>
-                          <h5>Requirements</h5>
+                          <h6>Requirements</h6>
                           <p>Java Virtual Machine, v7 minimum</p>
-                          <h5>Links</h5>
-                          <p><a class="content" href="https://github.com/PeterFelixNguyen/StatLogic" target="_blank">Source code</a>
-                          <br><a class="content" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/StatLogic.jar" target="_blank">Download app</a></p>
+                          <h6>Links</h6>
+                          <a class="content link-button portfolio-margins" href="https://github.com/PeterFelixNguyen/StatLogic" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Source Code</span>
+                          </a>
+                          <a class="content link-button portfolio-margins" href="https://my-portfolio-pfn.s3-us-west-1.amazonaws.com/StatLogic.jar" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-save"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Download app</span>
+                          </a>
+                          <div class="clear-floats"></div>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col vertical-separator">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-6 col-lg-6 inner-col vertical-separator">
+                          <h6>Features</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Hypothesis tests:</span> 1-sample Z-tests and t-tests</li>
-                              <li><span>Confidence intervals:</span> for both t and normal distributions</li>
-                              <li><span>Standard score:</span> quick way to calculate Z-score</li>
-                              <li><span>Descriptive statistics:</span> from a data set, produce descriptive statistics such as mean, median, mode, quartiles, min, max, variance, standard deviation </li>
-                              <li><span>Data sort:</span> sorts values</li>
-                              <li><span>Save and Load:</span> load data files to perform calculations, and save output into a file</li>
+                              <li><span>Hypothesis tests:</span>
+                                <ul>
+                                  <li>1-sample Z-tests</li>
+                                  <li>1-sample t-tests</li>
+                                </ul>
+                              </li>
+                              <li><span>Confidence intervals:</span>
+                                <ul>
+                                  <li>t distributions</li>
+                                  <li>Normal distributions</li>
+                                </ul>
+                              </li>
+                              <li><span>Standard score:</span>
+                                <ul>
+                                  <li>Quick way to calculate Z-score</li>
+                                </ul>
+                              </li>
+                              <li><span>Descriptive statistics:</span>
+                                <ul>
+                                  <li>Mean</li>
+                                  <li>Median</li>
+                                  <li>Mode</li>
+                                  <li>Quartiles</li>
+                                  <li>Min</li>
+                                  <li>Max</li>
+                                  <li>Variance</li>
+                                  <li>Standard deviation</li>
+                                </ul>
+                              </li>
+                              <li><span>Data sort:</span>
+                                <ul>
+                                  <li>Ascending numerical order</li>
+                                </ul>
+                              </li>
+                              <li><span>Save and Load:</span>
+                                <ul>
+                                  <li>Save output into a file</li>
+                                  <li>Load data files to perform calculations from</li>
+                                </ul>
+                              </li>
                             </ul>
                             <br>
                           </font>
@@ -932,36 +1281,36 @@
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-12">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_1.png">
-                          <img class="lazyload" data-src="ximages/sl_z_test_c_intervals_1.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Z-test, entering sample</p>
+                      <h2 class="blue-heading">Screenshots</h2>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_1.png">
+                          <img class="lazyload" data-src="ximages/sl_z_test_c_intervals_1.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Z-test, entering sample</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_2.png">
-                          <img class="lazyload" data-src="ximages/sl_z_test_c_intervals_2.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Z-test, results</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_2.png">
+                          <img class="lazyload" data-src="ximages/sl_z_test_c_intervals_2.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Z-test, results</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_3.png">
-                          <img class="lazyload" data-src="ximages/sl_z_test_c_intervals_3.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Output window</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_z_test_c_intervals_3.png">
+                          <img class="lazyload" data-src="ximages/sl_z_test_c_intervals_3.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Output window</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_descriptive_stats.png">
-                          <img class="lazyload" data-src="ximages/sl_descriptive_stats.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Descriptive statistics</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_descriptive_stats.png">
+                          <img class="lazyload" data-src="ximages/sl_descriptive_stats.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Descriptive statistics</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_standard_score.png">
-                          <img class="lazyload" data-src="ximages/sl_standard_score.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Standard score</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/sl_standard_score.png">
+                          <img class="lazyload" data-src="ximages/sl_standard_score.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Standard score</p>
                       </div>
                     </section>
                   </div>
@@ -973,76 +1322,105 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Floating Point Calculator for PC (IEEE 754)</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Floating Point Calculator for PC (IEEE 754)</h2>
                       <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
-                          <h5>Description</h5>
+                          <h6>Description</h6>
                           <p>A Java-based floating-point calculator that supports two-way 32-bit and 64-bit precision conversions between decimal values and their equivalent binary representations. This was a team project with co-developer Latrice Sebastian.</p>
-                          <h5>Requirements</h5>
+                          <h6>Requirements</h6>
                           <p>Java Virtual Machine, v7 minimum</p>
-                          <h5>Links</h5>
-                          <p><a class="content" href="https://github.com/lcsebastian/IEEE754CalcGUI" target="_blank">Source code</a>
-                          <br><a class="content" href="https://s3.amazonaws.com/ieee754/IEEE754CalcByLatriceAndPeter.jar" target="_blank">Download app</a></p>
+                          <h6>Links</h6>
+                          <a class="content link-button portfolio-margins" href="https://github.com/lcsebastian/IEEE754CalcGUI" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Source Code</span>
+                          </a>
+                          <a class="content link-button portfolio-margins" href="https://s3.amazonaws.com/ieee754/IEEE754CalcByLatriceAndPeter.jar" target="_blank">
+                            <span style="vertical-align: middle !important;" class="glyphicon glyphicon-save"></span>
+                            <span style="vertical-align: middle !important;">&nbsp;Download app</span>
+                          </a>
+                          <div class="clear-floats"></div>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Features</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Floating point precision:</span> single and double precision</li>
-                              <li><span>Conversions:</span> float-to-binary, binary-to-float</li>
-                              <li><span>Instant output:</span> no need to press enter, values updated dynamically</li>
-                              <li><span>Formatted output:</span> hide trailing zero bits, remove space delimiters</li>
+                              <li><span>Floating point precision:</span>
+                                <ul>
+                                  <li>Single Precision</li>
+                                  <li>Double precision</li>
+                                </ul>
+                              </li>
+                              <li><span>Conversions:</span>
+                                <ul>
+                                  <li>Float-to-binary</li>
+                                  <li>Binary-to-float</li>
+                                </ul>
+                              </li>
+                              <li><span>Instant output:</span>
+                                <ul>
+                                  <li>No need to press enter</li>
+                                  <li>Values updated dynamically</li>
+                                </ul>
+                              </li>
+                              <li><span>Formatted output:</span>
+                                <ul>
+                                  <li>Hide trailing zero bits</li>
+                                  <li>Remove space delimiters</li>
+                                </ul>
+                              </li>
                             </ul>
-                            <br>        
+                            <br>
                           </font>
                         </div>
                       </div>
                       <br>
                     </section>
                     <section class="contained min500 scaffold">
-                      <h2>Videos</h2>   
-                      <div class="temp">
-                        <div style="position: relative; padding-top: 56.25%;">
+                      <h2 class="blue-heading">Videos</h2>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 56.25%;">
                           <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/kRgPavSTLjI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                         </div>
+                        <p class="media-caption">Using Floating Point Calculator</p>
                       </div>
-                      <p class="caption">Using Floating Point Calculator</p>
-                    </section>	
+                    </section>
                     <section class="contained min500 scaffold">
-                      <h2>Disclosure</h2>
+                      <h2 class="blue-heading">Disclosure</h2>
                       <font size="4">
                         <ul>
-                          <li><span>Half precision :</span> never listed in features because it was buggy.</li>
-                          <li><span>Single and double precision:</span> (2019) discovered that single and double precision are not always accurate after further testing. This is due to unaccounted loss of precision during the manual calculations for certains numbers. Development for this app has stopped for the time being but I have made an Android version of this calculator which simply uses built-in Java functions to obtain these values which have higher accuracy than this version. </li>
+                          <li><span>Half precision: </span>never listed in features because it was buggy.</li>
+                          <li><span>Single and double precision: </span>(2019) discovered that single and double precision are not always accurate after further testing. This is due to unaccounted loss of precision during the manual calculations for certains numbers. Development for this app has stopped for the time being but I have made an Android version of this calculator which simply uses built-in Java functions to obtain these values which have higher accuracy than this version. </li>
                         </ul>
-                        <br>        
+                        <br>
                       </font>
-                    </section>	
+                    </section>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-half.png">
-                          <img class="lazyload" data-src="ximages/ieee754-half.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">16-bit conversion</p>
+                      <h2 class="blue-heading">Screenshots</h2>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-half.png">
+                          <img class="lazyload" data-src="ximages/ieee754-half.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">16-bit conversion</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-single.png">
-                          <img class="lazyload" data-src="ximages/ieee754-single.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">32-bit conversion</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-single.png">
+                          <img class="lazyload" data-src="ximages/ieee754-single.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">32-bit conversion</p>
                       </div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-double.png">
-                          <img class="lazyload" data-src="ximages/ieee754-double.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">64-bit conversion</p>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-formatting.png">
-                          <img class="lazyload" data-src="ximages/ieee754-formatting.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Formatting options</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-double.png">
+                          <img class="lazyload" data-src="ximages/ieee754-double.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">64-bit conversion</p>
+                      </div>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/ieee754-formatting.png">
+                          <img class="lazyload" data-src="ximages/ieee754-formatting.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Formatting options</p>
                       </div>
                     </section>
                   </div>
@@ -1054,56 +1432,78 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Sketch and Label</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Sketch and Label</h2>
                       <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
-                          <h5>Description</h5>
-                          <p><font style="font-weight: bold !important; color: red;">Requires a compatible Samsung device with S-Pen features.</font> An Android image recognition app that can determine what the user has sketched on the Android app. Trained and integrated the app’s neural network via transfer learning on the MobileNet architecture.</p>
-                          <h5>Requirements</h5>
-                          <p>Any Samsung Galaxy device with an S-Pen<br>Android Lollipop or newer</p>                          
-                          <h5>Links</h5>
+                          <h6>Description</h6>
+                          <p><font style="font-weight: bold !important; color: red;">Requires a compatible Samsung device with S-Pen features. </font>An Android image recognition app that can determine what the user has sketched on the Android app. Trained and integrated the app’s neural network via transfer learning on the MobileNet architecture.</p>
+                          <h6>Requirements</h6>
+                          <p>Any Samsung Galaxy device with an S-Pen<br>Android Lollipop or newer</p>
+                          <h6>Links</h6>
                           <p><a class="content" target="_blank">(Coming soon) to Google Play Store</a></p>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Features</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Image classification:</span> car, tank, plane</li>
-                              <li><span>Saves sketches: last sketch is saved in the file system</span> </li>
-                              <li><span>Eraser input:</span> erase with the stylus eraser</li>
+                              <li><span>Image classification:</span>
+                                <ul>
+                                  <li>Car, tank, airplane</li>
+                                </ul>
+                              </li>
+                              <li><span>Saves sketches:</span>
+                                <ul>
+                                  <li>Last sketch is saved in the file system</li>
+                                </ul>
+                              </li>
+                              <li><span>Eraser input:</span>
+                                <ul>
+                                  <li>Erase with the stylus eraser</li>
+                                </ul>
+                              </li>
                             </ul>
-                            <br>        
+                            <br>
                           </font>
                         </div>
                       </div>
                       <br>
                     </section>
                     <section class="contained min500 scaffold">
-                      <h2>Videos</h2>   
-                      <img class="temp" src="ximages/placeholder.png" alt="Screenshot">
-                      <p class="caption">App in action</p>
+                      <h2 class="blue-heading">Videos</h2>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 56.25%;">
+                          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/LDk9fyWWIgs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Sketch and Image Classification of a Car and a Tank</p>
+                      </div>
+                      <div class="media-container for-iframe">
+                        <div class="black-placeholder" style="position: relative; padding-top: 56.25%;">
+                          <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/mb7XKxNwGi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <p class="media-caption">Sketch and Image Classification of an Airplane</p>
+                      </div>
                     </section>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png">
-                          <img class="lazyload" data-src="ximages/placeholder.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Sketch of car</p>
+                      <h2 class="blue-heading">Screenshots</h2>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/skl_portfolio_01.png">
+                          <img class="lazyload" data-src="ximages/skl_portfolio_01.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Sketch of a car</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png">
-                          <img class="lazyload" data-src="ximages/placeholder.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Sketch of tank</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/skl_portfolio_02.png">
+                          <img class="lazyload" data-src="ximages/skl_portfolio_02.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Sketch of a tank</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png">
-                          <img class="lazyload" data-src="ximages/placeholder.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Sketch of plane</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/skl_portfolio_03.png">
+                          <img class="lazyload" data-src="ximages/skl_portfolio_03.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Sketch of an airplane</p>
                       </div>
                     </section>
                   </div>
@@ -1115,52 +1515,66 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained scaffold">
-                      <h2 style="margin-bottom:0px !important;">Raspberry Pi Door Sensor and Alarm System</h2>
+                      <h2 class="blue-heading" style="margin-bottom:0px !important;">Raspberry Pi Door Sensor and Alarm System</h2>
                       <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Description</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Description</h6>
                           <p>A two-person student project for Advanced Computer Networking in which we implemented a basic IoT door alarm system with a Raspberry Pi 3 Model B.</p>
-                          <h5>Requirements</h5>
-                          <p>Linux/unix system (alarm client)<br>Raspberry Pi (sensor client)<br>Ubuntu Server (messaging server)</p>                          
-                          <h5>Links</h5>
+                          <h6>Requirements</h6>
+                          <p>Linux/unix system (alarm client)<br>Raspberry Pi (sensor client)<br>Ubuntu Server (messaging server)</p>
+                          <h6>Links</h6>
                           <p><a class="content" target="_blank">Technical documentation (coming soon)</a><br>
                           <a class="content" target="_blank">Slide presentation (coming soon)</a><br>
                           <a class="content" target="_blank">Source code (coming soon)</a></p>
                         </div>
-                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">                                                
-                          <h5>Features</h5>
+                        <div class="col-sm-12 col-md-12 col-lg-12 inner-col">
+                          <h6>Features</h6>
                           <font size="4">
                             <ul>
-                              <li><span>Client alarm:</span> sounds an alarm upon server notification</li>
-                              <li><span>Client sensor:</span> detects an opened door with Reed sensor</li>
-                              <li><span>Server-side script:</span> python script to communicate between alarm and sensor</li>
+                              <li><span>Client alarm:</span>
+                                <ul>
+                                  <li>Sounds an alarm upon server notification</li>
+                                </ul>
+                              </li>
+                              <li><span>Client sensor:</span>
+                                <ul>
+                                  <li>Detects an opened door with Reed sensor</li>
+                                </ul>
+                              </li>
+                              <li><span>Server-side script:</span>
+                                <ul>
+                                  <li>Python script to communicate between alarm and sensor</li>
+                                </ul>
+                              </li>
                             </ul>
-                            <br>        
+                            <br>
                           </font>
                         </div>
                       </div>
                       <br>
                     </section>
                     <section class="contained min500 scaffold">
-                      <h2>Videos</h2>   
-                      <img class="temp" src="ximages/placeholder.png" alt="Screenshot">
-                      <p class="caption">Caption</p>
+                      <h2 class="blue-heading">Videos</h2>
+                      <div class="media-container">
+                        <img class="iframe-placeholder-parameters" src="ximages/placeholder.png" alt="Image Not Found">
+                        <p class="media-caption">Caption</p>
+                      </div>
                     </section>
                   </div>
                   <div class="col-sm-12 col-md-12 col-lg-6">
                     <section class="contained min500 scaffold">
-                      <h2>Screenshots</h2>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png">
-                          <img class="lazyload" data-src="ximages/placeholder.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Caption</p>
+                      <h2 class="blue-heading">Screenshots</h2>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png">
+                          <img class="lazyload" data-src="ximages/placeholder.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Caption</p>
                       </div>
-                      <div>
-                        <a class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png">
-                          <img class="lazyload" data-src="ximages/placeholder.png" alt="Screenshot">
-                        </a>
-                        <p class="caption">Caption</p>
+                      <div class="media-container">
+                        <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="ximages/placeholder.png">
+                          <img class="lazyload" data-src="ximages/placeholder.png" alt="Image Not Found">
+                        </div>
+                        <p class="media-caption">Caption</p>
                       </div>
                     </section>
                   </div>
@@ -1170,7 +1584,12 @@
           </div>
         </div>
       </div>
-      <p style="color: white; float: right;">Copyright &copy; 2019 Peter Nguyen</p>
+      <p class="footer" style="color: white;">
+        Copyright &copy; 2020 Peter Nguyen&nbsp;&nbsp;&bull;&nbsp;
+        <a href="https://peterfelixnguyen.github.io/attribution" target="_blank">
+            License Attribution
+        </a>
+      </p>
     </div>
     
     <script src="xjs/masonry.pkgd.min.js"></script>
@@ -1178,6 +1597,6 @@
     <script src="xjs/jquery.fittext.js"></script>
     <script type="text/javascript">
       $(".fit-sign").fitText(.7);
-    </script>   
+    </script>
   </body>
 </html>
