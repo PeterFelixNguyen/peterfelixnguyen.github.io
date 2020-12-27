@@ -2,6 +2,10 @@
 
 /* No Script */
 
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+}
+
 @keyframes flashing-white-text {
   from {
     color: rgba(255,255,255,1);
@@ -83,6 +87,8 @@ body.modal-open {
   padding: 0px !important; /* Important to remove annoying right padding for scrollbar (1) */
   margin-top: 0px;
   margin-bottom: 0px;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 .modal-content {
@@ -92,6 +98,11 @@ body.modal-open {
   box-shadow: 0 0 0 0 rgba(0,0,0,0); /* Bootstrap override */
   margin: 0px !important;
   padding: 0px !important;
+  /* Start modal content vertical centering */
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  /* End modal content vertical centering */
 }
 
 .modal-backdrop {
@@ -119,8 +130,11 @@ button {
   opacity: 1.0 !important;
 }
 
-button:hover {
-  opacity: 0.5 !important;
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  button:hover {
+    opacity: 0.5 !important;
+  }
 }
 
 /* Bootstrap Carousels */
@@ -154,11 +168,14 @@ ol.carousel-indicators > li {
   transition-delay: 0s;
 }
 
-ol.carousel-indicators > li:hover {
-  background-color: rgba(30,160,90,0.8); /* Hover Green */
-  border-style: dotted;
-  border-width: 2px;
-  border-color: rgba(255,255,255,0.4);
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  ol.carousel-indicators > li:hover {
+    background-color: rgba(30,160,90,0.8); /* Hover Green */
+    border-style: dotted;
+    border-width: 2px;
+    border-color: rgba(255,255,255,0.4);
+  }
 }
 
 ol.carousel-indicators > li:active {
@@ -251,8 +268,11 @@ div.header.four-o-four > div.name > a {
   line-height: 70px;
 }
 
-div.header > div.name:hover {
-  border-color: White; /* White */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.header > div.name:hover {
+    border-color: White; /* White */
+  }
 }
 
 div.header > div.name > a {
@@ -266,8 +286,11 @@ div.header > div.name > a {
   color: Black;
 }
 
-div.header > div.name > a:hover {
-  color: White; /* White */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.header > div.name > a:hover {
+    color: White; /* White */
+  }
 }
 
 div.header > div.name > a:nth-child(2) {
@@ -280,8 +303,11 @@ div.header > div.name > a:nth-child(2) {
   width: 34% !important;
 }
 
-div.header > div.name:hover > a:nth-child(2) {
-  border-color: White; /* White */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.header > div.name:hover > a:nth-child(2) {
+    border-color: White; /* White */
+  }
 }
 
 div.header > div.pages {
@@ -337,8 +363,11 @@ div.header > div.pages > a:nth-child(2) {
 }
 
 /* This is no longer needed with the new JQuery hover function */
-div.header > div.pages > a:hover {
-  /* background-color: rgba(60,190,120,1); */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.header > div.pages > a:hover {
+    /* background-color: rgba(60,190,120,1); */
+  }
 }
 
 div.header > div.pages > a.selected {
@@ -351,8 +380,11 @@ div.header > div.pages > a.selected {
   /* pointer-events: none; */
 }
 
-div.header > div.pages > a.selected:hover {
-  cursor: not-allowed;
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.header > div.pages > a.selected:hover {
+    cursor: not-allowed;
+  }
 }
 
 div.header > div.name-logo > h1 {
@@ -383,8 +415,11 @@ for everything else without a conflict */
   transition-delay: 0s;
 }
 
-*:hover {
-  transition-duration: 0.75s;
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  *:hover {
+    transition-duration: 0.75s;
+  }
 }
 
 *:active {
@@ -407,9 +442,12 @@ div.header > div.name-logo > a {
   transition-delay: 0s;
 }
 
-div.header > div.name-logo > a:hover {
-  background-image: url("../ximages/logo-colored2.png");
-  transition-duration: 0.75s;
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.header > div.name-logo > a:hover {
+    background-image: url("../ximages/logo-colored2.png");
+    transition-duration: 0.75s;
+  }
 }
 
 div.header > div.name-logo > a > h1 {
@@ -439,8 +477,11 @@ div.header > div.name-logo > a > h3 {
   padding-right: 1px;
 }
 
-.material-icon:hover {
-  background-color: rgba(30,160,90,1) !important; /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  .material-icon:hover {
+    background-color: rgba(30,160,90,1) !important; /* Hover Green */
+  }
 }
 
 .material-icon:active {
@@ -497,12 +538,15 @@ div.screenshot {
   cursor: pointer; /* required when used with anchor modals */
 }
 
-div.screenshot:hover > img {
-  filter: brightness(85%);
-  transition-property: filter;
-  transition-duration: 0.25s;
-  transition-timing-function: linear;
-  transition-delay: 0s;
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.screenshot:hover > img {
+    filter: brightness(85%);
+    transition-property: filter;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
 }
 
 div.screenshot:active > img {
@@ -524,12 +568,15 @@ div.screenshot-left, div.screenshot-right {
   cursor: pointer; /* required when used with anchor modals */
 }
 
-div.screenshot-left:hover > img {
-  filter: brightness(85%);
-  transition-property: filter;
-  transition-duration: 0.25s;
-  transition-timing-function: linear;
-  transition-delay: 0s;
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.screenshot-left:hover > img {
+    filter: brightness(85%);
+    transition-property: filter;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
 }
 
 div.screenshot-left:active > img {
@@ -537,12 +584,15 @@ div.screenshot-left:active > img {
   transition-property: none;
 }
 
-div.screenshot-right:hover > img {
-  filter: brightness(85%);
-  transition-property: filter;
-  transition-duration: 0.25s;
-  transition-timing-function: linear;
-  transition-delay: 0s;
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.screenshot-right:hover > img {
+    filter: brightness(85%);
+    transition-property: filter;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+  }
 }
 
 div.screenshot-right:active > img {
@@ -792,8 +842,11 @@ div.left-col > div.tab > ul > li.active > a {
 }
 
 /* This is no longer needed with the new JQuery hover function */
-div.left-col > div.tab > ul > li > a:hover {
-  /* background-color: rgba(60,190,120,1); */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  div.left-col > div.tab > ul > li > a:hover {
+    /* background-color: rgba(60,190,120,1); */
+  }
 }
 
 .left-col {
@@ -959,8 +1012,11 @@ p.footer a {
   transition-duration: 0.25s;
 }
 
-p.footer a:hover {
-  color: rgba(30,160,90,1); /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  p.footer a:hover {
+    color: rgba(30,160,90,1); /* Hover Green */
+  }
 }
 
 p.footer a:active {
@@ -989,8 +1045,11 @@ a.content.link-quote span, a.content.link-quote div.quote-box.opening, a.content
   transition-duration: 0.25s;
 }
 
-a.content.link-quote:hover span, a.content.link-quote:hover div.quote-box.opening, a.content.link-quote:hover div.quote-box.closing {
-  color: rgba(30,160,90,1); /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  a.content.link-quote:hover span, a.content.link-quote:hover div.quote-box.opening, a.content.link-quote:hover div.quote-box.closing {
+    color: rgba(30,160,90,1); /* Hover Green */
+  }
 }
 
 a.content.link-quote:active span, a.content.link-quote:active div.quote-box.opening, a.content.link-quote:active div.quote-box.closing {
@@ -1032,8 +1091,11 @@ a.content.link-button > span, a.content.link-button:link > span, a.content.link-
   /* transition-property: none !important; /* Block Universal Animations */
 }
 
-a.content:hover.link-button > span {
-  color: rgba(30,160,90,1) !important; /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  a.content:hover.link-button > span {
+    color: rgba(30,160,90,1) !important; /* Hover Green */
+  }
 }
 
 a.content.link-button:active > span {
@@ -1050,8 +1112,11 @@ a.content.link-button:active > span {
   transition-delay: 0s;
 }
 
-.image-hover img:hover {
-  transform: scale(1.04);
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  .image-hover img:hover {
+    transform: scale(1.04);
+  }
 }
 
 .image-hover img:active {
@@ -1064,8 +1129,11 @@ a.content.link-button:active > span {
   transition-duration: 0.25s;
 }
 
-.link-black:hover > span {
-  color: rgba(30,160,90,1); /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  .link-black:hover > span {
+    color: rgba(30,160,90,1); /* Hover Green */
+  }
 }
 
 .link-black:active > span {
@@ -1163,8 +1231,11 @@ h2.collapse-toggle {
   cursor: pointer;
 }
 
-h2.blue-heading.collapse-toggle:hover {
-  background-color: rgba(30,160,90,1); /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  h2.blue-heading.collapse-toggle:hover {
+    background-color: rgba(30,160,90,1); /* Hover Green */
+  }
 }
 
 h2.blue-heading.collapse-toggle:active {
@@ -1184,6 +1255,7 @@ h2.blue-heading.collapse-toggle:active {
 
 *::-webkit-scrollbar {
   width: 18px;
+  height: 18px;
 }
  
 *::-webkit-scrollbar-track {
@@ -1197,10 +1269,13 @@ h2.blue-heading.collapse-toggle:active {
   box-shadow: inset 0 0 4px rgba(0,0,0,1);
 }
 
-*::-webkit-scrollbar-thumb:hover {
-  background: rgba(30,160,90,1); /* Hover Green */
-  border-radius: 0px;
-  box-shadow: inset 0 0 4px rgba(0,0,0,1);
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  *::-webkit-scrollbar-thumb:hover {
+    background: rgba(30,160,90,1); /* Hover Green */
+    border-radius: 0px;
+    box-shadow: inset 0 0 4px rgba(0,0,0,1);
+  }
 }
  
 *::-webkit-scrollbar-thumb:active {
@@ -1210,57 +1285,48 @@ h2.blue-heading.collapse-toggle:active {
 }
 
 *::-webkit-scrollbar-button:single-button {
+  background-color: rgba(30,50,100,1); /* Dark Blue */
   box-shadow: inset 0 0 4px rgba(0,0,0,1);
   display: block;
+  width: 18px;
   height: 18px;
 }
 
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  *::-webkit-scrollbar-button:single-button:hover {
+    background-color: rgba(30,160,90,1); /* Hover Green */
+  }
+}
+
+*::-webkit-scrollbar-button:single-button:active {
+  background-color: rgba(60,190,120,1); /* Active Green */
+}
+
+*::-webkit-scrollbar-button:single-button:vertical,
+*::-webkit-scrollbar-button:single-button:horizontal {
+  background-size: contain;
+}
+
+*::-webkit-scrollbar-corner {
+  background-color: rgba(30,50,100,1); /* Dark Blue */
+  box-shadow: inset 0 0 4px rgba(30,30,30,1);
+}
+
 *::-webkit-scrollbar-button:single-button:vertical:decrement {
-  background: rgba(30,50,100,1); /* Dark Blue */
   background-image: url("../ximages/material-icon-arrow-up-white-rounded-cropped.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-*::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
-  background: rgba(30,160,90,1); /* Hover Green */
-  background-image: url("../ximages/material-icon-arrow-up-white-rounded-cropped.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-
-*::-webkit-scrollbar-button:single-button:vertical:decrement:active {
-  background: rgba(60,190,120,1); /* Active Green */
-  background-image: url("../ximages/material-icon-arrow-up-white-rounded-cropped.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
 *::-webkit-scrollbar-button:single-button:vertical:increment {
-  background: rgba(30,50,100,1); /* Dark Blue */
   background-image: url("../ximages/material-icon-arrow-down-white-rounded-cropped.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
 }
 
-*::-webkit-scrollbar-button:single-button:vertical:increment:hover {
-  background: rgba(30,160,90,1); /* Hover Green */
-  background-image: url("../ximages/material-icon-arrow-down-white-rounded-cropped.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+*::-webkit-scrollbar-button:single-button:horizontal:decrement {
+  background-image: url("../ximages/material-icon-arrow-left-white-rounded-cropped.png");
 }
 
-*::-webkit-scrollbar-button:single-button:vertical:increment:active {
-  background: rgba(60,190,120,1); /* Active Green */
-  background-image: url("../ximages/material-icon-arrow-down-white-rounded-cropped.png");
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
+*::-webkit-scrollbar-button:single-button:horizontal:increment {
+  background-image: url("../ximages/material-icon-arrow-right-white-rounded-cropped.png");
 }
 
 /* License Attribution */
@@ -1338,8 +1404,11 @@ a.content.link-quote.list p, a.content.link-quote.list ul > li {
   margin-bottom: 10px !important;
 }
 
-a.content.link-quote.list:hover p, a.content.link-quote.list:hover ul > li {
-  color: rgba(30,160,90,1) !important; /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  a.content.link-quote.list:hover p, a.content.link-quote.list:hover ul > li {
+    color: rgba(30,160,90,1) !important; /* Hover Green */
+  }
 }
 
 div.quote-box.body ul {
@@ -1462,8 +1531,11 @@ html {
   color: White !important;
 }
 
-.form-style:hover {
-  background-color: rgba(30,160,90,1) !important; /* Hover Green */
+@media (hover: hover), /* For all other browsers */
+(-ms-high-contrast: none) /* Internet Explorer compat */ {
+  .form-style:hover {
+    background-color: rgba(30,160,90,1) !important; /* Hover Green */
+  }
 }
 
 .form-style:active {

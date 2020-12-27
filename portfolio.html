@@ -27,22 +27,22 @@
         </h1>
       </div>
     </noscript>
-    <div class="modal fade" id="screenshotModal" tabindex="-1" style="padding-right: 0px !important;">
-      <div class="modal-dialog"  type="button" class="close" style="width: 100%; height: 100%; margin-left: auto !important; margin-right: auto !important;">
+    <div class="modal fade" id="screenshotModal" tabindex="-1">
+      <div class="modal-dialog"  type="button" data-dismiss="modal" style="width: 100%; height: 100%; margin-left: auto !important; margin-right: auto !important;">
         <div class="modal-content" id="modal-experiment">
-          <div class="modal-body" data-dismiss="modal">
+          <div class="modal-body">
             <div class="modal-screenshot">
               <img id="original" class="modal-screenshot" src="ximages/placeholder.png" oncontextmenu="return false" draggable="false" style="width: auto; display: block; margin-left: auto; margin-right: auto;"/>
             </div>
           </div>
-          <button type="button" class="modal-floating-button open" onclick="window.open('ximages/fpc-portfolio-01.png')">
-            <span class="glyphicon glyphicon-new-window"></span>
-          </button>
-          <button type="button" class="modal-floating-button dismiss" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span>
-          </button>
         </div>
       </div>
+      <button type="button" class="modal-floating-button open">
+        <span class="glyphicon glyphicon-new-window"></span>
+      </button>
+      <button type="button" class="modal-floating-button dismiss" data-dismiss="modal">
+        <span class="glyphicon glyphicon-remove"></span>
+      </button>
     </div>
     <div class="content-body">
       <div class="header">
