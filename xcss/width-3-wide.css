@@ -29,5 +29,9 @@ div.header > div.name > a {
 }
 
 body {
-  //background-color: rgba(65,152,115,1) !important;
+  /* background-color: Yellow !important; */
+}
+
+.tab-content.with-resizer-space {
+  min-height: 800px;
 }

@@ -70,14 +70,19 @@ div.header {
   height: 190px;
 }
 
-div.header > div.name {
+div.header > div.name-banner {
   left: 110px;
   height: 100px;
 }
 
-div.header > div.name  > a {
-  margin-top: 10px;
-  line-height: 70px;
+div.header > div.name-banner > a {
+  margin-top: 0px;
+  line-height: 90px;
+}
+
+div.separator {
+  height: 70px !important;
+  margin-top: 10px !important;
 }
 
 div.header > div.name-logo {
@@ -176,4 +181,14 @@ div.left-col > div.tab > ul > li > a.last {
 
 .vertical-separator {
   border-left: none;
+}
+
+/* Other */
+
+body {
+  /* background-color: Red !important; */
+}
+
+.tab-content.with-resizer-space {
+  min-height: 0px;
 }

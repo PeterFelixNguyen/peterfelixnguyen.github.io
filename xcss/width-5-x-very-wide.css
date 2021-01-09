@@ -36,5 +36,9 @@ div.header > div.name > a {
 }
 
 body {
-  //background-color: Magenta !important;
+  /* background-color: Blue !important; */
+}
+
+.tab-content.with-resizer-space {
+  min-height: 800px;
 }
