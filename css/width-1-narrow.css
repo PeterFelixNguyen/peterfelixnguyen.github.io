@@ -1,0 +1,294 @@
+/*********************************
+** Author: Peter "Felix" Nguyen **
+*********************************/
+
+/************************************************************************************************
+
+  MEDIA QUERY AND BOOTSTRAP GRID BREAKPOINTS INFO
+  
+                      File: width-1-narrow.css 
+               Media query: media="screen and (max-width: 767px)"
+           
+         Should align with: .col-xs-*
+        Default breakpoint: 767px max
+         Chosen breakpoint: 767px max
+                Comparison: same
+        
+    Actually aligning with: .col-xs-* (same)
+      
+    Notes: I wanted -xs to have same number of columns as -sm
+           Let -xs inherit from -sm by not specify any .col-xs-*
+    
+           As a result, class="col-xs-12 col-sm-12 col-md-6 col-lg-4"
+           can be simplified as class="col-sm-12 col-md-6 col-lg-4"
+           
+************************************************************************************************/
+
+/***********************
+** Responsive tracker **
+***********************/
+
+body {
+  /* background-color: Red !important; */
+}
+
+/***********************
+** Min parent heights **
+***********************/
+
+.min500 {
+  min-height: 0px;
+}
+
+.min800 {
+  min-height: 0px;
+}
+
+/*******************
+** Bootstrap grid **
+*******************/
+
+div.col-sm-12.col-md-12.col-lg-12 {
+  /* background-color: Red; */
+}
+
+div:not(.col-md-12).vertical-separator.position-2-1 {
+  margin-bottom: 20px;
+  background-image: none !important;
+}
+
+div:not(.col-md-12).vertical-separator.position-2-2 {
+  margin-top: -15px; /* Combine lists, which means remove the margins */
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Apply when ONLY -lg screens should be two columns */
+div.col-md-12:not(.col-lg-12).vertical-separator.position-2-1 {
+  margin-bottom: 20px;
+  background-image: none !important;
+}
+
+/* Apply when ONLY -lg screens should be two columns */
+div.col-md-12:not(.col-lg-12).vertical-separator.position-2-2 {
+  margin-top: -15px; /* Combine lists, which means remove the margins */
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+/* Sometimes single column grid will break (column does not take full width) */
+.row.align-column-heights {
+  display: block !important; /* Disable varying column heights on same row */
+}
+
+/********************
+** Bootstrap modal **
+********************/
+
+.modal-dialog {
+  width: 100% !important;
+  margin-top: 0px !important;
+}
+
+.modal-body {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/********************
+** Everything else **
+********************/
+
+.tab-content {
+  padding-left: 0px;
+}
+
+.row {
+  margin-left: 0px !important; /* New 2019, may want to set all screens to 0px, previously -15px */
+  margin-right: 0px !important; /* New 2019, may want to set all screens to 0px */
+}
+
+section {
+  margin: 10px 0px !important; /* Removes left padding on narrow screens */
+}
+
+/***************
+** Change log **
+***************/
+
+.change-log {
+  max-height: 220px;
+}
+
+div.main-block {
+  margin-top: 0px; /* go negative */
+  padding-top: 0px;
+}
+
+div.main-block.fill-height {
+  height: auto !important;
+  min-height: 0 !important;
+  border-top-style: none;
+  border-left-style: none;
+  border-bottom-style: none; /* not sure if prefer none or solid */
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+/* Do not delete this one */
+.container-fluid > .row  {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+/***********
+** Header **
+***********/
+
+div.header {
+  height: 190px;
+}
+
+div.header > div.name-banner {
+  left: 110px;
+  height: 100px;
+}
+
+div.header > div.name-banner > a {
+  margin-top: 0px;
+  line-height: 90px;
+}
+
+div.separator {
+  height: 70px !important;
+  margin-top: 10px !important;
+}
+
+div.header > div.name-logo {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+div.header > div.name-logo > a {
+  width: 100px;
+  height: 100px;
+  background-size: 100px 100px;
+}
+
+div.header {
+  overflow: hidden;
+}
+
+div.header > div.pages  {
+  font-size: 16px;
+  padding: 0px;
+}
+
+div.header > div.pages > a {
+  border-bottom-style: solid !important;
+  border-bottom-width: 5px;
+  border-bottom-color: rgba(30,50,100,1); /* Darker Blue */
+  padding: 10px 0px;
+}
+
+div.header > div.pages > a.selected {
+  border-bottom-color: rgba(30,50,100,1); /* Darker Blue */
+}
+
+div.header > div.pages {
+  left: 0px;
+}
+
+/************
+** Masonry **
+************/
+
+ul.container2 > li.wide {
+  width: 100%;
+}
+
+.grid-sizer, .item {
+  width: 100%;
+}
+
+.grid-sizer.attribution, .item.attribution {
+  width: 100%;
+}
+
+.gutter-sizer {
+  width: 20px;
+}
+
+.gutter-sizer.attribution {
+  width: 12px;
+}
+
+/*******************
+** Bootstrap tabs **
+*******************/
+
+div.right-col {
+  clear: both;
+}
+
+div.left-col {
+  width: 100%;
+  border-left-style: solid;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  border-left-width: 5px;
+  border-bottom-width: 5px;
+  border-right-width: 5px;
+  border-left-color: rgba(30,50,100,1); /* Darker Blue */
+  border-bottom-color: rgba(30,50,100,1); /* Darker Blue */
+  border-right-color: rgba(30,50,100,1); /* Darker Blue */
+}
+
+div.left-col > div.tab > ul > li {
+  width: 100%;
+}
+
+div.left-col > div.tab > ul > li > a {
+  float: none;
+  clear: both;
+  width: 100%;
+  border-style: none;
+  border-radius: 0px;
+  padding: 10px 0px;
+}
+
+div.left-col > div.tab > ul > li > a.first {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+div.left-col > div.tab > ul > li > a.last {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-style: none; /* not sure if prefer none or solid */
+}
+
+/**************************
+** Form textarea resizer **
+**************************/
+
+.tab-content.with-resizer-space {
+  min-height: 0px;
+}
+
+/****************
+** Screenshots **
+****************/
+
+div.media-background.align-bottom-contextual {
+  /* background-color: Red; */
+  height: auto;
+  position: static;
+  right: auto;
+  bottom: auto;
+}

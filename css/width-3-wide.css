@@ -1,0 +1,113 @@
+/*********************************
+** Author: Peter "Felix" Nguyen **
+*********************************/
+
+/************************************************************************************************
+
+  MEDIA QUERY AND BOOTSTRAP GRID BREAKPOINTS INFO
+  
+                      File: width-3-wide.css 
+               Media query: media="screen and (min-width: 992px) and (max-width: 1199px)"
+           
+         Should align with: .col-md-*
+        Default breakpoint: 992px min and 1199px max
+         Chosen breakpoint: 992px min and 1399px max
+                Comparison: different
+        
+   Currently aligning with: .col.md-* (same)
+      
+    Notes: I used the Bootstrap 3 customizer to change the Grid breakpoints
+           The breakpoint between -md and -lg was shifted right (1200px --> 1400px)
+    
+           This means that .col-md-* was altered to have a higher ceiling for screen widths.
+           Old [992px min and 1199px max] --> New [992px min and 1399px max]
+           
+           This means that .col-lg-* was altered to have a lower floor for screen widths.
+           Old [1200px min (no max)] --> New [1400px min (no max)]
+        
+************************************************************************************************/
+
+/***********************
+** Responsive tracker **
+***********************/
+
+body {
+  /* background-color: Yellow !important; */
+}
+
+/***********************
+** Min parent heights **
+***********************/
+
+.min500 {
+  min-height: 0px;
+}
+
+.min800 {
+  min-height: 0px;
+}
+
+/*******************
+** Bootstrap grid **
+*******************/
+
+div.col-sm-12.col-md-12.col-lg-12 {
+  /* background-color: Yellow; */
+}
+
+/* Apply when ONLY -lg screens should be two columns */
+div.col-md-12:not(.col-lg-12).vertical-separator.position-2-1 {
+  margin-bottom: 20px;
+  background-image: none !important;
+}
+
+/* Apply when ONLY -lg screens should be two columns */
+div.col-md-12:not(.col-lg-12).vertical-separator.position-2-2 {
+  margin-top: -15px; /* Combine lists, which means remove the margins */
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+/************
+** Masonry **
+************/
+
+ul.mason > li.wide {
+  width: 100%;
+}
+
+.grid-sizer, .item  {
+  width: 100%;
+}
+
+.grid-sizer.attribution, .item.attribution  {
+  width: 100%;
+}
+
+.gutter-sizer {
+  width: 20px;
+}
+
+.gutter-sizer.attribution {
+  width: 12px;
+}
+
+/**************************
+** Form textarea resizer **
+**************************/
+
+.tab-content.with-resizer-space {
+  min-height: 800px;
+}
+
+/****************
+** Screenshots **
+****************/
+
+div.media-background.align-bottom-contextual {
+  /* background-color: Yellow; */
+  height: auto;
+  position: absolute;
+  right: 20px; /* "position: absolute" does not respect padding, so work around it */
+  bottom: 0px;
+}

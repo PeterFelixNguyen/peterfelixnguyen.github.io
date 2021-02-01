@@ -1,0 +1,7 @@
+This is a reference doc for anything related to my website's CSS.
+
+TODO: 
+(1) Add a reference table for the customized Bootstrap 3, default Bootstrap 3, and default Bootstrap 4 grid system's breakpoints.
+(2) Sort and organize CSS classes by putting them under the right categories (still in progress).
+(3) Consider migrating the JQuery hover function to a CSS only method with media queries (test before release).
+(4) For consistency, change p.footer to div.footer and refactor/restructure its child elements.

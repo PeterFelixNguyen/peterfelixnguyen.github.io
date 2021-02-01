@@ -2,20 +2,21 @@
 <!-- Author: Peter "Felix" Nguyen -->
 <html>
   <head>
+    <title>Contact Me</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/logo-hovered.png"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
     <meta name="referrer" content="origin">
-    <title>Peter Felix Nguyen</title>
-    <link rel="stylesheet" type="text/css" href="xcss/bootstrap.min.css" title="normal">
-    <script src="xjs/jquery-2.1.4.min.js"></script>
-    <script src="xjs/bootstrap.min.js"></script>
-    <script src="xjs/imagesloaded.pkgd.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="xcss/style.css" media="all">
-    <link rel="stylesheet" type="text/css" href="xcss/width-1-narrow.css" media="screen and (max-width: 767px)">
-    <link rel="stylesheet" type="text/css" href="xcss/width-2-normal.css" media="screen and (min-width: 768px) and (max-width: 991px)">
-    <link rel="stylesheet" type="text/css" href="xcss/width-3-wide.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
-    <link rel="stylesheet" type="text/css" href="xcss/width-4-very-wide.css" media="screen and (min-width: 1200px) and (max-width: 1399px)">
-    <link rel="stylesheet" type="text/css" href="xcss/width-5-x-very-wide.css" media="screen and (min-width: 1400px)">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" title="normal">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/width-1-narrow.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" type="text/css" href="css/width-2-normal.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" type="text/css" href="css/width-3-wide.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" type="text/css" href="css/width-4-very-wide.css" media="screen and (min-width: 1200px) and (max-width: 1399px)">
+    <link rel="stylesheet" type="text/css" href="css/width-5-x-very-wide.css" media="screen and (min-width: 1400px)">
   </head>
   <body>
     <noscript>
@@ -53,32 +54,40 @@
                 <div class="col-sm-12 col-md-5 col-lg-5">
                   <div id="toast">Content copied</div>
                   <section class="contained">
-                    <h2 class="blue-heading">Phone <img class="material-icon" onclick="copy('#phone')" style="float:right; width: 36px; cursor:pointer;" src="ximages/material-icon-copy-white.png"></img></h2>
-                    <h4 class="no-separator">
-                      <a class="link-black" href="tel:9096530282">
-                        <span class="glyphicon glyphicon-phone-alt"></span>
-                        <span id="phone">(909) 653-0282</span>
-                      </a>
-                    </h4>
+                    <h2 class="blue-heading">Phone <img class="material-icon" onclick="copy('#phone')" style="float:right; width: 36px; cursor:pointer;" src="images/material-icon-copy-white.png"></img></h2>
+                    <h3>
+                      <div class="initial-top-left-padding">
+                        <a class="link-black" href="tel:9096530282">
+                          <span class="glyphicon glyphicon-phone-alt"></span>
+                          <span id="phone">(909) 653-0282</span>
+                        </a>
+                      </div>
+                    </h3>
                   </section>
                   <section class="contained">
-                    <h2 class="blue-heading">Email <img class="material-icon" onclick="copy('#email')" style="float:right; width: 36px; cursor:pointer;" src="ximages/material-icon-copy-white.png"></img></h2>
-                    <h4 class="no-separator">
-                      <a class="link-black" href="mailto:peterfelixnguyen@gmail.com">
-                        <span class="glyphicon glyphicon-envelope"></span>
-                        <span id="email">peterfelixnguyen@gmail.com</span>
-                      </a>
-                    </h4>
+                    <h2 class="blue-heading">Email <img class="material-icon" onclick="copy('#email')" style="float:right; width: 36px; cursor:pointer;" src="images/material-icon-copy-white.png"></img></h2>
+                    <h3>
+                      <div class="initial-top-left-padding">
+                        <a class="link-black" href="mailto:peterfelixnguyen@gmail.com">
+                          <span class="glyphicon glyphicon-envelope"></span>
+                          <span id="email">peterfelixnguyen@gmail.com</span>
+                        </a>
+                      </div>
+                    </h3>
                   </section>
                   <section class="contained">
                     <h2 class="blue-heading">Social Media</h2>
-                    <a class="image-hover" href="https://www.linkedin.com/in/peterfelixnguyen" target="_blank"><img class="temp" style="max-width: 170px; margin-left: 20px !important; margin-top: 0px !important; margin-bottom: 20px;" src="ximages/Logo-2C-41px-TM.png" align="left"></img></a>
+                    <div class="initial-top-left-padding">
+                      <div>
+                        <a class="image-hover" style="display: inline-block; margin-bottom: 20px; margin-right: 20px;" href="https://www.linkedin.com/in/peterfelixnguyen" target="_blank"><img style="max-width: 170px;" src="images/Logo-2C-41px-TM.png"></img></a>
+                      </div>
+                    </div>
                   </section>
                 </div>
                 <div class="col-sm-12 col-md-7 col-lg-7">
                   <section class="contained">
                     <h2 class="blue-heading">Send me an email</h2>
-                    <div style="padding-top: 0px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;">
+                    <div class="initial-top-left-padding">
                       <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/peterfelixnguyen@gmail.com" method="post" target="_blank">
                         <fieldset id="fs-frm-inputs">
                           <label for="full-name">Full Name</label>
@@ -107,9 +116,9 @@
       </p>
     </div>
 
-    <script src="xjs/masonry.pkgd.min.js"></script>
-    <script src="xjs/script.js"></script>
-    <script src="xjs/jquery.fittext.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jquery.fittext.js"></script>
     <script type="text/javascript">
       $(".fit-sign").fitText(.7);
     </script>

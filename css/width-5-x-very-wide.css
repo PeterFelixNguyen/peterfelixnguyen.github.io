@@ -1,0 +1,107 @@
+/*********************************
+** Author: Peter "Felix" Nguyen **
+*********************************/
+
+/************************************************************************************************
+
+  MEDIA QUERY AND BOOTSTRAP GRID BREAKPOINTS INFO
+  
+                      File: width-5-x-very-wide.css 
+               Media query: media="screen and (min-width: 1400px)"
+           
+         Should align with: .col-lg-*
+        Default breakpoint: 1200px min (no max)
+         Chosen breakpoint: 1400px min (no max)
+                Comparison: different
+        
+   Currently aligning with: .col.lg-* (same)
+      
+    Notes: I used the Bootstrap 3 customizer to change the Grid breakpoints
+           The breakpoint between -md and -lg was shifted right (1200px --> 1400px)
+    
+           This means that .col-md-* was altered to have a higher ceiling for screen widths.
+           Old [992px min and 1199px max] --> New [992px min and 1399px max]
+           
+           This means that .col-lg-* was altered to have a lower floor for screen widths.
+           Old [1200px min (no max)] --> New [1400px min (no max)]
+           
+************************************************************************************************/
+
+/***********************
+** Responsive tracker **
+***********************/
+
+body {
+  /* background-color: Blue !important; */
+}
+
+/***********************
+** Min parent heights **
+***********************/
+
+.min500 {
+  min-height: 500px;
+}
+
+.min800 {
+  min-height: 800px;
+}
+
+/*******************
+** Bootstrap grid **
+*******************/
+
+div.col-sm-12.col-md-12.col-lg-12 {
+  /* background-color: Blue; */
+}
+
+/************
+** Masonry **
+************/
+
+div.content-body.four-o-four {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+  max-height: 1200px;
+}
+
+ul.mason > li.wide {
+  width: 100%;
+}
+
+.grid-sizer, .item {
+  width: calc((100% - 40px) / 3);
+}
+
+.grid-sizer.attribution, .item.attribution {
+  width: calc((100% - 24px) / 3);
+}
+
+.gutter-sizer {
+  width: 20px;
+}
+
+.gutter-sizer.attribution {
+  width: 12px;
+}
+
+/**************************
+** Form textarea resizer **
+**************************/
+
+.tab-content.with-resizer-space {
+  min-height: 800px;
+}
+
+/****************
+** Screenshots **
+****************/
+
+div.media-background.align-bottom-contextual {
+  /* background-color: Blue; */
+  height: auto;
+  position: absolute;
+  right: 20px; /* "position: absolute" does not respect padding, so work around it */
+  bottom: 0px;
+}
