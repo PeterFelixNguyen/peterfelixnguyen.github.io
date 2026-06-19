@@ -55,6 +55,29 @@ function scrollToAnchor(anchor_id){
   }, scrollDelay);
 }
 
+function getPageFirstTabHash() {
+  var path = window.location.pathname.replace(/\/$/, "");
+  if (path === "/about" || path.endsWith("/about")) {
+    return "#summary";
+  }
+  if (path === "/portfolio" || path.endsWith("/portfolio")) {
+    return "#digitizer-pen-and-paper";
+  }
+  return null;
+}
+
+function showTabForHash(hash) {
+  if (!hash) {
+    return false;
+  }
+  var $tab = $('a[data-toggle="tab"][href="' + hash + '"]');
+  if ($tab.length) {
+    $tab.tab("show");
+    return true;
+  }
+  return false;
+}
+
 /*
    Initialize (this function calls on page load and refresh)
 */
@@ -76,32 +99,21 @@ $(document).ready(function() {
       history.scrollRestoration = 'manual';
     }
     
-  /* If location.hash is in URL, then show the associated tab */
-  if(location.hash) {
-    /* Show the specific tab based on the anchor specified in the URL */
-    $('a[href=' + location.hash + ']').tab('show');
-  } else {
-    var firstTab;
-    /* If location.hash is missing, then set the URL hash associated with the first tab */
-    if (document.URL.includes("about")) {
-      /* The first tab in about.html uses the anchor "#summary" */
-      firstTab = '#summary';
-    } else if (document.URL.includes("portfolio")) {
-      /* The first tab in portfolio.html uses the anchor "#digitizer-pen-and-paper" */
-      firstTab = '#digitizer-pen-and-paper';
+  /* Sync URL hash with the correct tab on tabbed pages (about, portfolio) */
+  var firstTab = getPageFirstTabHash();
+  if (firstTab) {
+    if (location.hash && showTabForHash(location.hash)) {
+      /* Hash matches a tab on this page (e.g. /portfolio/#joystick-mouse-adapter) */
+    } else if (location.hash) {
+      /* Stale hash from another page (e.g. /portfolio/#skills after leaving about) */
+      history.replaceState(null, null, firstTab);
+      showTabForHash(firstTab);
+      $("li.first-tab").addClass("active");
+    } else {
+      /* No hash yet: set the first tab without triggering auto-scroll */
+      history.pushState(null, null, firstTab);
+      $("li.first-tab").addClass("active");
     }
-    /* Part 1
-       
-       Set the URL hash without triggering auto-scroll
-       To prevent auto-scroll: DO NOT update URL hash via the "location.hash = <value>" method
-       
-       Part 2
-       
-       I discovered that this does not always work (particularly on page load), 
-       so I need to use the workaround with a duplicate id (i.e. temporary anchor) */
-    history.pushState(null, null, firstTab);
-    /* Mark the first tab as active (".active" class) */
-    $( "li.first-tab" ).addClass( "active" );
   }
   
   /* Remove the duplicate id (temporary anchor) 
@@ -305,9 +317,13 @@ window.addEventListener("hashchange", function(e) {
   if (location.hash == "") {
     /* If there is no URL hash, just show the first tab */
     $('.tab a:first').tab('show');
-  } else {
-    /* If there is a URL hash, show the tab assosciated with the URL hash */
-    $('a[href=' + location.hash + ']').tab('show');
+  } else if (!showTabForHash(location.hash)) {
+    /* Ignore hashes that belong to another page's tabs */
+    var firstTab = getPageFirstTabHash();
+    if (firstTab) {
+      history.replaceState(null, null, firstTab);
+      showTabForHash(firstTab);
+    }
   }
 });
 
@@ -375,10 +391,10 @@ $('#screenshotModal').on('show.bs.modal', function (event) {
   /* Insert the image content in the modal */
   $('img.modal-screenshot').error(function() {
     /* If there is an error loading (file not found), use the "file not found" image as a substitute */
-    $( this ).attr( "src", "images/image_not_found.png");
+    $( this ).attr( "src", "/images/image_not_found.png");
     /* If there is an error loading (file not found), change the destination of the "open" button
        to the substitute image */
-    imageURL = "images/image_not_found.png";
+    imageURL = "/images/image_not_found.png";
   }).attr( "src", imageURL); // Attempt to insert the image into the modal slot
   
   /* Remove all previous event handlers for button to prevent duplicates from stacking */

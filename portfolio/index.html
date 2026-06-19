@@ -3,26 +3,27 @@
 <html>
   <head>
     <title>My Portfolio</title>
-    <link rel="shortcut icon" type="image/jpg" href="images/logo-hovered.png"/>
+    <link rel="shortcut icon" type="image/jpg" href="/images/logo-hovered.png"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" title="normal">
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/lazyload.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" title="normal">
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/register-sw.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/imagesloaded.pkgd.min.js"></script>
+    <script src="/js/lazyload.js"></script>
     <!-- Matches all not specified by more specific media queries -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/css/style.css" media="all">
     <!-- Matches .col-sm-* (Bootstrap 3 default breakpoint) -->
-    <link rel="stylesheet" type="text/css" href="css/width-1-narrow.css" media="screen and (max-width: 767px)">
+    <link rel="stylesheet" type="text/css" href="/css/width-1-narrow.css" media="screen and (max-width: 767px)">
     <!-- Matches .col-sm-* (Bootstrap 3 default breakpoint) -->
-    <link rel="stylesheet" type="text/css" href="css/width-2-normal.css" media="screen and (min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" type="text/css" href="/css/width-2-normal.css" media="screen and (min-width: 768px) and (max-width: 991px)">
     <!-- Matches .col-md-* (Bootstrap 3 default breakpoint) -->
-    <link rel="stylesheet" type="text/css" href="css/width-3-wide.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" type="text/css" href="/css/width-3-wide.css" media="screen and (min-width: 992px) and (max-width: 1199px)">
     <!-- Matches .col-md-* (ALTERED BREAKPOINT: col-md-*: 992px min 1399px max) -->
-    <link rel="stylesheet" type="text/css" href="css/width-4-very-wide.css" media="screen and (min-width: 1200px) and (max-width: 1399px)">
+    <link rel="stylesheet" type="text/css" href="/css/width-4-very-wide.css" media="screen and (min-width: 1200px) and (max-width: 1399px)">
     <!-- Matches .col-lg-* (ALTERED BREAKPOINT: col-lg-*: 1400px min) -->
-    <link rel="stylesheet" type="text/css" href="css/width-5-x-very-wide.css" media="screen and (min-width: 1400px)">
+    <link rel="stylesheet" type="text/css" href="/css/width-5-x-very-wide.css" media="screen and (min-width: 1400px)">
   </head>
   <body>
     <!-- Prevent the annoying hash/anchor jump on page load by duplicating the id of the first tab to override the anchor jump point -->
@@ -41,7 +42,7 @@
         <div class="modal-content">
           <div class="modal-body">
             <div class="modal-screenshot">
-              <img id="original" class="modal-screenshot" src="screenshots/generic_placeholder.png" oncontextmenu="return false" draggable="false" style="width: auto; display: block; margin-left: auto; margin-right: auto;"/>
+              <img id="original" class="modal-screenshot" src="/screenshots/generic_placeholder.png" oncontextmenu="return false" draggable="false" style="width: auto; display: block; margin-left: auto; margin-right: auto;"/>
             </div>
           </div>
         </div>
@@ -56,19 +57,19 @@
     <div class="content-body">
       <div class="header">
         <div class="name-logo">
-          <a href="https://peterfelixnguyen.github.io"></a>
+          <a href="/"></a>
         </div>
         <div class="name-banner">
-          <a href="https://peterfelixnguyen.github.io" class="fit-sign"></a>
+          <a href="/" class="fit-sign"></a>
           <div class="separator"></div>
-          <a href="https://peterfelixnguyen.github.io" class="fit-sign"></a>
+          <a href="/" class="fit-sign"></a>
           <div class="separator"></div>
-          <a href="https://peterfelixnguyen.github.io" class="fit-sign"></a>
+          <a href="/" class="fit-sign"></a>
         </div>
         <div class="pages">
-          <a class="first hoverable"          href="https://peterfelixnguyen.github.io/about">About</a>
+          <a class="first hoverable"          href="/about">About</a>
           <a class="      hoverable selected">Portfolio</a>
-          <a class="last  hoverable"          href="https://peterfelixnguyen.github.io/contact">Contact</a>
+          <a class="last  hoverable"          href="/contact">Contact</a>
           <div>
             <span name="destination_large_screens_1"></span>
             <span name="destination_large_screens_2"></span>
@@ -153,23 +154,23 @@
                                 </ol>
                                 <div style="padding: 0px !important; margin: 0px !important; " class="carousel-inner slide-background">
                                   <div class="item item-carousel active">
-                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_01.gif">
-                                      <img class="d-block w-100" src="screenshots/dpnp_01.gif" alt="First slide">
+                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_01.gif">
+                                      <img class="d-block w-100" src="/screenshots/dpnp_01.gif" alt="First slide">
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_02.gif">
-                                      <img class="d-block w-100" src="screenshots/dpnp_02.gif" alt="Second slide">
+                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_02.gif">
+                                      <img class="d-block w-100" src="/screenshots/dpnp_02.gif" alt="Second slide">
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_03.gif">
-                                      <img class="d-block w-100" src="screenshots/dpnp_03.gif" alt="Third slide">
+                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_03.gif">
+                                      <img class="d-block w-100" src="/screenshots/dpnp_03.gif" alt="Third slide">
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_04.gif">
-                                      <img class="d-block w-100" src="screenshots/dpnp_04.gif" alt="Fourth slide">
+                                    <div class="slideshow" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_04.gif">
+                                      <img class="d-block w-100" src="/screenshots/dpnp_04.gif" alt="Fourth slide">
                                     </div>
                                   </div>
                                 </div>
@@ -191,8 +192,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_05.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_05.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_05.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_05.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Note example 1</p>
@@ -201,8 +202,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_06.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_06.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_06.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_06.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Note example 2</p>
@@ -211,8 +212,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_07.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_07.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_07.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_07.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Note example 3</p>
@@ -221,8 +222,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_08.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_08.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_08.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_08.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Changing page template</p>
@@ -231,8 +232,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_09.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_09.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_09.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_09.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Changing page colors</p>
@@ -241,8 +242,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_10.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_10.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_10.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_10.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Template examples</p>
@@ -251,8 +252,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_11.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_11.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_11.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_11.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Creating a new note</p>
@@ -261,8 +262,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_12.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_12.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_12.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_12.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Creating a new notebook</p>
@@ -271,8 +272,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_13.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_13.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_13.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_13.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Tool information page</p>
@@ -281,8 +282,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_14.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_14.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_14.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_14.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Cursor information page</p>
@@ -291,8 +292,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/dpnp_15.gif">
-                                <img class="lazyload play-gif-nullsafe" data-src="screenshots/dpnp_15.png" alt="Image Not Found">
+                              <div class="screenshot" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/dpnp_15.gif">
+                                <img class="lazyload play-gif-nullsafe" data-src="/screenshots/dpnp_15.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Changing user settings</p>
@@ -331,7 +332,7 @@
                         <div class="row align-column-heights initial-top-left-padding" style="padding-top: 0px;">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <div>
-                              <a class="content link-button" href="https://peterfelixnguyen.github.io/privacy/digitizer-pen-and-paper" target="_blank">
+                              <a class="content link-button" href="/privacy/digitizer-pen-and-paper" target="_blank">
                                 <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
                                 <span style="vertical-align: middle !important;">&nbsp;Privacy Policy</span>
                               </a>
@@ -481,7 +482,7 @@
                         <div class="row">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.digitizerpenandpaper" target="_blank">
-                              <img alt="Get it on Google Play" style="max-width:450px;" src="images/en_badge_web_generic.png"/>
+                              <img alt="Get it on Google Play" style="max-width:450px;" src="/images/en_badge_web_generic.png"/>
                             </a>
                           </div>
                         </div>
@@ -523,8 +524,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_01.png">
-                                <img class="lazyload" data-src="screenshots/fpc_01.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_01.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_01.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"3.14159" converted to 32-bits (Nexus 9)</p>
@@ -533,8 +534,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_02.png">
-                                <img class="lazyload" data-src="screenshots/fpc_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_02.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"3.14159" converted to 64-bits (Nexus 9)</p>
@@ -543,8 +544,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_03.png">
-                                <img class="lazyload" data-src="screenshots/fpc_03.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_03.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_03.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"3.14159" converted to 32-bits (Pixel 2 XL)</p>
@@ -553,8 +554,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_04.png">
-                                <img class="lazyload" data-src="screenshots/fpc_04.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_04.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_04.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"3.14159" copied to the clipboard (Pixel 2 XL)</p>
@@ -563,8 +564,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_05.png">
-                                <img class="lazyload" data-src="screenshots/fpc_05.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_05.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_05.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">64-bit mode, output cleared (Pixel 2 XL)</p>
@@ -573,8 +574,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_06.png">
-                                <img class="lazyload" data-src="screenshots/fpc_06.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_06.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_06.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"3.14159" pasted from clipboard for 64-bit conversion (Pixel 2 XL)</p>
@@ -583,8 +584,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_07.png">
-                                <img class="lazyload" data-src="screenshots/fpc_07.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_07.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_07.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"3.14159" converted to 64-bits (Pixel 2 XL)</p>
@@ -593,8 +594,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_08.png">
-                                <img class="lazyload" data-src="screenshots/fpc_08.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_08.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_08.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"71" converted to 64-bits (Pixel 2 XL)</p>
@@ -603,8 +604,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_09.png">
-                                <img class="lazyload" data-src="screenshots/fpc_09.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_09.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_09.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Hint overlay shows the result of toggling bit 16 out of 32 bits (Pixel 2 XL)</p>
@@ -613,8 +614,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-3 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/fpc_10.png">
-                                <img class="lazyload" data-src="screenshots/fpc_10.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-top" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/fpc_10.png">
+                                <img class="lazyload" data-src="/screenshots/fpc_10.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">"71.5" converted to hexadecimal in 32-bits (Pixel 2 XL)</p>
@@ -691,7 +692,7 @@
                         <div class="row align-column-heights initial-top-left-padding" style="padding-top: 0px;">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <div>
-                              <a class="content link-button" href="https://peterfelixnguyen.github.io/privacy/floating-point-calculator" target="_blank">
+                              <a class="content link-button" href="/privacy/floating-point-calculator" target="_blank">
                                 <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
                                 <span style="vertical-align: middle !important;">&nbsp;Privacy Policy</span>
                               </a>
@@ -807,7 +808,7 @@
                         <div class="row">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.floatingpointcalculatorieee754" target="_blank">
-                              <img alt="Get it on Google Play" style="max-width:450px;" src="images/en_badge_web_generic.png"/>
+                              <img alt="Get it on Google Play" style="max-width:450px;" src="/images/en_badge_web_generic.png"/>
                             </a>
                           </div>
                         </div>
@@ -1106,8 +1107,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_01.png">
-                                <img class="lazyload" data-src="screenshots/jma2_01.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_01.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_01.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Customize Your Mouse Cursor</p>
@@ -1116,8 +1117,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_02.png">
-                                <img class="lazyload" data-src="screenshots/jma2_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_02.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Use the Joysticks to Access Radial Menu</p>
@@ -1126,8 +1127,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_03.png">
-                                <img class="lazyload" data-src="screenshots/jma2_03.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_03.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_03.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Use the D-Pad to Access Cross Menu</p>
@@ -1136,8 +1137,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_04.png">
-                                <img class="lazyload" data-src="screenshots/jma2_04.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_04.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_04.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Remap the Buttons on Your Controller</p>
@@ -1146,8 +1147,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_05.png">
-                                <img class="lazyload" data-src="screenshots/jma2_05.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_05.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_05.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Adjust Your Joystick Deadzones to Remove Stick Drift</p>
@@ -1156,8 +1157,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_06.png">
-                                <img class="lazyload" data-src="screenshots/jma2_06.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_06.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_06.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Controls Are Very Customizable</p>
@@ -1166,8 +1167,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_07.png">
-                                <img class="lazyload" data-src="screenshots/jma2_07.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_07.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_07.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Check the Compatibility of Your Controller with the Gamepad Tester</p>
@@ -1176,8 +1177,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_08.png">
-                                <img class="lazyload" data-src="screenshots/jma2_08.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_08.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_08.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Test the Quality and Health of Your Joysticks (Measure Your Joystick Drift)</p>
@@ -1186,8 +1187,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma2_09.png">
-                                <img class="lazyload" data-src="screenshots/jma2_09.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma2_09.png">
+                                <img class="lazyload" data-src="/screenshots/jma2_09.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Feature Packed with Many Upcoming Features</p>
@@ -1273,7 +1274,7 @@
                         <div class="row align-column-heights initial-top-left-padding" style="padding-top: 0px;">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <div>
-                              <a class="content link-button" href="https://peterfelixnguyen.github.io/privacy/joystick-mouse-adapter-2" target="_blank">
+                              <a class="content link-button" href="/privacy/joystick-mouse-adapter-2" target="_blank">
                                 <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
                                 <span style="vertical-align: middle !important;">&nbsp;Privacy Policy</span>
                               </a>
@@ -1456,7 +1457,7 @@
                         <div class="row">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.joystickmouseadapter2" target="_blank">
-                              <img alt="Get it on Google Play" style="max-width:450px;" src="images/en_badge_web_generic.png"/>
+                              <img alt="Get it on Google Play" style="max-width:450px;" src="/images/en_badge_web_generic.png"/>
                             </a>
                           </div>
                         </div>
@@ -1629,8 +1630,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_01.gif">
-                                <img class="lazyload" data-src="screenshots/jma_01.gif" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_01.gif">
+                                <img class="lazyload" data-src="/screenshots/jma_01.gif" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Joystick Mouse Adapter example</p>
@@ -1639,8 +1640,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_02.png">
-                                <img class="lazyload" data-src="screenshots/jma_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_02.png">
+                                <img class="lazyload" data-src="/screenshots/jma_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Basic Controls, Part 1</p>
@@ -1649,8 +1650,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_03.png">
-                                <img class="lazyload" data-src="screenshots/jma_03.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_03.png">
+                                <img class="lazyload" data-src="/screenshots/jma_03.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Basic Controls, Part 2</p>
@@ -1659,8 +1660,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_04.png">
-                                <img class="lazyload" data-src="screenshots/jma_04.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_04.png">
+                                <img class="lazyload" data-src="/screenshots/jma_04.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Reassign functions to Buttons</p>
@@ -1669,8 +1670,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_05.png">
-                                <img class="lazyload" data-src="screenshots/jma_05.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_05.png">
+                                <img class="lazyload" data-src="/screenshots/jma_05.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Advanced Controls, Part 1</p>
@@ -1679,8 +1680,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_06.png">
-                                <img class="lazyload" data-src="screenshots/jma_06.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_06.png">
+                                <img class="lazyload" data-src="/screenshots/jma_06.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Advanced Controls, Part 2</p>
@@ -1689,8 +1690,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_07.png">
-                                <img class="lazyload" data-src="screenshots/jma_07.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_07.png">
+                                <img class="lazyload" data-src="/screenshots/jma_07.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">User Options, Part 1</p>
@@ -1699,8 +1700,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/jma_08.png">
-                                <img class="lazyload" data-src="screenshots/jma_08.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/jma_08.png">
+                                <img class="lazyload" data-src="/screenshots/jma_08.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">User Options, Part 2</p>
@@ -1778,7 +1779,7 @@
                         <div class="row align-column-heights initial-top-left-padding" style="padding-top: 0px;">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <div>
-                              <a class="content link-button" href="https://peterfelixnguyen.github.io/privacy/jma-1-pro-edition" target="_blank">
+                              <a class="content link-button" href="/privacy/jma-1-pro-edition" target="_blank">
                                 <span style="vertical-align: middle !important;" class="glyphicon glyphicon-file"></span>
                                 <span style="vertical-align: middle !important;">&nbsp;Privacy Policy</span>
                               </a>
@@ -1846,7 +1847,7 @@
                         <div class="row">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.joystickmouseadapterpro" target="_blank">
-                              <img alt="Get it on Google Play" style="max-width:450px;" src="images/en_badge_web_generic.png"/>
+                              <img alt="Get it on Google Play" style="max-width:450px;" src="/images/en_badge_web_generic.png"/>
                             </a>
                           </div>
                         </div>
@@ -1982,8 +1983,8 @@
                           </div>
                           <div class="col-sm-12 col-md-4 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_01.png">
-                                <img class="lazyload" data-src="screenshots/gl_01.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_01.png">
+                                <img class="lazyload" data-src="/screenshots/gl_01.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Mockup on ZTE Axon 7 (Portrait)</p>
@@ -1995,8 +1996,8 @@
                           </div>
                           <div class="col-sm-12 col-md-8 col-lg-8 media-container">
                             <div class="media-background align-bottom-contextual">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_02.png">
-                                <img class="lazyload" data-src="screenshots/gl_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_02.png">
+                                <img class="lazyload" data-src="/screenshots/gl_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Mockup on ZTE Axon 7 (Landscape)</p>
@@ -2005,8 +2006,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_03.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_03.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_03.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_03.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Minimal appearance</p>
@@ -2015,8 +2016,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_04.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_04.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_04.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_04.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Narrow appearance</p>
@@ -2025,8 +2026,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_05.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_05.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_05.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_05.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Wide appearance, no transparency</p>
@@ -2035,8 +2036,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_06.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_06.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_06.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_06.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Medium transparency</p>
@@ -2045,8 +2046,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_09.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_09.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_09.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_09.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Options 1</p>
@@ -2055,8 +2056,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_10.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_10.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_10.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_10.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Options 2</p>
@@ -2065,8 +2066,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_07.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_07.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_07.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_07.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Landscape overlay</p>
@@ -2075,8 +2076,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/gl_08.jpg">
-                                <img class="lazyload" data-src="screenshots/gl_08.jpg" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/gl_08.jpg">
+                                <img class="lazyload" data-src="/screenshots/gl_08.jpg" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Reverse landscape overlay</p>
@@ -2244,7 +2245,7 @@
                         <div class="row">
                           <div class="col-sm-12 col-md-12 col-lg-12">
                             <a class="image-hover" href="https://play.google.com/store/apps/details?id=com.gmail.peterfelixnguyen.guidelights" target="_blank">
-                              <img alt="Get it on Google Play" style="max-width:450px;" src="images/en_badge_web_generic.png"/>
+                              <img alt="Get it on Google Play" style="max-width:450px;" src="/images/en_badge_web_generic.png"/>
                             </a>
                           </div>
                         </div>
@@ -2341,8 +2342,8 @@
                                 </ol>
                                 <div class="carousel-inner slide-background">
                                   <div class="item item-carousel active">
-                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ffs_01.jpg">
-                                      <img class="d-block w-100" src="screenshots/ffs_01.jpg" alt="First slide">
+                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ffs_01.jpg">
+                                      <img class="d-block w-100" src="/screenshots/ffs_01.jpg" alt="First slide">
                                     </div>
                                     <div class="carousel-caption d-none d-md-block not-clickable">
                                       <p class="slide-caption-main">Forest Fire</p>
@@ -2350,8 +2351,8 @@
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ffs_02.jpg">
-                                      <img class="d-block w-100" src="screenshots/ffs_02.jpg" alt="Second slide">
+                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ffs_02.jpg">
+                                      <img class="d-block w-100" src="/screenshots/ffs_02.jpg" alt="Second slide">
                                     </div>
                                     <div class="carousel-caption d-none d-md-block not-clickable">
                                       <p class="slide-caption-main">Forest Fire</p>
@@ -2359,8 +2360,8 @@
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ffs_03.jpg">
-                                      <img class="d-block w-100" src="screenshots/ffs_03.jpg" alt="Third slide">
+                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ffs_03.jpg">
+                                      <img class="d-block w-100" src="/screenshots/ffs_03.jpg" alt="Third slide">
                                     </div>
                                     <div class="carousel-caption d-none d-md-block not-clickable">
                                       <p class="slide-caption-main">Forest Fire</p>
@@ -2368,8 +2369,8 @@
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ffs_04.jpg">
-                                      <img class="d-block w-100" src="screenshots/ffs_04.jpg" alt="Fourth slide">
+                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ffs_04.jpg">
+                                      <img class="d-block w-100" src="/screenshots/ffs_04.jpg" alt="Fourth slide">
                                     </div>
                                     <div class="carousel-caption d-none d-md-block not-clickable">
                                       <p class="slide-caption-main">Weather Mechanics</p>
@@ -2377,8 +2378,8 @@
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ffs_05.jpg">
-                                      <img class="d-block w-100" src="screenshots/ffs_05.jpg" alt="Fourth slide">
+                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ffs_05.jpg">
+                                      <img class="d-block w-100" src="/screenshots/ffs_05.jpg" alt="Fourth slide">
                                     </div>
                                     <div class="carousel-caption d-none d-md-block not-clickable">
                                       <p class="slide-caption-main">Weather Mechanics</p>
@@ -2386,8 +2387,8 @@
                                     </div>
                                   </div>
                                   <div class="item item-carousel">
-                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ffs_06.jpg">
-                                      <img class="d-block w-100" src="screenshots/ffs_06.jpg" alt="Fourth slide">
+                                    <div class="slideshow outline-padding-all-30" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ffs_06.jpg">
+                                      <img class="d-block w-100" src="/screenshots/ffs_06.jpg" alt="Fourth slide">
                                     </div>
                                     <div class="carousel-caption d-none d-md-block not-clickable">
                                       <p class="slide-caption-main">Weather Mechanics</p>
@@ -2603,8 +2604,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-4 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/hm_01.png">
-                                <img class="lazyload" data-src="screenshots/hm_01.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/hm_01.png">
+                                <img class="lazyload" data-src="/screenshots/hm_01.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Step 1: enter the values</p>
@@ -2613,8 +2614,8 @@
                           </div>
                           <div class="col-sm-12 col-md-4 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/hm_02.png">
-                                <img class="lazyload" data-src="screenshots/hm_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/hm_02.png">
+                                <img class="lazyload" data-src="/screenshots/hm_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Step 2: specify tick intervals</p>
@@ -2623,8 +2624,8 @@
                           </div>
                           <div class="col-sm-12 col-md-4 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/hm_03.png">
-                                <img class="lazyload" data-src="screenshots/hm_03.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/hm_03.png">
+                                <img class="lazyload" data-src="/screenshots/hm_03.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Step 3a: pick color and gap size</p>
@@ -2633,8 +2634,8 @@
                           </div>
                           <div class="col-sm-12 col-md-8 col-lg-8 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/hm_04.png">
-                                <img class="lazyload" data-src="screenshots/hm_04.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/hm_04.png">
+                                <img class="lazyload" data-src="/screenshots/hm_04.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Step 3b: alternatively, click on square for color palette</p>
@@ -2643,8 +2644,8 @@
                           </div>
                           <div class="col-sm-12 col-md-4 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/hm_05.png">
-                                <img class="lazyload" data-src="screenshots/hm_05.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/hm_05.png">
+                                <img class="lazyload" data-src="/screenshots/hm_05.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Step 4: change the graph labels</p>
@@ -2653,8 +2654,8 @@
                           </div>
                           <div class="col-sm-12 col-md-8 col-lg-8 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/hm_06.png">
-                                <img class="lazyload" data-src="screenshots/hm_06.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/hm_06.png">
+                                <img class="lazyload" data-src="/screenshots/hm_06.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Step 5: generate the graph, resize, and save</p>
@@ -2663,8 +2664,8 @@
                           </div>
                           <div class="col-sm-12 col-md-4 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/hm_07.png">
-                                <img class="lazyload" data-src="screenshots/hm_07.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/hm_07.png">
+                                <img class="lazyload" data-src="/screenshots/hm_07.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Resized graph</p>
@@ -2862,8 +2863,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-9 col-lg-9 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/sl_01.png">
-                                <img class="lazyload" data-src="screenshots/sl_01.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/sl_01.png">
+                                <img class="lazyload" data-src="/screenshots/sl_01.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Z-test, entering sample</p>
@@ -2872,8 +2873,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/sl_02.png">
-                                <img class="lazyload" data-src="screenshots/sl_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/sl_02.png">
+                                <img class="lazyload" data-src="/screenshots/sl_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Z-test, results</p>
@@ -2882,8 +2883,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/sl_03.png">
-                                <img class="lazyload" data-src="screenshots/sl_03.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/sl_03.png">
+                                <img class="lazyload" data-src="/screenshots/sl_03.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Output window</p>
@@ -2892,8 +2893,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/sl_04.png">
-                                <img class="lazyload" data-src="screenshots/sl_04.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/sl_04.png">
+                                <img class="lazyload" data-src="/screenshots/sl_04.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Descriptive statistics</p>
@@ -2902,8 +2903,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/sl_05.png">
-                                <img class="lazyload" data-src="screenshots/sl_05.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/sl_05.png">
+                                <img class="lazyload" data-src="/screenshots/sl_05.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Standard score</p>
@@ -3066,8 +3067,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ieee754_01.png">
-                                <img class="lazyload" data-src="screenshots/ieee754_01.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ieee754_01.png">
+                                <img class="lazyload" data-src="/screenshots/ieee754_01.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">16-bit conversion</p>
@@ -3076,8 +3077,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ieee754_02.png">
-                                <img class="lazyload" data-src="screenshots/ieee754_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ieee754_02.png">
+                                <img class="lazyload" data-src="/screenshots/ieee754_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">32-bit conversion</p>
@@ -3086,8 +3087,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ieee754_03.png">
-                                <img class="lazyload" data-src="screenshots/ieee754_03.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ieee754_03.png">
+                                <img class="lazyload" data-src="/screenshots/ieee754_03.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">64-bit conversion</p>
@@ -3096,8 +3097,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/ieee754_04.png">
-                                <img class="lazyload" data-src="screenshots/ieee754_04.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/ieee754_04.png">
+                                <img class="lazyload" data-src="/screenshots/ieee754_04.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Formatting options</p>
@@ -3270,8 +3271,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/snl_01.png">
-                                <img class="lazyload" data-src="screenshots/snl_01.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/snl_01.png">
+                                <img class="lazyload" data-src="/screenshots/snl_01.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Sketch of a car</p>
@@ -3280,8 +3281,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/snl_02.png">
-                                <img class="lazyload" data-src="screenshots/snl_02.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/snl_02.png">
+                                <img class="lazyload" data-src="/screenshots/snl_02.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Sketch of a tank</p>
@@ -3290,8 +3291,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/snl_03.png">
-                                <img class="lazyload" data-src="screenshots/snl_03.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/snl_03.png">
+                                <img class="lazyload" data-src="/screenshots/snl_03.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Sketch of an airplane</p>
@@ -3455,8 +3456,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/generic_coming_soon_horizontal.png">
-                                <img class="lazyload" data-src="screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/generic_coming_soon_horizontal.png">
+                                <img class="lazyload" data-src="/screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Caption</p>
@@ -3465,8 +3466,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/generic_coming_soon_horizontal.png">
-                                <img class="lazyload" data-src="screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/generic_coming_soon_horizontal.png">
+                                <img class="lazyload" data-src="/screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Caption</p>
@@ -3475,8 +3476,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-4 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/generic_coming_soon_horizontal.png">
-                                <img class="lazyload" data-src="screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/generic_coming_soon_horizontal.png">
+                                <img class="lazyload" data-src="/screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Caption</p>
@@ -3497,8 +3498,8 @@
                         <div class="row align-column-heights initial-top-left-padding">
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/generic_coming_soon_horizontal.png">
-                                <img class="lazyload" data-src="screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/generic_coming_soon_horizontal.png">
+                                <img class="lazyload" data-src="/screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Caption</p>
@@ -3507,8 +3508,8 @@
                           </div>
                           <div class="col-sm-12 col-md-6 col-lg-6 media-container">
                             <div class="media-background">
-                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="screenshots/generic_coming_soon_horizontal.png">
-                                <img class="lazyload" data-src="screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
+                              <div class="screenshot outline-padding-all" data-toggle="modal" data-target="#screenshotModal" data-screenshot="/screenshots/generic_coming_soon_horizontal.png">
+                                <img class="lazyload" data-src="/screenshots/generic_coming_soon_horizontal.png" alt="Image Not Found">
                               </div>
                               <div class="caption-background remove-inline-bottom-margins">
                                 <p class="media-caption">Caption</p>
@@ -3611,15 +3612,15 @@
       </div>
       <p class="footer" style="color: white;">
         Copyright &copy; 2026 Peter Nguyen&nbsp;&nbsp;&bull;&nbsp;
-        <a href="https://peterfelixnguyen.github.io/attribution" target="_blank">
+        <a href="/attribution" target="_blank">
             License Attribution
         </a>
       </p>
     </div>
     
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/jquery.fittext.js"></script>
+    <script src="/js/masonry.pkgd.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/jquery.fittext.js"></script>
     <script type="text/javascript">
       $(".fit-sign").fitText(.7);
     </script>
