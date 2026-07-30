@@ -79,9 +79,100 @@ function showTabForHash(hash) {
 }
 
 /*
+   Replace only the year in each footer copyright notice
+*/
+function setCopyrightYear(year) {
+  $("p.footer").each(function() {
+    var copyrightText = this.firstChild;
+    if (copyrightText) {
+      copyrightText.nodeValue = copyrightText.nodeValue.replace(
+        /(Copyright\s+©\s+)\d{4}\b/,
+        "$1" + year
+      );
+    }
+  });
+}
+
+/*
+   Read the hardcoded footer year so it does not need to be duplicated in this script
+*/
+function getCopyrightFallbackYear() {
+  var fallbackYearMatch = $("p.footer").first().text().match(/Copyright\s+©\s+(\d{4})\b/);
+  if (fallbackYearMatch) {
+    return parseInt(fallbackYearMatch[1], 10);
+  }
+  return null;
+}
+
+/*
+   Use the visitor's device year when the web server's date is unavailable
+*/
+function useDeviceCopyrightYear() {
+  /* Create a date using the visitor's local device clock and time zone */
+  var deviceDate = new Date();
+  if (!isNaN(deviceDate.getTime())) {
+    var fallbackYear = getCopyrightFallbackYear();
+    var deviceYear = deviceDate.getFullYear();
+
+    /* Use the device year only when it is not older than the hardcoded fallback year */
+    if (fallbackYear !== null && deviceYear >= fallbackYear) {
+      setCopyrightYear(deviceYear);
+    }
+  }
+  /* If validation fails, do nothing so the hardcoded HTML year remains visible */
+}
+
+/*
+   Update the footer copyright year using the web server's date
+   The HTML displays its hardcoded year first. It remains the final fallback when neither the
+   server nor the visitor's device provides an acceptable year.
+*/
+function updateCopyrightYear() {
+  /* Fall back to the device date when the browser does not support Fetch */
+  if (!window.fetch) {
+    useDeviceCopyrightYear();
+    return;
+  }
+
+  /* Request only the site root's headers so the current page does not need to be downloaded again */
+  fetch("/", {
+    method: "HEAD",
+    cache: "no-store"
+  }).then(function(response) {
+    /* Read the date supplied by the web server instead of using the visitor's device clock */
+    var serverDateHeader = response.headers.get("Date");
+    if (!response.ok || !serverDateHeader) {
+      throw new Error("The web server did not provide a valid response date");
+    }
+
+    /* Convert the server's HTTP date into a JavaScript Date object */
+    var serverDate = new Date(serverDateHeader);
+    if (isNaN(serverDate.getTime())) {
+      throw new Error("The web server provided an invalid response date");
+    }
+
+    /* The HTTP Date header uses GMT, so read its year in UTC */
+    var serverYear = serverDate.getUTCFullYear();
+    var fallbackYear = getCopyrightFallbackYear();
+    if (fallbackYear === null || serverYear < fallbackYear) {
+      throw new Error("The web server provided a year older than the hardcoded fallback");
+    }
+
+    /* Use the server year only when it is not older than the hardcoded fallback year */
+    setCopyrightYear(serverYear);
+  }).catch(function() {
+    /* Fall back to the visitor's local device year when the server date lookup fails */
+    useDeviceCopyrightYear();
+  });
+}
+
+/*
    Initialize (this function calls on page load and refresh)
 */
 $(document).ready(function() {
+  /* Update the footer copyright year after its HTML has loaded */
+  updateCopyrightYear();
+
   /* Initialize the LazyLoader (Thank you, Mika Tuupola for creating this) */
     if ($.isFunction($.fn.lazyload)) {
       $("img.lazyload").lazyload();
